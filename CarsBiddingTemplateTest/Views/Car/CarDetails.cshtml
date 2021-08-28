@@ -1,0 +1,244 @@
+﻿@{
+    ViewBag.Title = CarsBiddingUsingBootstrap.Localization.CarDetails;
+}
+@model CarsBiddingUsingBootstrap.Models.ViewModelClasses.CarsInfoViewModel
+@section linkTag{
+    <link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">
+    <link href="~/Content/animate.css" rel="stylesheet" />
+}
+<section class="CarDetails">
+    <div class="container">
+        @Html.HiddenFor(model => model.CarId)
+        @Html.HiddenFor(model => model.Auction_End_Date)
+        <span id="NotificationParameterLocalization" data-type="@Model.Type" data-msg="@Model.Msg"></span>
+        <h3 class="agileits-title PageHeading">@CarsBiddingUsingBootstrap.Localization.CarDetails<span class="w3lshr-line"></span></h3>
+        <div class="main">
+            <div class="row">
+                @{
+                    if (ViewBag.ImagesPathList != null)
+                    {
+                        foreach (string imgPath in ViewBag.ImagesPathList)
+                        {
+                            <div class="col-sm-4 col-xs-6 gallry-agile-grids">
+                                <div class="view">
+                                    <a href="@Url.Content(imgPath)" class="b-link-stripe b-animate-go thickbox" title="@Model.TypeOfCar">
+                                        <img src="@Url.Content(imgPath)" alt="Car Photo" />
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row Cars-info">
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.CarType</label><span class="colon">:</span><label class="column-value">@Model.TypeOfCar</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.CarColor</label><span class="colon">:</span><label class="column-value">@Model.ColorOfCar</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.EngineCar</label><span class="colon">:</span><label class="column-value">@Model.EngineCapacity</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.CheckingCar</label><span class="colon">:</span><label class="column-value">@Model.CarChecking</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.Kilometers</label><span class="colon">:</span><label class="column-value">@Model.Kilometers</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.ManufactureYear</label><span class="colon">:</span><label class="column-value">@Model.YearOfManufacture</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.InitialPrice</label><span class="colon">:</span><label class="column-value">@Model.InitialPrice</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.CurrentPrice</label><span class="colon">:</span><label class="column-value">@Model.CurrentPrice</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.CarCustoms</label><span class="colon">:</span><label class="column-value">@Model.CarCustoms</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.CarInsurance</label><span class="colon">:</span><label class="column-value">@Model.CarInsurance</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.TypeOfTransmissionGear</label><span class="colon">:</span><label class="column-value">@Model.TypeOfTransmissionGear</label>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.CarLicense</label><span class="colon">:</span><label class="column-value">@Model.CarLicense</label>
+            </div>
+            <div class="col-md-offset-1 col-md-11">
+                <label class="column-name">@CarsBiddingUsingBootstrap.Localization.Description</label><span class="colon">:</span><label class="column-value">@Model.Description</label>
+            </div>
+        </div>
+        @*<div class="display">
+                <div id="clock" class="clock">
+                    <h1 class="event_title">The Remaining Time For Bid Ending</h1>
+                    <div id="numbers">
+                        <span class="days"></span>
+                        <span class="hours"></span>
+                        <span class="minutes"></span>
+                        <span class="seconds"></span>
+                    </div>
+                    <div id="units">
+                        <span>Days</span>
+                        <span>Hours</span>
+                        <span>Minutes</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <div id="door" class="hide">
+                    <h1 class="event_title">Timer Is End</h1>
+                </div>
+            </div>*@
+        <!--Timer-->
+        <div id="timer" class="wthree-soon">
+            <div class="wthree-soon-agileinfo">
+                <h5>@CarsBiddingUsingBootstrap.Localization.TheRemainingTimeForAuctionEnding</h5>
+                <!-- timer -->
+                <div class="agileits-timer">
+                    <div class="clock">
+                        <div class="column days">
+                            <div class="timer" id="days"></div>
+                            <div class="text">Days</div>
+                        </div>
+                        <div class="timer days"></div>
+                        <div class="column">
+                            <div class="timer" id="hours"></div>
+                            <div class="text">Hours</div>
+                        </div>
+                        <div class="timer"></div>
+                        <div class="column">
+                            <div class="timer" id="minutes"></div>
+                            <div class="text">Minutes</div>
+                        </div>
+                        <div class="timer"></div>
+                        <div class="column">
+                            <div class="timer" id="seconds"></div>
+                            <div class="text">Seconds</div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <!-- //timer -->
+                <span id="TimerStatusLocalization" data-timer-status-localization="@CarsBiddingUsingBootstrap.Localization.AuctionTimeEnded"></span>
+            </div>
+        </div>
+        <!--Timer-->
+        <div class="text-center">
+            <button id="biddingBtn" type="button" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.Bidding<span></span></button>
+            <span id="BiddingProcessErrorLocalization" data-bidding-process-msg="@CarsBiddingUsingBootstrap.Localization.BiddingProcessErrorMsg"></span>
+        </div>
+        <!-- PurchaseInsurance Modal -->
+        @using (Ajax.BeginForm("PurchaseInsurance", "PurchaseInsurance", null, new AjaxOptions()
+        {
+            HttpMethod = "POST",
+            OnSuccess = "PurchaseOnSuccess"
+        }, new { id = "PurchaseInsuranceForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="modal fade scrollStyle PageModal" id="PurchaseInsurance" tabindex="-1" role="dialog" aria-labelledby="PurchaseInsuranceTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">@CarsBiddingUsingBootstrap.Localization.ThePurchaseInsurance</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        @Html.HiddenFor(model => model.InsuranceViewModel.CarId, new { Name = "CarId", Value = Model.CarId })
+                                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CreditCardNumber</label>
+                                        @Html.TextBoxFor(model => model.InsuranceViewModel.CreditCardNumber, new { @class = "form-control", title = CarsBiddingUsingBootstrap.Localization.PurchaseInsuranceToolTip, data_toggle = "tooltip", data_placement = "bottom", Name = "CreditCardNumber" })
+                                        @Html.ValidationMessageFor(model => model.InsuranceViewModel.CreditCardNumber, "", new { @class = "text-danger", id = "CreditCardNumberMsgError", data_valmsg_for = "CreditCardNumber" })
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <i data-toggle="collapse" href="#InsuranceDetails" aria-expanded="false" aria-controls="InsuranceDetails" class="fa fa-info-circle text-info InfoIcon" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="collapse" id="InsuranceDetails">
+                                <div class="card card-body">
+                                    <span>@CarsBiddingUsingBootstrap.Localization.InsuranceDetails</span>
+                                    <span>@CarsBiddingUsingBootstrap.Localization.InsuranceDetailsA</span>
+                                    <span>@CarsBiddingUsingBootstrap.Localization.InsuranceDetailsB</span>
+                                    <span>@CarsBiddingUsingBootstrap.Localization.InsuranceDetailsHowever</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="ConfirmBtn" type="submit" class="btn btn-primary">@CarsBiddingUsingBootstrap.Localization.Confirm</button>
+                            <button id="PurchaseCloseBtn" type="button" class="btn btn-primary" data-dismiss="modal">@CarsBiddingUsingBootstrap.Localization.Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <!-- PurchaseInsurance Modal -->
+        <!-- BiddingProcess Modal -->
+        @using (Ajax.BeginForm("BiddingProcess", "BiddingProcess", null, new AjaxOptions()
+        {
+            HttpMethod = "POST",
+            OnSuccess = "BiddingOnSuccess",
+        }, new { id = "BiddingProcessForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="modal fade scrollStyle PageModal" id="BiddingProcess" tabindex="-1" role="dialog" aria-labelledby="BiddingProcessTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">@CarsBiddingUsingBootstrap.Localization.BiddingProcess</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <span id="BiddingProcessLocalization" data-jd="@CarsBiddingUsingBootstrap.Localization.JD"></span>
+                                        @Html.HiddenFor(model => model.BiddingViewModel.CarId, new { Name = "CarId", Value = Model.CarId })
+                                        @Html.HiddenFor(model => model.BiddingViewModel.CurrentPrice, new { Name = "CurrentPrice", id = "CurrentPrice" })
+                                        <label for="name">@CarsBiddingUsingBootstrap.Localization.NewPrice</label>
+                                        @Html.TextBoxFor(model => model.BiddingViewModel.NewPrice, new { @class = "form-control", title = CarsBiddingUsingBootstrap.Localization.NewPriceValidation, data_toggle = "tooltip", data_placement = "bottom", Name = "NewPrice", id = "NewPrice", type = "number" })
+                                        @Html.ValidationMessageFor(model => model.BiddingViewModel.NewPrice, "", new { @class = "text-danger", id = "InputMsgError", data_valmsg_for = "NewPrice" })
+                                        <span id="NewPriceValidation" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-xs-offset-2 text-center priceBox">
+                                    <div><i class="fa fa-money fa-3x" aria-hidden="true"></i></div>
+                                    <h3 id="currentPriceHeader"></h3>
+                                    <h3>@CarsBiddingUsingBootstrap.Localization.CurrentPrice</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="ConfirmBtn" type="submit" class="btn btn-primary">@CarsBiddingUsingBootstrap.Localization.Confirm</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">@CarsBiddingUsingBootstrap.Localization.Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- BiddingProcess Modal -->
+
+    </div>
+</section>
+@section scripts{
+    @*
+        [start]
+        the jquery.unobtrusive-ajax.min.js script we need it when
+        use Ajax.BeginForm() which we need it in order make action go to
+        same view in other word go to success function after ajax request.
+
+        without it the action wil go to empty page with json object as is:
+        {"Type":"SUCCESS","Msg":"The insurance has been paid successfully, you can now participate in the bidding process."}
+    *@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    @*[End]*@
+    <script src="~/Scripts/TemplateFromStyle.js"></script>
+    @*jquery.chocolat-custom.js => this script make the images in Gallery open as a pop up in same page*@
+    <script src="~/Scripts/jquery.chocolat-custom.js"></script>
+    <script src="~/Scripts/CarDetails.js"></script>
+    <script src="~/Scripts/jquery.countdown.min.js"></script>
+}

@@ -1,0 +1,1817 @@
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP host was not specified.
+ExceptionTrackStack: at System.Net.Mail.SmtpClient.CheckHostAndPort()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:08:24 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP host was not specified.
+ExceptionTrackStack: at System.Net.Mail.SmtpClient.CheckHostAndPort()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:10:37 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP host was not specified.
+ExceptionTrackStack: at System.Net.Mail.SmtpClient.CheckHostAndPort()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:25:00 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+ExceptionTrackStack: at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:28:10 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+ExceptionTrackStack: at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:40:58 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+ExceptionTrackStack: at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:41:14 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+ExceptionTrackStack: at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:41:37 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. Learn more at
+ExceptionTrackStack: at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:42:15 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Failure sending mail.
+ExceptionTrackStack: at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 39
+Date: 5/3/2021 12:58:50 AM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 5/3/2021 7:24:15 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 5/3/2021 7:24:39 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 5/3/2021 7:24:54 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 5/3/2021 8:50:25 PM
+===========================================================================
+PageName: [Get] Gallary action,Gallary Controller
+Message: Index was outside the bounds of the array.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GallaryController.Gallary(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GallaryController.cs:line 31
+Date: 5/8/2021 5:38:12 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 19
+Date: 5/8/2021 6:46:57 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 19
+Date: 5/8/2021 6:48:15 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 19
+Date: 5/8/2021 6:49:30 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 26
+Date: 5/8/2021 6:50:01 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 26
+Date: 5/8/2021 6:50:08 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 26
+Date: 5/8/2021 6:50:15 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 26
+Date: 5/8/2021 6:56:07 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 26
+Date: 5/8/2021 6:56:11 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String search, Nullable`1 CheckBoxValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 41
+Date: 5/17/2021 9:15:06 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 3:02:48 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 3:03:21 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 6:25:03 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 6:25:12 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 6:27:27 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 6:31:52 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 6:58:20 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 7:30:39 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 7:32:55 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 7:40:53 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 7:42:28 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 7:43:14 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 7:44:53 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 7:53:58 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 8:02:43 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 8:48:24 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 8:50:34 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 8:51:43 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 8:51:52 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:07:07 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:07:15 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:11:03 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:12:47 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:13:05 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:13:15 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:13:32 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:14:19 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:15:04 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:50:05 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:51:47 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 9:56:21 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/25/2021 10:01:29 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/25/2021 10:12:22 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/25/2021 10:12:43 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/25/2021 10:13:05 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/25/2021 10:14:33 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/25/2021 10:17:21 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/25/2021 10:18:08 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/25/2021 10:18:19 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:35:54 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:35:57 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:36:39 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:42:58 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:45:41 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:46:19 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:46:25 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/26/2021 8:47:06 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 9:59:57 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 10:02:12 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:21:02 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:21:29 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:21:50 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:22:49 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:23:26 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:24:01 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:25:01 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:25:48 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:26:55 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:27:04 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:29:38 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:29:49 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 64
+Date: 5/27/2021 11:30:08 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 64
+Date: 5/27/2021 11:30:17 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 132
+Date: 5/27/2021 11:30:58 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 132
+Date: 5/27/2021 11:31:17 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:31:30 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:39:37 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:39:52 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:40:05 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:41:37 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:46:58 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:47:21 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:57:48 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:57:58 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:58:06 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:58:27 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/27/2021 11:59:24 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 12:00:58 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 12:05:16 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 12:05:36 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 12:06:01 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 12:06:20 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 12:07:50 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 64
+Date: 5/28/2021 12:08:07 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 132
+Date: 5/28/2021 12:08:39 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 64
+Date: 5/28/2021 12:08:52 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 132
+Date: 5/28/2021 12:09:09 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 132
+Date: 5/28/2021 12:09:31 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 12:10:19 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 132
+Date: 5/28/2021 12:11:05 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:31:07 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:31:45 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:32:44 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:33:59 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:34:47 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:36:20 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:36:28 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:37:15 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:37:33 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:37:42 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:38:01 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:38:31 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 12:39:39 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:14:02 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:33:32 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 63
+Date: 5/28/2021 10:33:44 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:36:08 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:45:57 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:46:05 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:46:10 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:46:19 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: String
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, String ManufactureYeartxt, String Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 62
+Date: 5/28/2021 10:54:58 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 64
+Date: 5/28/2021 2:05:29 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: source
+ExceptionTrackStack: at System.Linq.Queryable.AsQueryable[TElement](IEnumerable`1 source)
+   at PagedList.PagedList`1..ctor(IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at PagedList.PagedListExtensions.ToPagedList[T](IEnumerable`1 superset, Int32 pageNumber, Int32 pageSize)
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 25
+Date: 5/28/2021 3:52:26 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 46
+Date: 6/2/2021 8:51:03 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 77
+Date: 6/2/2021 8:52:47 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 77
+Date: 6/2/2021 8:55:29 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: s
+ExceptionTrackStack: at System.IO.StringReader..ctor(String s)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings) in d:\Development\Releases\Json\Working\Src\Newtonsoft.Json\JsonConvert.cs:line 700
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings) in d:\Development\Releases\Json\Working\Src\Newtonsoft.Json\JsonConvert.cs:line 669
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value) in d:\Development\Releases\Json\Working\Src\Newtonsoft.Json\JsonConvert.cs:line 626
+   at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, Cars_Info DF, String searchedResult, String x) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 19
+Date: 6/7/2021 10:47:10 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String sortOrder, String x) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 19
+Date: 6/8/2021 10:26:42 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String sortOrder, String x) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 19
+Date: 6/8/2021 10:27:29 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String sortOrder, String x) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 21
+Date: 6/8/2021 10:28:34 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.GalleryController.Gallery(Nullable`1 page, String sortOrder, String x) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 21
+Date: 6/8/2021 10:29:25 PM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: Sequence contains more than one element
+ExceptionTrackStack: at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 214
+Date: 6/26/2021 11:51:40 AM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: The entity or complex type 'CarsBiddingModel.Cars_Info' cannot be constructed in a LINQ to Entities query.
+ExceptionTrackStack: at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.CheckInitializerType(Type type)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MemberInitTranslator.TypedTranslate(ExpressionConverter parent, MemberInitExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SelectTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   at System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 196
+Date: 6/26/2021 12:41:55 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 9:10:42 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 9:24:06 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 9:24:26 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 9:26:53 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 9:26:53 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 9:31:24 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery_post(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, List`1 SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 9:42:40 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery_post(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, List`1 SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 215
+Date: 6/30/2021 10:06:13 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+Date: 7/2/2021 1:37:33 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+Date: 7/2/2021 1:38:57 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+Date: 7/2/2021 1:39:12 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 167
+Date: 7/2/2021 1:41:18 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 168
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 168
+Date: 7/2/2021 1:53:12 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 170
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult, String PostRequestType) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 170
+Date: 7/2/2021 4:21:46 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Value cannot be null.
+Parameter name: s
+ExceptionTrackStack: at System.IO.StringReader..ctor(String s)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings) in d:\Development\Releases\Json\Working\Src\Newtonsoft.Json\JsonConvert.cs:line 700
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings) in d:\Development\Releases\Json\Working\Src\Newtonsoft.Json\JsonConvert.cs:line 669
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value) in d:\Development\Releases\Json\Working\Src\Newtonsoft.Json\JsonConvert.cs:line 626
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult, String PostRequestType) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 90
+Date: 7/5/2021 7:11:39 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult, String PostRequestType) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+Date: 7/5/2021 8:24:51 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult, String PostRequestType) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+Date: 7/5/2021 8:25:28 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult, String PostRequestType) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+Date: 7/5/2021 8:25:57 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__10(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult, String PostRequestType) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 160
+Date: 7/5/2021 8:27:38 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.<>c__DisplayClass1_0.<Gallery>b__16(CarsInfoViewModel car) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 185
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 185
+Date: 7/9/2021 6:41:43 PM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:01:47 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:03:57 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:13:04 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:13:06 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:13:09 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:13:35 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:23:13 AM
+===========================================================================
+PageName: [Get] Gallery action,Gallery Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.GalleryController.ChangePage(Nullable`1 page, String SearchedResult) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 238
+Date: 7/10/2021 10:24:05 AM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 194
+Date: 7/10/2021 10:36:07 AM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 194
+Date: 7/10/2021 10:37:09 AM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 194
+Date: 7/10/2021 10:38:25 AM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 194
+Date: 7/10/2021 10:39:29 AM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.NewCar() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 21
+Date: 7/10/2021 10:48:33 AM
+===========================================================================
+PageName: [Post] NewCar action,AddNewCar Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 194
+Date: 7/10/2021 11:49:12 AM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 196
+Date: 7/22/2021 3:59:18 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 196
+Date: 7/22/2021 4:01:03 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 196
+Date: 7/22/2021 4:01:18 PM
+===========================================================================
+PageName: [Post] BiddingProcess action,BiddingProcess Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.BiddingProcessController.BiddingProcess(BiddingViewModel biddingModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\BiddingProcessController.cs:line 39
+Date: 7/25/2021 7:50:33 PM
+===========================================================================
+PageName: [Post] BiddingProcess action,BiddingProcess Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.BiddingProcessController.BiddingProcess(BiddingViewModel biddingModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\BiddingProcessController.cs:line 39
+Date: 7/25/2021 7:59:08 PM
+===========================================================================
+PageName: [Post] PurchaseInsurance action,PurchaseInsurance Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.PurchaseInsuranceController.PurchaseInsurance(InsuranceViewModel model) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\PurchaseInsuranceController.cs:line 23
+Date: 7/26/2021 7:33:00 PM
+===========================================================================
+PageName: [Post] PurchaseInsurance action,PurchaseInsurance Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.PurchaseInsuranceController.PurchaseInsurance(InsuranceViewModel model) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\PurchaseInsuranceController.cs:line 23
+Date: 7/26/2021 7:38:25 PM
+===========================================================================
+PageName: [Post] PurchaseInsurance action,PurchaseInsurance Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.PurchaseInsuranceController.PurchaseInsurance(InsuranceViewModel model) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\PurchaseInsuranceController.cs:line 23
+Date: 7/26/2021 8:13:45 PM
+===========================================================================
+PageName: [Post] PurchaseInsurance action,PurchaseInsurance Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.PurchaseInsuranceController.PurchaseInsurance(InsuranceViewModel model) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\PurchaseInsuranceController.cs:line 23
+Date: 7/26/2021 8:17:42 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 199
+Date: 7/29/2021 9:05:28 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 7/29/2021 9:13:39 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 7/29/2021 9:35:04 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 7/29/2021 9:35:49 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 7/29/2021 9:36:05 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 7/29/2021 9:36:29 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingTemplateTest.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 28
+Date: 7/29/2021 9:46:36 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:10:57 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:11:04 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:16:49 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:17:36 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:19:57 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:20:04 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:20:51 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:20:56 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(UserViewModel userViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 94
+Date: 7/29/2021 10:22:04 PM
+===========================================================================
+PageName: [Post] Sign Up action,Login Controller
+Message: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.LoginController.SignUp(SignUpViewModel signUpViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 46
+Date: 8/1/2021 10:13:42 PM
+===========================================================================
+PageName: [Post] Sign Up action,Login Controller
+Message: An error occurred while updating the entries. See the inner exception for details.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.LoginController.SignUp(SignUpViewModel signUpViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 46
+Date: 8/1/2021 10:24:05 PM
+===========================================================================
+PageName: [Post] Sign Up action,Login Controller
+Message: An error occurred while updating the entries. See the inner exception for details.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.LoginController.SignUp(SignUpViewModel signUpViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 46
+Date: 8/1/2021 10:24:16 PM
+===========================================================================
+PageName: [Post] NewCar action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.NewCar(CarsInfoViewModel carsInfoViewModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 43
+Date: 8/2/2021 9:58:42 PM
+===========================================================================
+PageName: [Post] Contact action,Contact Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.ContactController.Contact(ContactViewModel ContactModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\ContactController.cs:line 29
+Date: 8/4/2021 8:48:17 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 283
+Date: 8/9/2021 10:55:57 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 283
+Date: 8/9/2021 10:56:30 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 283
+Date: 8/9/2021 10:56:54 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: Exception of type 'System.Exception' was thrown.
+ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 283
+Date: 8/10/2021 6:51:47 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: LINQ to Entities does not recognize the method 'System.DateTime AddDays(Double)' method, and this method cannot be translated into a store expression.
+ExceptionTrackStack: at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.UnaryTranslator.TypedTranslate(ExpressionConverter parent, UnaryExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MemberInitTranslator.TypedTranslate(ExpressionConverter parent, MemberInitExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.JoinTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SinglePredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   at System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 227
+Date: 8/11/2021 9:06:25 PM
+===========================================================================
+PageName: [GET] CarDetails action,Car Controller
+Message: LINQ to Entities does not recognize the method 'System.DateTime AddDays(Double)' method, and this method cannot be translated into a store expression.
+ExceptionTrackStack: at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.UnaryTranslator.TypedTranslate(ExpressionConverter parent, UnaryExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MemberInitTranslator.TypedTranslate(ExpressionConverter parent, MemberInitExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.JoinTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.FirstPredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SinglePredicateTranslatorBase.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   at System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__2[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at CarsBiddingUsingBootstrap.Controllers.CarController.CarDetails(Nullable`1 Id) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\CarController.cs:line 227
+Date: 8/11/2021 9:14:48 PM
+===========================================================================
+PageName: [GET] EndTimerOperations action,EndTimerOperations Controller
+Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.EndTimerOperationsController.EndTimerOperations(Int32 CarId) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\EndTimerOperationsController.cs:line 93
+Date: 8/13/2021 11:45:19 AM
+===========================================================================
+PageName: [GET] EndTimerOperations action,EndTimerOperations Controller
+Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.EndTimerOperationsController.EndTimerOperations(Int32 CarId) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\EndTimerOperationsController.cs:line 93
+Date: 8/13/2021 11:52:29 AM
+===========================================================================
+PageName: [GET] EndTimerOperations action,EndTimerOperations Controller
+Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.EndTimerOperationsController.EndTimerOperations(Int32 CarId) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\EndTimerOperationsController.cs:line 93
+Date: 8/13/2021 11:55:01 AM
+===========================================================================
+PageName: [GET] EndTimerOperations action,EndTimerOperations Controller
+Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.EndTimerOperationsController.EndTimerOperations(Int32 CarId) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\EndTimerOperationsController.cs:line 93
+Date: 8/13/2021 11:57:06 AM
+===========================================================================
+PageName: [GET] EndTimerOperations action,EndTimerOperations Controller
+Message: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+ExceptionTrackStack: at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsBiddingUsingBootstrap.Controllers.EndTimerOperationsController.EndTimerOperations(Int32 CarId) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\EndTimerOperationsController.cs:line 93
+Date: 8/13/2021 12:00:03 PM
+===========================================================================
+PageName: [POST] Gallery action,Gallery Controller
+Message: The specified type member 'Timer_Status' is not supported in LINQ to Entities. Only initializers, entity members, and entity navigation properties are supported.
+ExceptionTrackStack: at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MemberAccessTranslator.TypedTranslate(ExpressionConverter parent, MemberExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   at System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   at System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Controllers.GalleryController.Gallery(String CarTypetxt, String CarColortxt, Nullable`1 ManufactureYeartxt, Nullable`1 Pricetxt, String TypeOfTransmissionGeartxt, Nullable`1 page, String SelectedSearchTypeValue) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\GalleryController.cs:line 106
+Date: 8/13/2021 12:26:00 PM
+===========================================================================
+PageName: [GET] GetAllUserNotification action,Helper Controller
+Message: C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Views\Helper\GetAllUserNotification.cshtml(4): error CS1061: 'NotificationHistoryUI' does not contain a definition for 'AllNotificationHistory' and no accessible extension method 'AllNotificationHistory' accepting a first argument of type 'NotificationHistoryUI' could be found (are you missing a using directive or an assembly reference?)
+ExceptionTrackStack: at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at CarsBiddingUsingBootstrap.Controllers.HelperController.RenderViewToString(ControllerContext context, String viewName, Object model) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\HelperController.cs:line 73
+   at CarsBiddingUsingBootstrap.Controllers.HelperController.GetAllUserNotification() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\HelperController.cs:line 49
+Date: 8/20/2021 11:55:23 AM
+===========================================================================
+PageName: [GET] GetAllUserNotification action,Helper Controller
+Message: Object reference not set to an instance of an object.
+ExceptionTrackStack: at ASP._Page_Views_Helper_GetAllUserNotification_cshtml.Execute() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Views\Helper\GetAllUserNotification.cshtml:line 3
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at CarsBiddingUsingBootstrap.Controllers.HelperController.RenderViewToString(ControllerContext context, String viewName, Object model) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\HelperController.cs:line 73
+   at CarsBiddingUsingBootstrap.Controllers.HelperController.GetAllUserNotification() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\HelperController.cs:line 49
+Date: 8/20/2021 3:52:10 PM
+===========================================================================
+PageName: [GET] GetAllUserNotification action,Helper Controller
+Message: Value cannot be null.
+Parameter name: view
+ExceptionTrackStack: at System.Web.Mvc.ViewContext..ctor(ControllerContext controllerContext, IView view, ViewDataDictionary viewData, TempDataDictionary tempData, TextWriter writer)
+   at CarsBiddingUsingBootstrap.Classes.Helper.RenderViewToString(ControllerContext context, String viewName, Object model) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Classes\Helper.cs:line 195
+   at CarsBiddingUsingBootstrap.Controllers.NotificationHistoryController.GetAllUserNotification() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\NotificationHistoryController.cs:line 43
+Date: 8/21/2021 5:23:54 PM
+===========================================================================

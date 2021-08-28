@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>من نحن</value>
+  </data>
+  <data name="AdditionalPhoto" xml:space="preserve">
+    <value>صور إضافية</value>
+  </data>
+  <data name="AddNewCar" xml:space="preserve">
+    <value>إضافة سيارة جديدة</value>
+  </data>
+  <data name="AddNewCarFigure" xml:space="preserve">
+    <value>:الصورة التالية تمثل مثال على كيفية إضافة سيارة جديدة بالطريقة الصحيحة*</value>
+  </data>
+  <data name="AddNewCarSuccessfully" xml:space="preserve">
+    <value>.تم إضافة سيارة جديدة للمعرض بنجاح</value>
+  </data>
+  <data name="AuctionTimeEnded" xml:space="preserve">
+    <value>انتهى وقت المزايدة</value>
+  </data>
+  <data name="AutomaticGear" xml:space="preserve">
+    <value>جير أوتوماتيك</value>
+  </data>
+  <data name="Bidding" xml:space="preserve">
+    <value>مزايدة</value>
+  </data>
+  <data name="BiddingProcess" xml:space="preserve">
+    <value>المزايدة</value>
+  </data>
+  <data name="BiddingProcessErrorMsg" xml:space="preserve">
+    <value>.يجب أن تقوم بتسجيل الدخول لكي تتمكن من المشاركة في المزايدة</value>
+  </data>
+  <data name="BidProcessSuccessfully" xml:space="preserve">
+    <value>تمت عملية المزايدة بنجاح</value>
+  </data>
+  <data name="BirthDay" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="CarColor" xml:space="preserve">
+    <value>لون السيارة</value>
+  </data>
+  <data name="CarCustoms" xml:space="preserve">
+    <value>الجمرك</value>
+  </data>
+  <data name="CarDetails" xml:space="preserve">
+    <value>تفاصيل السيارة</value>
+  </data>
+  <data name="CarInsurance" xml:space="preserve">
+    <value>التأمين</value>
+  </data>
+  <data name="CarLicense" xml:space="preserve">
+    <value>الترخيص</value>
+  </data>
+  <data name="Cars Bidding" xml:space="preserve">
+    <value>مزاد السيارات</value>
+  </data>
+  <data name="CarSoldSuccessfully" xml:space="preserve">
+    <value>.{0} تم بيع سيارة</value>
+  </data>
+  <data name="CarType" xml:space="preserve">
+    <value>نوع السيارة</value>
+  </data>
+  <data name="CheckingCar" xml:space="preserve">
+    <value>فحص السيارة</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>اللون</value>
+  </data>
+  <data name="CompareValidation" xml:space="preserve">
+    <value>.حقل {1} وحقل {0} غير متماثلين</value>
+  </data>
+  <data name="ComprehensiveInsurance" xml:space="preserve">
+    <value>تأمين شامل</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>تأكيد</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>إتصل بنا</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>معلومات الإتصال</value>
+  </data>
+  <data name="ContactLocation" xml:space="preserve">
+    <value>.شارع الجاردنز ، مجمع الشخشير ، الطابق الثالث ، الاردن</value>
+  </data>
+  <data name="ContactResponseMessage" xml:space="preserve">
+    <value>.شكرا لتواصلك  معنا، &lt;br&gt;سنراجع رسالتك ونتواصل معك بأسرع وقت ممكن</value>
+  </data>
+  <data name="CreditCardField" xml:space="preserve">
+    <value>:حقل رقم بطاقة الإئتمان*</value>
+  </data>
+  <data name="CreditCardFieldText" xml:space="preserve">
+    <value>  يجب دفع 50 دينار كمبلغ ضمان وحماية لبيع السيارة</value>
+  </data>
+  <data name="CreditCardNumber" xml:space="preserve">
+    <value>رقم بطاقة الإئتمان</value>
+  </data>
+  <data name="CurrentPrice" xml:space="preserve">
+    <value>السعر الحالي</value>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>منذ {0} يوم</value>
+  </data>
+  <data name="DefinedUserSuccessfully" xml:space="preserve">
+    <value>.تم تعريف مستخدم جديد بنجاح</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="Detailsabout50JD" xml:space="preserve">
+    <value>تفاصيل عن ال 50 دينار</value>
+  </data>
+  <data name="Detailsabout50jdText" xml:space="preserve">
+    <value>: يجب دفع 50 دينار كمبلغ ضمان وحماية لبيع السيارة وسيتم إرجاع هذا المبلغ في حالة</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="EmailValidation" xml:space="preserve">
+    <value>.يرجى إدخال بريد إلكتروني صحيح</value>
+  </data>
+  <data name="EngineCar" xml:space="preserve">
+    <value>محرك السيارة</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="FEWSECONDS" xml:space="preserve">
+    <value>منذ ثوان قليلة</value>
+  </data>
+  <data name="FileTypeValidation" xml:space="preserve">
+    <value>.يمكنك رفع الصور فقط</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>الإسم الأول</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>المعرض</value>
+  </data>
+  <data name="GalleryMultiSearchTextInputRequiredField" xml:space="preserve">
+    <value>.يرجى تعبئة جميع حقول البحث</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>الجنس</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="HOURS" xml:space="preserve">
+    <value>منذ {0} ساعة </value>
+  </data>
+  <data name="However" xml:space="preserve">
+    <value>.ولكن هذا المبلغ(50 دينار) لن يتم إرجاعه إذا قام مالك السيارة بإلغاء عملية المزايدة او بيع السيارة</value>
+  </data>
+  <data name="ImageNumberValidation" xml:space="preserve">
+    <value>.أكبر عدد يمكنك رفعه من الصور هو 5 صور</value>
+  </data>
+  <data name="ImageSize" xml:space="preserve">
+    <value>.حجم الصورة يجب ان يكون أقل من 2 ميجا بايت</value>
+  </data>
+  <data name="ImageSizeV2" xml:space="preserve">
+    <value>.كل صورة يجب ان يكون حجمها أقل من 2 ميجا بايت</value>
+  </data>
+  <data name="InitialPrice" xml:space="preserve">
+    <value>السعر الإبتدائي</value>
+  </data>
+  <data name="InsuranceDetails" xml:space="preserve">
+    <value>: يجب دفع 50 دينار كمبلغ ضمان وحماية لشراء السيارة وسيتم إرجاع هذا المبلغ في حالة</value>
+  </data>
+  <data name="InsuranceDetailsA" xml:space="preserve">
+    <value>. تم شراء السيارة بنجاح</value>
+  </data>
+  <data name="InsuranceDetailsB" xml:space="preserve">
+    <value>.قام مالك السيارة بإلغاء عملية البيع</value>
+  </data>
+  <data name="InsuranceDetailsHowever" xml:space="preserve">
+    <value>.ولكن هذا المبلغ(50 دينار) لن يتم إرجاعه إذا قام المشتري  بإلغاء عملية الشراء بعد دخول المزايدة</value>
+  </data>
+  <data name="InsurancePaidSuccessfully" xml:space="preserve">
+    <value>.تم دفع التأمين بنجاح ، يمكنك الآن المشاركة في عملية المزايدة</value>
+  </data>
+  <data name="isRTL" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="JD" xml:space="preserve">
+    <value>د.أ</value>
+  </data>
+  <data name="Kilometers" xml:space="preserve">
+    <value>الكيلو ميترات</value>
+  </data>
+  <data name="Langauge" xml:space="preserve">
+    <value>اللغة</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>الإسم الأخير</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="MainPhoto" xml:space="preserve">
+    <value>الصورة الرئيسة</value>
+  </data>
+  <data name="MainPhotoField" xml:space="preserve">
+    <value>:حقل الصورة الرئيسية*</value>
+  </data>
+  <data name="MainPhotoToolTip" xml:space="preserve">
+    <value>.الصورة الرئيسية هي الصورة التي سيتم إستخدامها قسم المعرض</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="MandatoryInsurance" xml:space="preserve">
+    <value>تأمين إلزامي</value>
+  </data>
+  <data name="ManufactureYear" xml:space="preserve">
+    <value>سنة الصنع</value>
+  </data>
+  <data name="ManufactureYearValidation" xml:space="preserve">
+    <value>.يرجى إدخال السنة من 4 مقاطع</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>. . . المشكلة التي تواجهها</value>
+  </data>
+  <data name="MINUTES" xml:space="preserve">
+    <value>منذ {0} دقيقة</value>
+  </data>
+  <data name="MONTHS" xml:space="preserve">
+    <value>منذ {0} شهر</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>...المزيد</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الإسم</value>
+  </data>
+  <data name="NameValidation" xml:space="preserve">
+    <value>.حقل {0} يجب ان يكون اقل من 10 حروف بدون فراغ وأن لا يكون خليط عربي-انجليزي</value>
+  </data>
+  <data name="NewCar" xml:space="preserve">
+    <value>سيارة جديدة</value>
+  </data>
+  <data name="NewPrice" xml:space="preserve">
+    <value>السعر الجديد</value>
+  </data>
+  <data name="NewPriceValidation" xml:space="preserve">
+    <value>.السعر الجديد يجب أن يكون أعلى من السعر الحالي</value>
+  </data>
+  <data name="NormalGear" xml:space="preserve">
+    <value>جير عادي</value>
+  </data>
+  <data name="NotFoundData" xml:space="preserve">
+    <value>.المعرض لاحتوي على سيارات</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="PasswordValidation" xml:space="preserve">
+    <value>.حقل {0} يجب ان يتكون من 8 حروف  (يجب على الاقل ان تحتوي على حرف ورقم واحد) بدون فراغ</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="PhoneNumberValidation" xml:space="preserve">
+    <value>.يرجى إدخال رقم هاتف أردني صالح يبدأ ب 07</value>
+  </data>
+  <data name="PostiveNumberValidation" xml:space="preserve">
+    <value>.حقل {0} يجب ان يكون أكبرمن صفر</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>السعر</value>
+  </data>
+  <data name="PriceSearchTextInputValidation" xml:space="preserve">
+    <value>.حقل السعر يجب ان يكون أكبر من صفر</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الصفحة الشخصية</value>
+  </data>
+  <data name="PurchaseInsuranceToolTip" xml:space="preserve">
+    <value>.يجب دفع 50 دينار  كمبلغ ضمان وحماية لشراء السيارة</value>
+  </data>
+  <data name="RefundmoneycaseOne" xml:space="preserve">
+    <value>.أ- عند بيع السيارة بنجاح</value>
+  </data>
+  <data name="RefundmoneycaseThree" xml:space="preserve">
+    <value>.ج-عند قيام الزبون بإلغاء عملية شراء السيارة</value>
+  </data>
+  <data name="RefundmoneycaseTwo" xml:space="preserve">
+    <value>.ب-عند إنتهاء وقت المزايدة ولم يقم أحد بشراء السيارة</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>إنشاء حساب</value>
+  </data>
+  <data name="RepeatPassword" xml:space="preserve">
+    <value>إعادة كلمة المرور</value>
+  </data>
+  <data name="RequiredFieldValidation" xml:space="preserve">
+    <value>.حقل {0} مطلوب</value>
+  </data>
+  <data name="SearchNotFound" xml:space="preserve">
+    <value>.السيارة التي تبحث عنها غير متوفرة</value>
+  </data>
+  <data name="SearchType" xml:space="preserve">
+    <value>-- نوع البحث -- </value>
+  </data>
+  <data name="SECONDS" xml:space="preserve">
+    <value>منذ {0} ثانية</value>
+  </data>
+  <data name="Select Gender" xml:space="preserve">
+    <value>إختيار الجنس</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>إرسال</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>إنشاء حساب</value>
+  </data>
+  <data name="Sorry" xml:space="preserve">
+    <value>!نأسف</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>نجاح</value>
+  </data>
+  <data name="ThemeColor" xml:space="preserve">
+    <value>لون النظام</value>
+  </data>
+  <data name="ThePurchaseInsurance" xml:space="preserve">
+    <value>تأمين الشراء</value>
+  </data>
+  <data name="TheRemainingTimeForAuctionEnding" xml:space="preserve">
+    <value>الوقت المتبقي لإنتهاء المزاد</value>
+  </data>
+  <data name="TypeOfTransmissionGear" xml:space="preserve">
+    <value>نوع ناقل الحركة</value>
+  </data>
+  <data name="UniqueFieldValidaion" xml:space="preserve">
+    <value>.حقل {0} موجود مسبقا</value>
+  </data>
+  <data name="UserLoginValidation" xml:space="preserve">
+    <value>.إسم المستخدم او كلمة المرور غير صحيحة</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>إسم المستخدم</value>
+  </data>
+  <data name="UserNameEmailValidation" xml:space="preserve">
+    <value>.يرجى إدخل إسم مستخدم او بريد إلكتروني صحيح</value>
+  </data>
+  <data name="UserNameValidation" xml:space="preserve">
+    <value>.حقل {0} يجب ان يكون بدون فراغ وأن لا يكون خليط عربي-إنجليزي (تسطيع إدخال رمز _)</value>
+  </data>
+  <data name="WARNING" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+  <data name="WEEKS" xml:space="preserve">
+    <value>منذ {0} أسبوع</value>
+  </data>
+  <data name="WithCustoms" xml:space="preserve">
+    <value>مجمركة</value>
+  </data>
+  <data name="WithLicense" xml:space="preserve">
+    <value>مرخصة</value>
+  </data>
+  <data name="WithoutCustoms" xml:space="preserve">
+    <value>غير مجمركة</value>
+  </data>
+  <data name="WithoutInsurance" xml:space="preserve">
+    <value>غير مؤمنة</value>
+  </data>
+  <data name="WithoutLicense" xml:space="preserve">
+    <value>غير مرخصة</value>
+  </data>
+  <data name="WithoutSpaceRgexValidation" xml:space="preserve">
+    <value>.يجب إدخال {0} بدون فراغ</value>
+  </data>
+  <data name="YEARS" xml:space="preserve">
+    <value>منذ {0} سنة</value>
+  </data>
+</root>

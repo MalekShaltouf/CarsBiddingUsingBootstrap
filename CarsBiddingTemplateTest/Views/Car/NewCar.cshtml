@@ -1,0 +1,213 @@
+﻿@model CarsBiddingUsingBootstrap.Models.ViewModelClasses.CarsInfoViewModel
+@{
+    ViewBag.Title = CarsBiddingUsingBootstrap.Localization.AddNewCar;
+}
+@section linkTag{
+    <link href="~/Content/bootstrap-datepicker.min.css" rel="stylesheet" />
+}
+
+@using (Html.BeginForm("NewCar", "Car", FormMethod.Post, new { enctype = "multipart/form-data", id = "NewCarForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <section class="New-Car">
+        <div class="container">
+            <h3 class="PageHeading agileits-title">@CarsBiddingUsingBootstrap.Localization.NewCar<span class="w3lshr-line"></span></h3>
+            <div class="text-right Carinfo">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                <a href="#" id="HowLink">How to Add New Car?</a>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarType</label>
+                        @Html.EditorFor(model => model.TypeOfCar, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.TypeOfCar, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarColor</label>
+                        @Html.EditorFor(model => model.ColorOfCar, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.ColorOfCar, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.EngineCar</label>
+                        @Html.EditorFor(model => model.EngineCapacity, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.EngineCapacity, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CheckingCar</label>
+                        @Html.EditorFor(model => model.CarChecking, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CarChecking, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.Kilometers</label>
+                        @Html.EditorFor(model => model.Kilometers, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Kilometers, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.ManufactureYear</label>
+                        <div class="input-group date" data-provide="yearpicker">
+                            @Html.TextBoxFor(model => model.YearOfManufacture, new { @class = "form-control yearpicker", autocomplete = "off" })
+                            @Html.ValidationMessageFor(model => model.YearOfManufacture, "", new { @class = "text-danger" })
+                            <div class="input-group-addon" style="visibility:hidden">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.InitialPrice</label>
+                        @Html.EditorFor(model => model.InitialPrice, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.InitialPrice, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.TypeOfTransmissionGear</label>
+                        @Html.DropDownListFor(model => model.TypeOfTransmissionGear, Model.TypeOfTransmissionGearMenu, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.TypeOfTransmissionGear, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarCustoms</label>
+                        @Html.DropDownListFor(model => model.CarCustoms, Model.CarCustomsMenu, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.CarCustoms, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarInsurance</label>
+                        @Html.DropDownListFor(model => model.CarInsuranceInput, Model.CarInsuranceMenu, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.CarInsuranceInput, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarLicense</label>
+                        @Html.DropDownListFor(model => model.CarLicense, Model.CarLicenseMenu, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.CarLicense, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    @*<i data-toggle="tooltip" data-placement="bottom" title="@CarsBiddingUsingBootstrap.Localization.CreditCardToolTip" class="fa fa-info-circle text-info InfoIcon" aria-hidden="true"></i>*@
+                    <div class="form-group">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.CreditCardNumber</label>
+                        @Html.EditorFor(model => model.CreditCardNumber, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CreditCardNumber, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-6">
+                    <div class="custom-file-upload mainPhoto">
+                        @Html.TextBoxFor(model => model.UploadMainPhoto, new { data_tooltip_value = CarsBiddingUsingBootstrap.Localization.MainPhotoToolTip, data_btn_text = CarsBiddingUsingBootstrap.Localization.MainPhoto, type = "file" })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.UploadMainPhoto, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6">
+                    <div class="custom-file-upload additionalPhoto">
+                        @Html.TextBoxFor(model => model.UploadAdditionalPhoto, new { data_btn_text = @CarsBiddingUsingBootstrap.Localization.AdditionalPhoto, type = "file", multiple = true })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.UploadAdditionalPhoto, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="row formInputs">
+                <div class="col-md-12">
+                    <div class="form-group DescTextArea">
+                        <label for="name">@CarsBiddingUsingBootstrap.Localization.Description</label>
+                        @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center subscribe-agileinfo">
+                <div class="col-md-12">
+                    <button type="submit" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.AddNewCar<span></span></button>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+@section scripts{
+
+    <script src="~/Scripts/FileUploadTemplteScript.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+    <script src="~/Scripts/TemplateFromStyle.js"></script>
+    <script>
+        document.getElementById("NewCarForm").onsubmit = function ()
+        {
+            let msgNotification = "@CarsBiddingUsingBootstrap.Localization.ImageNumberValidation";
+            NewCarformValidation(msgNotification);
+        }
+
+        document.getElementById("HowLink").onclick = function () {
+            let ModelContent = `${"@CarsBiddingUsingBootstrap.Localization.CreditCardField"}|${"@CarsBiddingUsingBootstrap.Localization.CreditCardFieldText"}|
+                                ${ "@CarsBiddingUsingBootstrap.Localization.Detailsabout50JD"}| ${ "@CarsBiddingUsingBootstrap.Localization.Detailsabout50jdText" }|
+                                ${"@CarsBiddingUsingBootstrap.Localization.RefundmoneycaseOne"}|${"@CarsBiddingUsingBootstrap.Localization.RefundmoneycaseTwo"}|
+                                ${"@CarsBiddingUsingBootstrap.Localization.RefundmoneycaseThree"}|${"@CarsBiddingUsingBootstrap.Localization.However"}|
+                                ${"@CarsBiddingUsingBootstrap.Localization.MainPhotoField"}|${"@CarsBiddingUsingBootstrap.Localization.MainPhotoToolTip"}|
+                                ${"@CarsBiddingUsingBootstrap.Localization.AddNewCarFigure"}`;
+
+            HowLinkEvent(ModelContent);
+        };
+
+        let requestType = "@Model.RequestType",
+            type = "@Model.Type",
+            msg = "@Model.Msg";
+        if (requestType == 'POST') {
+            addNotEmptyClass();
+            debugger;
+            if (type != '')
+            {
+                addNotification(type, msg);
+                if (type == "@CarsBiddingUsingBootstrap.Localization.SUCCESS") {
+                    document.getElementById("CloseBtn").onclick = function () {
+                        window.location.href = "@Url.Action("Gallery", "Gallery")";
+                    }
+                }
+            }
+
+        }
+        else
+        {
+            document.getElementById("CloseBtn").onclick = function (e) {
+                document.getElementById("NotificationBodyHead").innerText = '';
+                if (document.getElementById("InfoModal") != null) {
+                    document.getElementById("InfoModal").remove();
+                }
+            }
+        }
+        $('[data-toggle="tooltip"]').tooltip();
+        $('.yearpicker').datepicker({
+            minViewMode: 2,
+            format: 'yyyy',
+            orientation: 'auto bottom'//this prop make date picker always open from bottom orientation
+        });
+    </script>
+}
+
+
+

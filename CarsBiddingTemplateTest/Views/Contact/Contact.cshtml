@@ -1,0 +1,81 @@
+﻿@model CarsBiddingUsingBootstrap.Models.ViewModelClasses.ContactViewModel
+@{
+    ViewBag.Title = CarsBiddingUsingBootstrap.Localization.Contact;
+}
+@section linkTag{
+    <link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <section class="Contact">
+        <div class="container">
+            <h3 class="PageHeading agileits-title">@CarsBiddingUsingBootstrap.Localization.Contact<span class="w3lshr-line"></span></h3>
+            <div class="col-md-4">
+                <div class="agileits_w3layouts_map_pos">
+                    <div class="agileits_w3layouts_map_pos1">
+                        <h3>@CarsBiddingUsingBootstrap.Localization.ContactInfo</h3>
+                        <p>@CarsBiddingUsingBootstrap.Localization.ContactLocation</p>
+                        <ul class="wthree_contact_info_address">
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:CarsBidding@gmail.com">CarsBidding@gmail.com</a></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>+(962)775632591</li>
+                        </ul>
+                        <div class="w3_agile_social_icons w3_agile_social_icons_contact">
+                            <ul>
+                                <li><a href="#" class="icon icon-cube agile_facebook"></a></li>
+                                <li><a href="#" class="icon icon-cube agile_rss"></a></li>
+                                <li><a href="#" class="icon icon-cube agile_t"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-2">
+                <div class="form-group">
+                    <label for="name">@CarsBiddingUsingBootstrap.Localization.Name</label>
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label for="name">@CarsBiddingUsingBootstrap.Localization.Email</label>
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.TextAreaFor(model => model.Message, 7, 5, new { @class = "form-control", placeholder = CarsBiddingUsingBootstrap.Localization.Message })
+                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.Send<span></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+@section scripts{
+    <script src="~/Scripts/TemplateFromStyle.js"></script>
+    <script>
+        let requestType = "@Model.RequestType",
+            type = "@Model.Type",
+            msg = "@Html.Raw(Model.Msg)";
+        /*
+         * here we use Html.Raw in order keeping html code(there are html code in msg)
+         *
+         * there are <br/> tag
+         * without using Html.Raw => <br/> wiil return as &lt;br/&gt; not <br/>
+         * so for that reason we used Html.Raw
+         */
+        if (requestType == 'POST') {
+
+            addNotification(type, msg);
+
+            if (type == "@CarsBiddingUsingBootstrap.Localization.ERROR")
+             {
+                addNotEmptyClass();
+            }
+        }
+
+    </script>
+}
+

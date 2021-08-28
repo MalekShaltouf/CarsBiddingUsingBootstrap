@@ -1,0 +1,134 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
+@model IPagedList<CarsInfoViewModel>
+@{
+    ViewBag.Title = CarsBiddingUsingBootstrap.Localization.Gallery;
+}
+@section linkTag{
+    <link href="~/Content/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="~/Content/NotFoundStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">
+    <link href="~/Content/multi-select.css" rel="stylesheet" />
+}
+<section class="Main-Gallery">
+    @using (Html.BeginForm("Gallery", "Gallery", FormMethod.Post, new { onsubmit = "return submitEvent(inputRequiredMsg,positiveNumberMsg)" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Hidden("SelectedSearchTypeValue")
+        @Html.Hidden("searchResult")
+        <div class="container">
+            <h3 class="agileits-title PageHeading">@CarsBiddingUsingBootstrap.Localization.Gallery<span class="w3lshr-line"></span></h3>
+            @if (ViewBag.SearchOrGalleryNotFound != CarsBiddingUsingBootstrap.Classes.GalleryEmptySource.GalleryDontHaveData)
+            {
+                <div id="SearchTextBoxBehindScenes">
+                    @Html.Partial("SearchTextBoxBehindScenes", new GalleryViewModel())
+                </div>
+                @*MainSearchOnBehindScenes => we set it zero to CarType because CarType don't have (text&value) in SearchType DDList*@
+                <div class="row formInputs" id="SearchTextBoxOnScreen">
+                    <div class="col-md-offset-3 col-md-6" id="MainSearchOnScreen" data-search-type-ddl-value="0">
+                        <div class="form-group">
+                            <label for="name">@CarsBiddingUsingBootstrap.Localization.CarType</label>
+                            <div class="input-group">
+                                @Html.TextBox("CarTypeTextSearch", null, new { @class = "form-control", Name = "CarTypetxt" })
+                                <span class="input-group-btn">
+                                    <button type="submit" class="sky-hover wthree-btn btn-6 scroll"><i class="fa fa-search"></i><span></span></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" id="SearchType">
+                        <select class="SearchType" name="SearchType" multiple>
+                            <option data-dd="ff" data-search-type-name="CarColor" value="1">@CarsBiddingUsingBootstrap.Localization.CarColor</option>
+                            <option data-search-type-name="ManufactureYear" value="2">@CarsBiddingUsingBootstrap.Localization.ManufactureYear</option>
+                            <option data-dd="ff" data-search-type-name="Price" value="3">@CarsBiddingUsingBootstrap.Localization.Price</option>
+                            <option data-search-type-name="TypeOfTransmissionGear" value="4">@CarsBiddingUsingBootstrap.Localization.TypeOfTransmissionGear</option>
+                        </select>
+                    </div>
+                </div>
+            }
+            <div id="PagingCarPanelContainer">
+                @Html.Partial("~/Views/Gallery/PagingCarPanel.cshtml", Model)
+            </div>
+        </div>
+    }
+</section>
+
+@section scripts{
+
+    <script src="~/Scripts/TemplateFromStyle.js"></script>
+    <script src="~/Scripts/jquery.multi-select.min.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+    <!-- pop-up-script -->
+    @*jquery.chocolat-custom.js => this script make the images in Gallery open as a pop up in same page*@
+    <script src="~/Scripts/jquery.chocolat-custom.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".view-seventh a").Chocolat();
+        });
+    </script>
+    <!-- //pop-up-script -->
+    <script>
+        let type = '@ViewBag.Type',
+                msg = '@ViewBag.Msg';
+
+        if (type == "@CarsBiddingUsingBootstrap.Localization.ERROR")
+        {
+           addNotification(type, msg);
+        }
+        function details(eventSource) {
+            let carId = eventSource.getAttribute("data-car-id");
+            window.location.href = `/Car/CarDetails/${carId}`;
+            return false;
+        }
+
+        $(function () {
+            $('.SearchType').multiSelect({
+                'noneText': '@CarsBiddingUsingBootstrap.Localization.SearchType',
+            });
+        });
+        
+        $(".Main-Gallery").on("click", ".pagination li", function () {
+            /*
+             * here we used this click event way 
+             * $(".Main-Gallery").on("click", ".pagination li", function (){}); instead of
+             * $(".pagination li").click(function(){});
+             * in order ensure click event keeping working after ajax request
+             */
+            $(".pagination li a").removeAttr("href");
+            let currentPage = $(this).text(),
+                result = $("#searchResult").val(),
+                token = $('input[name="__RequestVerificationToken"]').val();
+
+            $.ajax({
+                url: '@Url.Action("ChangePage", "Gallery")',
+                method: 'POST',
+                data: { __RequestVerificationToken: token, page: currentPage, SearchedResult: result },
+                success: function (data) {
+                    if (typeof data == "object") {
+                        //here mean that occured error in action so we want to display it
+                        addNotification("ERROR", data);
+                    }
+                    else
+                    {
+                        $("#PagingCarPanelContainer").html(data);
+                        $(function () {
+                            $('.view-seventh a').Chocolat();
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="~/Scripts/SearchTextInputScript.js"></script>
+    <script>
+        let inputRequiredMsg = "@CarsBiddingUsingBootstrap.Localization.GalleryMultiSearchTextInputRequiredField",
+            positiveNumberMsg = "@CarsBiddingUsingBootstrap.Localization.PriceSearchTextInputValidation";
+
+        if ('@ViewBag.RequestType' == 'POST') {
+            let SelectedSearchTypeValue = '@ViewBag.SelectedSearchTypeValue';
+            displaySearchInputText(SelectedSearchTypeValue);
+        }
+
+    </script>
+}

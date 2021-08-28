@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="AdditionalPhoto" xml:space="preserve">
+    <value>Additional Photo</value>
+  </data>
+  <data name="AddNewCar" xml:space="preserve">
+    <value>Add New Car</value>
+  </data>
+  <data name="AddNewCarFigure" xml:space="preserve">
+    <value>*The following picture represent example how to add new car in correct way:</value>
+  </data>
+  <data name="AddNewCarSuccessfully" xml:space="preserve">
+    <value>A new car has been added to gallery successfully.</value>
+  </data>
+  <data name="AuctionTimeEnded" xml:space="preserve">
+    <value>Auction Time Ended.</value>
+  </data>
+  <data name="AutomaticGear" xml:space="preserve">
+    <value>Automatic Gear</value>
+  </data>
+  <data name="Bidding" xml:space="preserve">
+    <value>Bidding</value>
+  </data>
+  <data name="BiddingProcess" xml:space="preserve">
+    <value>Bidding Process</value>
+  </data>
+  <data name="BiddingProcessErrorMsg" xml:space="preserve">
+    <value>You must be logged in to be able to participate in the bidding process.</value>
+  </data>
+  <data name="BidProcessSuccessfully" xml:space="preserve">
+    <value>Bid process completed successfully.</value>
+  </data>
+  <data name="BirthDay" xml:space="preserve">
+    <value>BirthDay</value>
+  </data>
+  <data name="CarColor" xml:space="preserve">
+    <value>Car Color</value>
+  </data>
+  <data name="CarCustoms" xml:space="preserve">
+    <value>Car Customs</value>
+  </data>
+  <data name="CarDetails" xml:space="preserve">
+    <value>Car Details</value>
+  </data>
+  <data name="CarInsurance" xml:space="preserve">
+    <value>Car Insurance</value>
+  </data>
+  <data name="CarLicense" xml:space="preserve">
+    <value>Car License</value>
+  </data>
+  <data name="Cars Bidding" xml:space="preserve">
+    <value>Cars Bidding</value>
+  </data>
+  <data name="CarSoldSuccessfully" xml:space="preserve">
+    <value>Your {0} Car sold successfully.</value>
+  </data>
+  <data name="CarType" xml:space="preserve">
+    <value>Car Type</value>
+  </data>
+  <data name="CheckingCar" xml:space="preserve">
+    <value>Checking Car</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="CompareValidation" xml:space="preserve">
+    <value>The {0} and {1} do not match.</value>
+  </data>
+  <data name="ComprehensiveInsurance" xml:space="preserve">
+    <value>Comprehensive Insurance</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Contact Info</value>
+  </data>
+  <data name="ContactLocation" xml:space="preserve">
+    <value>Gardens Street, Shakshir Building, Third Floor , Jordan.</value>
+  </data>
+  <data name="ContactResponseMessage" xml:space="preserve">
+    <value>Thank you to contact with us,&lt;br/&gt; we will review your message then will we contact with you as soon as possible.</value>
+  </data>
+  <data name="CreditCardField" xml:space="preserve">
+    <value>*CreditCardField:</value>
+  </data>
+  <data name="CreditCardFieldText" xml:space="preserve">
+    <value> You should provide 50 JD as a deposit money to guarantee that you will sell the car and as a protection on our part.</value>
+  </data>
+  <data name="CreditCardNumber" xml:space="preserve">
+    <value>Credit Card Number</value>
+  </data>
+  <data name="CurrentPrice" xml:space="preserve">
+    <value>Current Price</value>
+  </data>
+  <data name="DAYS" xml:space="preserve">
+    <value>{0} days  ago</value>
+  </data>
+  <data name="DefinedUserSuccessfully" xml:space="preserve">
+    <value>Defined new user successfully.</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Detailsabout50JD" xml:space="preserve">
+    <value>Details About 50JD</value>
+  </data>
+  <data name="Detailsabout50jdText" xml:space="preserve">
+    <value>You should provide 50 JD as a deposit money to guarantee that you will sell the car and as a protection on our part and We will refund the deposit money (50 JD) when:</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EmailValidation" xml:space="preserve">
+    <value>Please enter valid email.</value>
+  </data>
+  <data name="EngineCar" xml:space="preserve">
+    <value>Engine Car</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="FEWSECONDS" xml:space="preserve">
+    <value>A few seconds ago</value>
+  </data>
+  <data name="FileTypeValidation" xml:space="preserve">
+    <value>Only images can be uploaded.</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="GalleryMultiSearchTextInputRequiredField" xml:space="preserve">
+    <value>please fill all search inputs.</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HOURS" xml:space="preserve">
+    <value>{0} hours  ago</value>
+  </data>
+  <data name="However" xml:space="preserve">
+    <value>However,the deposit money (50 JD) will not be refunded if the owner of the car cancels the bidding process or sale.</value>
+  </data>
+  <data name="ImageNumberValidation" xml:space="preserve">
+    <value>The greatest number of  image that you can upload is 5 image.</value>
+  </data>
+  <data name="ImageSize" xml:space="preserve">
+    <value>Image size must be less than 2MB.</value>
+  </data>
+  <data name="ImageSizeV2" xml:space="preserve">
+    <value>Each image size must be less than 2MB.</value>
+  </data>
+  <data name="InitialPrice" xml:space="preserve">
+    <value>Initial Price</value>
+  </data>
+  <data name="InsuranceDetails" xml:space="preserve">
+    <value>You should provide 50 JD as a deposit money to guarantee that you will purchase the car and as a protection on our part and We will refund the deposit money (50 JD) when:</value>
+  </data>
+  <data name="InsuranceDetailsA" xml:space="preserve">
+    <value>A- the car is purchased successfully.</value>
+  </data>
+  <data name="InsuranceDetailsB" xml:space="preserve">
+    <value>B- the car owner cancels the sell of the car.</value>
+  </data>
+  <data name="InsuranceDetailsHowever" xml:space="preserve">
+    <value>However,the deposit money (50 JD) will not be refunded if the buyer cancels the purchase of the car after participating in the bidding process .</value>
+  </data>
+  <data name="InsurancePaidSuccessfully" xml:space="preserve">
+    <value>The insurance has been paid successfully, you can now participate in the bidding process.</value>
+  </data>
+  <data name="isRTL" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="JD" xml:space="preserve">
+    <value>JD</value>
+  </data>
+  <data name="Kilometers" xml:space="preserve">
+    <value>Kilometers</value>
+  </data>
+  <data name="Langauge" xml:space="preserve">
+    <value>Langauge</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MainPhoto" xml:space="preserve">
+    <value>Main Photo</value>
+  </data>
+  <data name="MainPhotoField" xml:space="preserve">
+    <value>*MainPhotoField: </value>
+  </data>
+  <data name="MainPhotoToolTip" xml:space="preserve">
+    <value>The main photo is the one that we will use in the gallery section.</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="MandatoryInsurance" xml:space="preserve">
+    <value>Mandatory Insurance</value>
+  </data>
+  <data name="ManufactureYear" xml:space="preserve">
+    <value>Manufacture  Year</value>
+  </data>
+  <data name="ManufactureYearValidation" xml:space="preserve">
+    <value>Please enter the year consisting of 4 digits.</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Your Message . . .</value>
+  </data>
+  <data name="MINUTES" xml:space="preserve">
+    <value>{0} minutes  ago</value>
+  </data>
+  <data name="MONTHS" xml:space="preserve">
+    <value>{0} Months ago</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameValidation" xml:space="preserve">
+    <value>The {0} field must be less than 10 character,without space and not mixing Ar-En.</value>
+  </data>
+  <data name="NewCar" xml:space="preserve">
+    <value>New Car</value>
+  </data>
+  <data name="NewPrice" xml:space="preserve">
+    <value>New Price</value>
+  </data>
+  <data name="NewPriceValidation" xml:space="preserve">
+    <value>The new price should be greater than current price.</value>
+  </data>
+  <data name="NormalGear" xml:space="preserve">
+    <value>Normal Gear</value>
+  </data>
+  <data name="NotFoundData" xml:space="preserve">
+    <value>The Gallery does not contain any car.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordValidation" xml:space="preserve">
+    <value>The {0} field must be consists from 8 character(at least one number &amp; letter) without space.</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="PhoneNumberValidation" xml:space="preserve">
+    <value>please enter Jordanian valid phone number which start with 07.</value>
+  </data>
+  <data name="PostiveNumberValidation" xml:space="preserve">
+    <value>the {0} field must be greater than zero.</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="PriceSearchTextInputValidation" xml:space="preserve">
+    <value>the price field must be greater than zero.</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="PurchaseInsuranceToolTip" xml:space="preserve">
+    <value>You should provide 50 JD as a deposit money to guarantee that you will purchase the car and as a protection on our part.</value>
+  </data>
+  <data name="RefundmoneycaseOne" xml:space="preserve">
+    <value>A-the car is sold successfully.</value>
+  </data>
+  <data name="RefundmoneycaseThree" xml:space="preserve">
+    <value>C- the customer cancels the purchase of the car.</value>
+  </data>
+  <data name="RefundmoneycaseTwo" xml:space="preserve">
+    <value>B-the bidding time has expired and nobody buy the car.</value>
+  </data>
+  <data name="RegisterNow" xml:space="preserve">
+    <value>Register Now</value>
+  </data>
+  <data name="RepeatPassword" xml:space="preserve">
+    <value>Repeat Password</value>
+  </data>
+  <data name="RequiredFieldValidation" xml:space="preserve">
+    <value>The {0} field is required.</value>
+  </data>
+  <data name="SearchNotFound" xml:space="preserve">
+    <value>The car that you are looking for doesn't exists.</value>
+  </data>
+  <data name="SearchType" xml:space="preserve">
+    <value>-- SearchType --</value>
+  </data>
+  <data name="SECONDS" xml:space="preserve">
+    <value>{0} seconds  ago</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="Sorry" xml:space="preserve">
+    <value>Sorry!</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>SUCCESS</value>
+  </data>
+  <data name="ThemeColor" xml:space="preserve">
+    <value>Theme Colors</value>
+  </data>
+  <data name="ThePurchaseInsurance" xml:space="preserve">
+    <value>The Purchase Insurance</value>
+  </data>
+  <data name="TheRemainingTimeForAuctionEnding" xml:space="preserve">
+    <value>The Remaining Time For Auction Ending</value>
+  </data>
+  <data name="TypeOfTransmissionGear" xml:space="preserve">
+    <value>Type Of Transmission Gear</value>
+  </data>
+  <data name="UniqueFieldValidaion" xml:space="preserve">
+    <value>The {0} is already exists.</value>
+  </data>
+  <data name="UserLoginValidation" xml:space="preserve">
+    <value>username or password is incorrect.</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="UserNameEmailValidation" xml:space="preserve">
+    <value>please enter valid username or email.</value>
+  </data>
+  <data name="UserNameValidation" xml:space="preserve">
+    <value>The {0} field must be without space and not mixing Ar-En(can you use _ symbol).</value>
+  </data>
+  <data name="WARNING" xml:space="preserve">
+    <value>WARNING</value>
+  </data>
+  <data name="WEEKS" xml:space="preserve">
+    <value>{0} Weeks  ago</value>
+  </data>
+  <data name="WithCustoms" xml:space="preserve">
+    <value>With Customs</value>
+  </data>
+  <data name="WithLicense" xml:space="preserve">
+    <value>With License</value>
+  </data>
+  <data name="WithoutCustoms" xml:space="preserve">
+    <value>Without Customs</value>
+  </data>
+  <data name="WithoutInsurance" xml:space="preserve">
+    <value>Without Insurance</value>
+  </data>
+  <data name="WithoutLicense" xml:space="preserve">
+    <value>Without License</value>
+  </data>
+  <data name="WithoutSpaceRgexValidation" xml:space="preserve">
+    <value>The {0} must be without space.</value>
+  </data>
+  <data name="YEARS" xml:space="preserve">
+    <value>{0} Years ago</value>
+  </data>
+</root>

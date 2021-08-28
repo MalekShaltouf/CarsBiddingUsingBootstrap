@@ -1,0 +1,213 @@
+﻿@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
+@model List<CarsInfoViewModel>
+@{
+    ViewBag.Title = CarsBiddingUsingBootstrap.Localization.Home;
+    //Layout = "~/Views/Shared/_AllTemplate.cshtml";
+
+}
+
+@section flexsliderCss{
+    <link rel="stylesheet" href="~/Content/flexslider.css" type="text/css" media="screen" />
+}
+@section linkTag{
+    <link href="~/Content/NotFoundStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">
+}
+@section CssStyleTag{
+    <style>
+        nav.navbar.navbar-default.navbar-fixed-top {
+            /*there are not space between classes because all classes in one element*/
+            background: none;
+        }
+        .RenderBody {
+            padding: 0;
+        }
+        #Choco_close {
+            margin-top: 0
+        }
+    </style>
+}
+<!-- banner-text -->
+<div id="home" class="w3ls-banner">
+    <div class="banner-text">
+        <div class="container">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="banner-w3lstext">
+                            <h2>Trendy Car Sale</h2>
+                            <p>Mauris ex nulla aliquam ornare facilisis nec convallis pulvinar a non nunc non leo sollicitudin, Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-w3lstext">
+                            <h3>Cars for Sale </h3>
+                            <p>Mauris ex nulla aliquam ornare facilisis nec convallis pulvinar a non nunc non leo sollicitudin, Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-w3lstext">
+                            <h3>Sapien Delects</h3>
+                            <p>Mauris ex nulla aliquam ornare facilisis nec convallis pulvinar a non nunc non leo sollicitudin, Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <a href="/Login/SignUp" class="wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.RegisterNow<span></span></a>
+            }
+        </div>
+    </div>
+</div>
+<!-- //banner-text -->
+<!--Timer-->
+<div class="wthree-soon">
+    <div class="container">
+        <div class="wthree-soon-agileinfo">
+            <h5>Our Turbo Car is almost ready</h5>
+            <!-- timer -->
+            <div class="agileits-timer">
+                <div class="clock">
+                    <div class="column days">
+                        <div class="timer" id="days"></div>
+                        <div class="text">Days</div>
+                    </div>
+                    <div class="timer days"></div>
+                    <div class="column">
+                        <div class="timer" id="hours"></div>
+                        <div class="text">Hours</div>
+                    </div>
+                    <div class="timer"></div>
+                    <div class="column">
+                        <div class="timer" id="minutes"></div>
+                        <div class="text">Minutes</div>
+                    </div>
+                    <div class="timer"></div>
+                    <div class="column">
+                        <div class="timer" id="seconds"></div>
+                        <div class="text">Seconds</div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <!-- //timer -->
+            <div class="w3_agile_social_icons">
+                <ul>
+                    <li><a href="#" class="icon icon-cube agile_facebook"></a></li>
+                    <li><a href="#" class="icon icon-cube agile_rss"></a></li>
+                    <li><a href="#" class="icon icon-cube agile_instagram"></a></li>
+                    <li><a href="#" class="icon icon-cube agile_t"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Timer-->
+<!--About-->
+<div id="about" class="about">
+    <div class="container">
+        <div class="col-md-6 agileits_about_grid_left">
+
+        </div>
+        <img src="~/images/4.png" alt=" " class="img-responsive about-w3img" />
+        <div class="col-md-6 agileits_about_grid_right">
+            <h3 class="agileits-title">about <span class="w3lshr-line"> </span></h3>
+            <h4>What's the Cars Biddong?</h4>
+            <p>
+                The system of sale and purchase of used cars by auction,
+                is a system directed mainly to those who want to sell
+                or buy their used cars through an auction. Working on
+                the system of buying and selling by  bidding, solve
+                problems in other traditional systems, such as: Credibility
+                and seriousness in selling and buying.
+            </p>
+            <p>
+                Any electronic process aimed at reducing the time
+                and effort on the user, and thus Bidding Cars aims
+                to speed up the process of selling cars in less time
+                and effort on the user. That leads to an increase in
+                the process of selling bidding as it became easier.
+            </p>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--About-->
+<!-- gallery -->
+<div id="gallery" class="gallery">
+    <div class="container">
+        <h3 class="agileits-title">@CarsBiddingUsingBootstrap.Localization.Gallery<span class="w3lshr-line"> </span></h3>
+        @if (Model != null && Model.Count > 0)
+        {
+            <div class="text-right">
+                <a href="/Car/NewCar" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.NewCar<span></span></a>
+            </div>
+        }
+        @if (Model != null && Model.Count > 0)
+        {
+            @Html.Partial("~/Views/Gallery/CarPanel.cshtml",Model)
+        }
+        else
+        {
+            <div id="notfound">
+                <div class="notfound">
+                    <div class="notfound-404">
+                        <h1>@CarsBiddingUsingBootstrap.Localization.Sorry</h1>
+                        <h2>@CarsBiddingUsingBootstrap.Localization.NotFoundData</h2>
+                    </div>
+                    <a href="/Car/NewCar" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.NewCar<span></span></a>
+                </div>
+            </div>
+        }
+
+        @if (Model != null && Model.Count > 0)
+        {
+            <div class="text-right">
+                <a href="/Gallery/Gallery" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.More<span></span></a>
+            </div>
+        }
+
+    </div>
+</div>
+<!-- //gallery -->
+@section TimerScripts{
+    <script type="text/javascript" src="~/Scripts/moment.js"></script>
+    <script type="text/javascript" src="~/Scripts/moment-timezone-with-data.js"></script>
+    <script type="text/javascript" src="~/Scripts/timer.js"></script>
+}
+
+@section FlexSliderScripts{
+    <!-- FlexSlider -->
+    <script defer src="~/Scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+        
+    </script>
+    <!-- //End-FlexSlider -->
+}
+@section scripts{
+    <script src="~/Scripts/TemplateFromStyle.js"></script>
+    <!-- pop-up-script -->
+    @*jquery.chocolat-custom.js => this script make the images in Gallery open as a pop up in same page*@
+    <script src="~/Scripts/jquery.chocolat-custom.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.view-seventh a').Chocolat();
+        });
+    </script>
+    <!-- //pop-up-script -->
+    <script>
+        function details(eventSource) {
+            let carId = eventSource.getAttribute("data-car-id");
+            window.location.href = `/Car/CarDetails/${carId}`;
+        }
+    </script>
+}

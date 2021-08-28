@@ -1,0 +1,34 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
+@model IPagedList<CarsInfoViewModel>
+
+@if (Model != null && Model.Count > 0)
+{
+    @Html.Partial("~/Views/Gallery/CarPanel.cshtml",Model)
+}
+else if (ViewBag.Type != "ERROR")
+{
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>@CarsBiddingUsingBootstrap.Localization.Sorry</h1>
+                <h2>@ViewBag.NotFoundDataMsg</h2>
+            </div>
+            @if (ViewBag.SearchOrGalleryNotFound != CarsBiddingUsingBootstrap.Classes.GalleryEmptySource.SearchDontHaveData)
+            {
+                <a href="/Car/NewCar" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.NewCar<span></span></a>
+            }
+        </div>
+    </div>
+}
+@if (Model != null && Model.Count > 0)
+{
+    <div class="text-center">
+        @Html.PagedListPager(Model, Page => null, new PagedListRenderOptions()
+   {
+       Display = PagedListDisplayMode.IfNeeded,
+       DisplayPageCountAndCurrentLocation = true,
+   })
+    </div>
+}

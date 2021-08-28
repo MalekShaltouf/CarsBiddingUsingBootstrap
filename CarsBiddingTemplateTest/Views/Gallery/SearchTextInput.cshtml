@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "SearchTextInput";
+}
+
+<h2>SearchTextInput</h2>
+
+<div class="form-group">
+    <label for="name">@CarsBiddingUsingBootstrap.Localization.CarType</label>
+    <div class="input-group">
+        @Html.TextBox("search", null, new { @class = "form-control" })
+        @*@Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })*@
+        <span class="input-group-btn">
+            <button type="submit" class="sky-hover wthree-btn btn-6 scroll"><i class="fa fa-search"></i><span></span></button>
+        </span>
+    </div>
+    @Html.ValidationMessage("search", new { @class = "text-danger" })
+</div>

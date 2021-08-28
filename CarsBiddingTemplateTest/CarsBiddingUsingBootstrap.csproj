@@ -1,0 +1,405 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91CBEB87-BD5F-43EE-A271-908E7FCB2308}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarsBiddingTemplateTest</RootNamespace>
+    <AssemblyName>CarsBiddingTemplateTest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44380</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.3.5.8\lib\35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CarImage\BMW\MainPhoto\prc.jpg" />
+    <Content Include="CarImage\HondaiYY4924036\MainPhoto\qweiop.jpg" />
+    <Content Include="CarImage\HondaiYY4924036\MultiPhoto\gfhfg.jpg" />
+    <Content Include="CarImage\HondaiYY4924036\MultiPhoto\mvbn.jpg" />
+    <Content Include="CarImage\HondaiYY4924036\MultiPhoto\qwetyu.jpg" />
+    <Content Include="CarImage\HondaiYY4924036\MultiPhoto\uiyuqweq.jpg" />
+    <Content Include="CarImage\HondaiYY4924036\MultiPhoto\yiui.jpg" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-multiselect.css" />
+    <Content Include="Content\bootstrap-multiselect.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\chocolat.css" />
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\CustomeStyle.css" />
+    <Content Include="Content\multi-select.css" />
+    <Content Include="Content\flexslider.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\NotFoundStyle.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\Sky_Style.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="favicon\android-chrome-192x192.png" />
+    <Content Include="favicon\android-chrome-512x512.png" />
+    <Content Include="favicon\apple-touch-icon.png" />
+    <Content Include="favicon\browserconfig.xml" />
+    <Content Include="favicon\favicon-16x16.png" />
+    <Content Include="favicon\favicon-32x32.png" />
+    <Content Include="favicon\favicon.ico" />
+    <Content Include="favicon\mstile-144x144.png" />
+    <Content Include="favicon\mstile-150x150.png" />
+    <Content Include="favicon\mstile-310x150.png" />
+    <Content Include="favicon\mstile-310x310.png" />
+    <Content Include="favicon\mstile-70x70.png" />
+    <Content Include="favicon\safari-pinned-tab.svg" />
+    <Content Include="fonts\Aguafina_Script\OFL.txt" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\Lato\OFL.txt" />
+    <Content Include="fonts\Montserrat\OFL.txt" />
+    <Content Include="fonts\Petit_Formal_Script\OFL.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\AddNewCarEx.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\close.png" />
+    <Content Include="images\g1.jpg" />
+    <Content Include="images\g2.jpg" />
+    <Content Include="images\g3.jpg" />
+    <Content Include="images\g4.jpg" />
+    <Content Include="images\g5.jpg" />
+    <Content Include="images\g6.jpg" />
+    <Content Include="images\g7.jpg" />
+    <Content Include="images\g8.jpg" />
+    <Content Include="images\g9.jpg" />
+    <Content Include="images\left.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\move-up.png" />
+    <Content Include="images\right.png" />
+    <Content Include="images\suv-car.svg" />
+    <Content Include="images\user.png" />
+    <Content Include="Models\CarsBiddingEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CarsBiddingEntities.edmx</DependentUpon>
+      <LastGenOutput>CarsBiddingEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\CarsBiddingEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CarsBiddingEntities.edmx</DependentUpon>
+      <LastGenOutput>CarsBiddingEntities.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="favicon\site.webmanifest" />
+    <Content Include="fonts\Lato\Lato-Regular.ttf" />
+    <Content Include="fonts\Petit_Formal_Script\PetitFormalScript-Regular.ttf" />
+    <Content Include="fonts\Aguafina_Script\AguafinaScript-Regular.ttf" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-datepicker.css.map" />
+    <Content Include="fonts\Montserrat\Montserrat-ExtraLight.ttf" />
+    <EntityDeploy Include="Models\CarsBiddingEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CarsBiddingEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\CarsBiddingEntities.edmx.diagram">
+      <DependentUpon>CarsBiddingEntities.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\BootstrapModal-Animation.js" />
+    <Content Include="Scripts\CarDetails.js" />
+    <Content Include="Scripts\easing.js" />
+    <Content Include="Scripts\FileUploadTemplteScript.js" />
+    <Content Include="Scripts\Helper.js" />
+    <Content Include="Scripts\jarallax.js" />
+    <None Include="Scripts\jquery-3.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery.chocolat-custom.js" />
+    <Content Include="Scripts\jquery.chocolat.js" />
+    <Content Include="Scripts\jquery.countdown.js" />
+    <Content Include="Scripts\jquery.countdown.min.js" />
+    <Content Include="Scripts\jquery.flexslider.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.multi-select.js" />
+    <Content Include="Scripts\jquery.multi-select.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\moment-timezone-with-data.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\move-top.js" />
+    <Content Include="Scripts\Notification.js" />
+    <Content Include="Scripts\numscroller-1.0.js" />
+    <Content Include="Scripts\scrolling-nav.js" />
+    <Content Include="Scripts\SearchTextInputScript.js" />
+    <Content Include="Scripts\SmoothScroll.min.js" />
+    <Content Include="Scripts\TemplateFromStyle.js" />
+    <Content Include="Scripts\timer.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Attribute\AllowAnonymousOnlyAttribute.cs" />
+    <Compile Include="Classes\Enumeration.cs" />
+    <Compile Include="Classes\ErrorLog.cs" />
+    <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Controllers\BiddingProcessController.cs" />
+    <Compile Include="Controllers\CarController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\EndTimerOperationsController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="Controllers\HelperController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NotificationHistoryController.cs" />
+    <Compile Include="Controllers\PurchaseInsuranceController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizationRecource\Localization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Bidding.cs">
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CarOwnerDetails.cs" />
+    <Compile Include="Classes\CarWinnerDetails.cs" />
+    <Compile Include="Interfaces\IWinner_Owner_Car_Details.cs" />
+    <Compile Include="Models\NotificationHistory.cs">
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NotificationHistoryUI.cs" />
+    <Compile Include="Models\MetaDataClasses\UserMetaDataType.cs" />
+    <Compile Include="Models\ViewModelClasses\BiddingViewModel.cs" />
+    <Compile Include="Models\CarsBiddingEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarsBiddingEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CarsBiddingEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CarsBiddingEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarsBiddingEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cars_Info.cs">
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Insurance.cs">
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\NotificationParameter.cs" />
+    <Compile Include="Models\ViewModelClasses\CarsInfoViewModel.cs" />
+    <Compile Include="Models\MetaDataClasses\Cars_InfoMetaDataType.cs" />
+    <Compile Include="Models\ViewModelClasses\ContactViewModel.cs" />
+    <Compile Include="Models\ViewModelClasses\GalleryViewModel.cs" />
+    <Compile Include="Models\ViewModelClasses\InsuranceViewModel.cs" />
+    <Compile Include="Models\User.cs">
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModelClasses\NotificationHistoryViewModel.cs" />
+    <Compile Include="Models\ViewModelClasses\SignInViewModel.cs" />
+    <Compile Include="Models\ViewModelClasses\SignUpViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Mvc_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Shared\_AllTemplate.cshtml" />
+    <Content Include="Views\Login\SignUp.cshtml" />
+    <Content Include="Views\Login\SignIn.cshtml" />
+    <Content Include="Views\Car\NewCar.cshtml" />
+    <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\Gallery\Gallery.cshtml" />
+    <Content Include="Views\Gallery\SearchTextInput.cshtml" />
+    <Content Include="Views\Gallery\SearchTextBoxBehindScenes.cshtml" />
+    <Content Include="Views\Car\CarDetails.cshtml" />
+    <Content Include="Views\Gallery\CarPanel.cshtml" />
+    <Content Include="Views\Gallery\PagingCarPanel.cshtml" />
+    <Content Include="Views\NotificationHistory\GetAllUserNotification.cshtml" />
+    <Content Include="Views\NotificationHistory\NotificationDetails.cshtml" />
+    <Content Include="Views\NotificationHistory\CarWinnerInfo.cshtml" />
+    <Content Include="Views\NotificationHistory\CarOwnerInfo.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="CarImage\MultiPhoto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizationRecource\Localization.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>CarsBiddingUsingBootstrap</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizationRecource\Localization.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49909</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44380/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

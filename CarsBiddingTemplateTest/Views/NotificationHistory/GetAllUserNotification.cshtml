@@ -1,0 +1,26 @@
+﻿@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
+@model List<NotificationHistoryViewModel>
+@if (Model == null)
+{
+    <li>
+        <div class="text empty-Notification">
+            <p>There are'nt any notification.</p>
+        </div>
+    </li>
+}
+else
+{
+    foreach (NotificationHistoryViewModel notificationHis in Model)
+    {
+        <li>
+            <div onclick="window.location.href='/NotificationHistory/NotificationDetails/@(notificationHis.NotificationId)'" class="notifications-item @(notificationHis.NotificationStatus == false ? "not-open-notification" : "")">
+                <img src="@Url.Content(notificationHis.MainPhoto)" alt="Main img">
+                <div class="text">
+                    <p>@notificationHis.Eng_ArMessage</p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"><span class="TimeSince-Span">@notificationHis.TimeSince</span></i></p>
+                </div>
+            </div>
+        </li>
+    }
+}
+

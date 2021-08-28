@@ -1,0 +1,40 @@
+﻿@using CarsBiddingUsingBootstrap.Classes
+@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
+@model List<NotificationHistoryViewModel>
+@{
+    ViewBag.Title = "NotificationDetails";
+}
+
+<section class="Notification-Details">
+    <div class="container">
+        <h3 class="agileits-title PageHeading">NotificationDetails<span class="w3lshr-line"></span></h3>
+        <div class="row">
+            @foreach (NotificationHistoryViewModel notiHis in Model)
+            {
+                <div class="col-md-12">
+                    <div class="notifications-details-card">
+                        <img src="@Url.Content("~/CarImage/BMW/MainPhoto/prc.jpg")" alt="Main img">
+                        <div class="notifications-details-body">
+                            <h3>Your Car Sold Successfully</h3>
+                            <div class="notifications-details-text">
+                                @if (notiHis.NotificationType == Convert.ToInt32(NotificationType.CarOwnerNotification))
+                                {
+                                    @Html.Partial("~/Views/NotificationHistory/CarWinnerInfo.cshtml", notiHis.carWinnerDetails)
+                                }
+                                else
+                                {
+                                    @Html.Partial("~/Views/NotificationHistory/CarOwnerInfo.cshtml", notiHis.carOwnerDetails)
+                                }
+                                <div><label class="column-name">Final Price</label><span class="colon">:</span><label class="column-value">@notiHis.FinalPrice</label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+
+

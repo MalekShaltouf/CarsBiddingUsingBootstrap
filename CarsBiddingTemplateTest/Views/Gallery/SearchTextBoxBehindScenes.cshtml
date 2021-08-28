@@ -1,0 +1,52 @@
+﻿@model CarsBiddingUsingBootstrap.Models.ViewModelClasses.GalleryViewModel
+<div id="CarColor" data-search-type-ddl-value="1">
+    <div class="form-group">
+        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarColor</label>
+        @Html.TextBoxFor(model => model.CarColorTextSearch, new { @class = "form-control" })
+    </div>
+</div>
+<div id="ManufactureYear" data-search-type-ddl-value="2">
+    <div class="form-group">
+        <label for="name">@CarsBiddingUsingBootstrap.Localization.ManufactureYear</label>
+        <div class="input-group date" data-provide="yearpicker">
+            @Html.TextBoxFor(model => model.ManufactureYearTextSearch, new { @class = "form-control yearpicker", autocomplete = "off", type = "number" })
+            <div class="input-group-addon" style="visibility:hidden">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Price" data-search-type-ddl-value="3">
+    <div class="form-group">
+        <label for="name">@CarsBiddingUsingBootstrap.Localization.Price</label>
+        @Html.TextBoxFor(model => model.PriceTextSearch, new { @class = "form-control", type = "number" })
+    </div>
+</div>
+<div id="TypeOfTransmissionGear" data-search-type-ddl-value="4">
+    <div class="form-group">
+        <label for="name">@CarsBiddingUsingBootstrap.Localization.TypeOfTransmissionGear</label>
+        @Html.DropDownListFor(model => model.TypeOfTransmissionGearTextSearch, (List<SelectListItem>)ViewBag.TypeOfTransmissionGear, new { @class = "form-control" })
+    </div>
+</div>
+@*MainSearch => we set it zero to CarType because CarType don't have (text&value) in SearchType DDList*@
+<div id="MainSearch" data-search-type-ddl-value="0">
+    <div class="form-group">
+        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarType</label>
+        @Html.TextBoxFor(model => model.CarTypeTextSearch, new { @class = "form-control custom-form-control" })
+    </div>
+</div>
+@*MainSearchOnBehindScenes => we set it zero to CarType because CarType don't have (text&value) in SearchType DDList*@
+<div class="col-md-offset-3 col-md-6" id="MainSearchOnBehindScenes" data-search-type-ddl-value="0">
+    <div class="form-group">
+        <label for="name">@CarsBiddingUsingBootstrap.Localization.CarType</label>
+        <div class="input-group">
+            @Html.TextBoxFor(model => model.CarTypeTextSearch, new { @class = "form-control" })
+            <span class="input-group-btn">
+                <button type="submit" class="sky-hover wthree-btn btn-6 scroll"><i class="fa fa-search"></i><span></span></button>
+            </span>
+        </div>
+    </div>
+</div>
+<div id="SearchBtn">
+    <button type="submit" class="sky-hover wthree-btn btn-6 searchBtn scroll"><i class="fa fa-search"></i><span></span></button>
+</div>
