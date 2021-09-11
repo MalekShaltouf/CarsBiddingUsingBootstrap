@@ -3,7 +3,7 @@
     $('.view a').Chocolat();//enable image slider
     $('[data-toggle="tooltip"]').tooltip();//enable tooltip that exists in PurchaseInsurance & Bidding Modal(popUp)
     isTimerEnd();
-
+    isUserCarOwner();
     $('#PurchaseInsurance').on('shown.bs.modal', function (e) {
         /*
          * here we will open collapse after one second from open
@@ -46,7 +46,6 @@
         }
     });
     $("#BiddingProcessForm").on("submit", function (e) {
-        debugger;
         if ($("#BiddingProcessForm").valid()) {
             /*
              * when click on confirmBtn & the
@@ -243,7 +242,48 @@ function isTimerEnd()
 function BiddingOnSuccess(response) {
     addNotification(response.Type, response.Msg);
 }
-
+function isUserCarOwner()
+{
+    /*
+     * here we want to check if User that open CarDetails Page
+     * is same user that own the car or not
+     * 
+     * if yes => we want to remove BiddingProcess btn => because 
+     * we don't want to make car owner to prticipate in bidding process
+     * on his own car
+     * 
+     * to execute this check the user should be login
+     */
+    $.ajax({
+        url: "/Helper/IsUserAuthorize",
+        type: "GET",
+        success: function (response)
+        {
+            if (response)
+            {
+                /*
+                 * response == true => that mean that user Authenticated so
+                 * in this case will execute the check
+                 */
+                $.ajax({
+                    url: "/Helper/IsUserCarOwner",
+                    data: { CarId: document.getElementById("CarId").value},
+                    type: "GET",
+                    success: function (response) {
+                        if (response)
+                        {
+                            /*
+                             * response == true => that mean that user that open CarDetails
+                             * is same CarOwnerUser so we will remove BiddingProcess Btn
+                             */
+                            $("#biddingBtn").remove();
+                        }
+                    }
+                });
+            }
+        }
+    });
+}
 function PurchaseOnSuccess(response) {
     if (response.Type == "SUCCESS") {
         $("#NotificationPopUp #CloseBtn").one("click", function ()

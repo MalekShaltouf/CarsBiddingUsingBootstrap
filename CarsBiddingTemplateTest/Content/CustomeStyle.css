@@ -653,16 +653,17 @@ height: 25px;
 border-radius: 50%
 }
 
-.bell::before {
-content: attr(data-before-selector) !important;
-background-color: red;
-width: 16px;
-height: 16px;
-text-align: center;
-border-radius: 50%;
-left: 15px;
-bottom: 18px;
-font-size: 12px;
+.bell-before-content::before {
+    content: attr(data-before-selector) !important;
+    background-color: red;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    left: 15px;
+    bottom: 18px;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .remove-bell-before-pseudo-element::before {

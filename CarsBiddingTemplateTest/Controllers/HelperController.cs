@@ -16,7 +16,35 @@ namespace CarsBiddingUsingBootstrap.Controllers
     {
         public JsonResult IsUserAuthorize()
         {
-            return Json(User.Identity.IsAuthenticated, JsonRequestBehavior.AllowGet);
+            try
+            {
+                return Json(User.Identity.IsAuthenticated, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[GET] IsUserAuthorize action, Helper Controller");
+                throw ex;
+            }
+        }
+        public JsonResult IsUserCarOwner(int CarId)
+        {
+            try
+            {
+                using (CarsBiddingEntities context = new CarsBiddingEntities())
+                {
+                    //step1:we want to return Car Owner
+                    int? CarOwnerUserId = context.Cars_Info.SingleOrDefault(car => car.CarId == CarId).UserId;
+                    int? UserId = int.Parse(User.Identity.Name.Split('|').LastOrDefault());
+
+                    return Json(CarOwnerUserId == UserId, JsonRequestBehavior.AllowGet);
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[GET] IsUserCarOwner action, Helper Controller");
+                throw ex;
+            }
+
         }
     }
 }

@@ -65,6 +65,8 @@ function GetAllUserNotification() {
                 $('.bell').addClass("remove-bell-before-pseudo-element");
             } else
             {
+                
+                $('.bell').addClass("bell-before-content");
                 $('.bell').attr('data-before-selector', response.NumberOfNotOpenedNotification);
             }
         }
