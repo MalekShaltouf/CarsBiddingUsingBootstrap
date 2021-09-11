@@ -258,6 +258,9 @@
   <data name="FileTypeValidation" xml:space="preserve">
     <value>Only images can be uploaded.</value>
   </data>
+  <data name="FinalPrice" xml:space="preserve">
+    <value>Final Price</value>
+  </data>
   <data name="FirstName" xml:space="preserve">
     <value>First Name</value>
   </data>
@@ -378,6 +381,18 @@
   <data name="NotFoundData" xml:space="preserve">
     <value>The Gallery does not contain any car.</value>
   </data>
+  <data name="NotificationDetails" xml:space="preserve">
+    <value>Notification Details</value>
+  </data>
+  <data name="OwnerEmail" xml:space="preserve">
+    <value>Owner Email</value>
+  </data>
+  <data name="OwnerName" xml:space="preserve">
+    <value>Owner Name</value>
+  </data>
+  <data name="OwnerPhoneNumber" xml:space="preserve">
+    <value>Owner Phone Number</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
@@ -453,6 +468,9 @@
   <data name="ThePurchaseInsurance" xml:space="preserve">
     <value>The Purchase Insurance</value>
   </data>
+  <data name="ThereAre'ntAnyNotification." xml:space="preserve">
+    <value>There are'nt any notification.</value>
+  </data>
   <data name="TheRemainingTimeForAuctionEnding" xml:space="preserve">
     <value>The Remaining Time For Auction Ending</value>
   </data>
@@ -479,6 +497,15 @@
   </data>
   <data name="WEEKS" xml:space="preserve">
     <value>{0} Weeks  ago</value>
+  </data>
+  <data name="WinnerEmail" xml:space="preserve">
+    <value>Winner Email</value>
+  </data>
+  <data name="WinnerName" xml:space="preserve">
+    <value>Winner Name</value>
+  </data>
+  <data name="WinnerPhoneNumber" xml:space="preserve">
+    <value>Winner Phone Number</value>
   </data>
   <data name="WithCustoms" xml:space="preserve">
     <value>With Customs</value>

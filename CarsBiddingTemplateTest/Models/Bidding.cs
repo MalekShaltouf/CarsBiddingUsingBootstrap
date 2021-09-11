@@ -17,7 +17,8 @@ namespace CarsBiddingUsingBootstrap.Models
         public int BiddingId { get; set; }
         public int UserId { get; set; }
         public int CarId { get; set; }
-        public Nullable<int> CurrentPrice { get; set; }
+        public Nullable<double> CurrentPrice { get; set; }
+        public Nullable<int> UserType { get; set; }
     
         public virtual Cars_Info Cars_Info { get; set; }
         public virtual User User { get; set; }

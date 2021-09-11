@@ -691,15 +691,21 @@ border-color: #02a1b5;
 transform: unset;
 opacity: unset;
 }
+nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse span.TimeSince-Span {
+    font-size:unset
+}
+.nav .open > a.bell, .nav .open > a.bell:hover, .nav .open > a.bell:focus {
+    background: #02a1b5 !important;
+}
 /*End NotificationHistory*/
 /*Start NotificationHistory Details*/
 .Notification-Details .notifications-details-card {
-    display:flex;
-    min-height:150px;
+    display: flex;
+    min-height: 150px;
     border-radius: 5px 0px 5px 5px;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top:15px
+    margin-top: 15px
 }
 .Notification-Details .notifications-details-card img{
     display: block;
@@ -709,7 +715,8 @@ opacity: unset;
     margin-left: 15px;
 }
 .notifications-details-body h3 {
-    color:#00bcd4;
+    color: #00bcd4;
+    font-family: "Times New Roman",Serif
 }
 .notifications-details-body {
     padding-top: 15px;

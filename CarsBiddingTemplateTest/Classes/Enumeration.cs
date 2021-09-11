@@ -26,4 +26,9 @@ namespace CarsBiddingUsingBootstrap.Classes
         NotificationNotOpenYet = 0,
         NotificationOpened = 1,
     }
+    public enum BiddingUserType
+    {
+        CarOwner = 1,
+        LastUserBidToCar = 2
+    }
 }

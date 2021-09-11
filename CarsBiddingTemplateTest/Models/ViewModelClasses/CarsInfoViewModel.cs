@@ -28,7 +28,7 @@ namespace CarsBiddingUsingBootstrap.Models.ViewModelClasses
 
         [Required(ErrorMessageResourceName = "RequiredFieldValidation", ErrorMessageResourceType = typeof(CarsBiddingUsingBootstrap.Localization))]
         [Range(1, Double.PositiveInfinity, ErrorMessageResourceName = "PostiveNumberValidation", ErrorMessageResourceType = typeof(CarsBiddingUsingBootstrap.Localization))]
-        public Nullable<int> InitialPrice { get; set; }
+        public Nullable<double> InitialPrice { get; set; }
         [Required(ErrorMessageResourceName = "RequiredFieldValidation", ErrorMessageResourceType = typeof(CarsBiddingUsingBootstrap.Localization))]
         [Range(1, Double.PositiveInfinity, ErrorMessageResourceName = "PostiveNumberValidation", ErrorMessageResourceType = typeof(CarsBiddingUsingBootstrap.Localization))]
         public Nullable<int> Kilometers { get; set; }
@@ -62,7 +62,7 @@ namespace CarsBiddingUsingBootstrap.Models.ViewModelClasses
         public Nullable<bool> InsuranceForSale { get; set; }
         public Nullable<int> UserId { get; set; }
         public string CarInsurance { get; set; }
-        public Nullable<int> CurrentPrice { get; set; }
+        public Nullable<double> CurrentPrice { get; set; }
         public Nullable<DateTime> Create_Date { get; set; }
         public Nullable<DateTime> Auction_End_Date { get; set; }
         public Nullable<bool> Timer_Status { get; set; }
@@ -74,6 +74,8 @@ namespace CarsBiddingUsingBootstrap.Models.ViewModelClasses
         public List<SelectListItem> CarCustomsMenu { get;set; }
         public List<SelectListItem> CarInsuranceMenu { get;set; }
         public List<SelectListItem> CarLicenseMenu { get;set; }
+
+
 
     }
 }

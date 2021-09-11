@@ -258,6 +258,9 @@
   <data name="FileTypeValidation" xml:space="preserve">
     <value>.يمكنك رفع الصور فقط</value>
   </data>
+  <data name="FinalPrice" xml:space="preserve">
+    <value>السعر النهائي</value>
+  </data>
   <data name="FirstName" xml:space="preserve">
     <value>الإسم الأول</value>
   </data>
@@ -378,6 +381,18 @@
   <data name="NotFoundData" xml:space="preserve">
     <value>.المعرض لاحتوي على سيارات</value>
   </data>
+  <data name="NotificationDetails" xml:space="preserve">
+    <value>تفاصيل الإشعارات</value>
+  </data>
+  <data name="OwnerEmail" xml:space="preserve">
+    <value>البريد الإلكتروني للمالك</value>
+  </data>
+  <data name="OwnerName" xml:space="preserve">
+    <value>إسم المالك</value>
+  </data>
+  <data name="OwnerPhoneNumber" xml:space="preserve">
+    <value>رقم هاتف المالك</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>كلمة المرور</value>
   </data>
@@ -456,6 +471,9 @@
   <data name="ThePurchaseInsurance" xml:space="preserve">
     <value>تأمين الشراء</value>
   </data>
+  <data name="ThereAre'ntAnyNotification." xml:space="preserve">
+    <value>.لا يوجد إشعارات</value>
+  </data>
   <data name="TheRemainingTimeForAuctionEnding" xml:space="preserve">
     <value>الوقت المتبقي لإنتهاء المزاد</value>
   </data>
@@ -482,6 +500,15 @@
   </data>
   <data name="WEEKS" xml:space="preserve">
     <value>منذ {0} أسبوع</value>
+  </data>
+  <data name="WinnerEmail" xml:space="preserve">
+    <value>البريد الإلكتروني للرابح</value>
+  </data>
+  <data name="WinnerName" xml:space="preserve">
+    <value>إسم الرابح</value>
+  </data>
+  <data name="WinnerPhoneNumber" xml:space="preserve">
+    <value>رقم هاتف الرابح</value>
   </data>
   <data name="WithCustoms" xml:space="preserve">
     <value>مجمركة</value>

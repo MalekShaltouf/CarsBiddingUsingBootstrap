@@ -1,10 +1,10 @@
 ﻿@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
 @model List<NotificationHistoryViewModel>
-@if (Model == null)
+@if (Model == null || Model.Count == 0)
 {
     <li>
         <div class="text empty-Notification">
-            <p>There are'nt any notification.</p>
+            <p>@CarsBiddingUsingBootstrap.Localization.ThereAre_ntAnyNotification_</p>
         </div>
     </li>
 }
@@ -13,7 +13,7 @@ else
     foreach (NotificationHistoryViewModel notificationHis in Model)
     {
         <li>
-            <div onclick="window.location.href='/NotificationHistory/NotificationDetails/@(notificationHis.NotificationId)'" class="notifications-item @(notificationHis.NotificationStatus == false ? "not-open-notification" : "")">
+            <div onclick="window.location.href='/NotificationHistory/NotificationDetails/@(notificationHis.NotificationId)?NotificationSatus=@(Convert.ToInt32(notificationHis.NotificationStatus))'" class="notifications-item @(notificationHis.NotificationStatus == false ? "not-open-notification" : "")">
                 <img src="@Url.Content(notificationHis.MainPhoto)" alt="Main img">
                 <div class="text">
                     <p>@notificationHis.Eng_ArMessage</p>

@@ -7,13 +7,13 @@
     <Schema Namespace="CarsBiddingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Bidding">
           <Key>
-            <PropertyRef Name="UserId" />
             <PropertyRef Name="CarId" />
           </Key>
           <Property Name="BiddingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="CarId" Type="int" Nullable="false" />
-          <Property Name="CurrentPrice" Type="int" />
+          <Property Name="CurrentPrice" Type="float" />
+          <Property Name="UserType" Type="int" />
         </EntityType>
         <EntityType Name="Cars_Info">
           <Key>
@@ -24,7 +24,7 @@
           <Property Name="ColorOfCar" Type="nvarchar" MaxLength="50" />
           <Property Name="EngineCapacity" Type="nvarchar" MaxLength="50" />
           <Property Name="YearOfManufacture" Type="int" />
-          <Property Name="InitialPrice" Type="int" />
+          <Property Name="InitialPrice" Type="float" />
           <Property Name="CarChecking" Type="nvarchar" MaxLength="50" />
           <Property Name="Description" Type="nvarchar" MaxLength="360" />
           <Property Name="MainPhoto" Type="nvarchar" MaxLength="300" />
@@ -83,7 +83,7 @@
         </EntityType>
         <Association Name="FK__Bidding__CarId__4E88ABD4">
           <End Role="Cars_Info" Type="Self.Cars_Info" Multiplicity="1" />
-          <End Role="Bidding" Type="Self.Bidding" Multiplicity="*" />
+          <End Role="Bidding" Type="Self.Bidding" Multiplicity="0..1" />
           <ReferentialConstraint>
             <Principal Role="Cars_Info">
               <PropertyRef Name="CarId" />
@@ -204,17 +204,122 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CarsBiddingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Bidding">
+        <EntityType Name="Insurance">
           <Key>
             <PropertyRef Name="UserId" />
+            <PropertyRef Name="CarId" />
+          </Key>
+          <Property Name="InsuranceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="CarId" Type="Int32" Nullable="false" />
+          <Property Name="IsInsuranceForPurchase" Type="Boolean" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Insurance__UserI__49C3F6B7" FromRole="Insurance" ToRole="Users" />
+          <NavigationProperty Name="Cars_Info" Relationship="CarsBiddingModel.FK__Insurance__CarId__4AB81AF0" FromRole="Insurance" ToRole="Cars_Info" />
+        </EntityType>
+        <EntityType Name="NotificationHistory">
+          <Key>
+            <PropertyRef Name="NotificationId" />
+          </Key>
+          <Property Name="NotificationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="EnglishMessage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NativeMessage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MainPhoto" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Time" Type="DateTime" Precision="3" />
+          <Property Name="NotificationStatus" Type="Boolean" />
+          <Property Name="NotificationType" Type="Int32" />
+          <Property Name="CarId" Type="Int32" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Notificat__UserI__5FB337D6" FromRole="NotificationHistory" ToRole="Users" />
+          <NavigationProperty Name="Cars_Info" Relationship="CarsBiddingModel.FK__Notificat__CarId__6E01572D" FromRole="NotificationHistory" ToRole="Cars_Info" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Lname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birthday" Type="DateTime" Precision="3" />
+          <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Insurances" Relationship="Self.FK__Insurance__UserI__49C3F6B7" FromRole="Users" ToRole="Insurance" />
+          <NavigationProperty Name="NotificationHistories" Relationship="Self.FK__Notificat__UserI__5FB337D6" FromRole="Users" ToRole="NotificationHistory" />
+          <NavigationProperty Name="Biddings" Relationship="CarsBiddingModel.FK__Bidding__UserId__4D94879B" FromRole="User" ToRole="Bidding" />
+          <NavigationProperty Name="Cars_Info" Relationship="CarsBiddingModel.FK__Cars_Info__UserI__2E1BDC42" FromRole="User" ToRole="Cars_Info" />
+        </EntityType>
+        <Association Name="FK__Insurance__UserI__49C3F6B7">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Insurance" Type="Self.Insurance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Insurance">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Notificat__UserI__5FB337D6">
+          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+          <End Role="NotificationHistory" Type="Self.NotificationHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="NotificationHistory">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CarsBiddingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Insurances" EntityType="Self.Insurance" />
+          <EntitySet Name="NotificationHistories" EntityType="Self.NotificationHistory" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK__Insurance__UserI__49C3F6B7" Association="Self.FK__Insurance__UserI__49C3F6B7">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Insurance" EntitySet="Insurances" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Notificat__UserI__5FB337D6" Association="Self.FK__Notificat__UserI__5FB337D6">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="NotificationHistory" EntitySet="NotificationHistories" />
+          </AssociationSet>
+          <EntitySet Name="Biddings" EntityType="CarsBiddingModel.Bidding" />
+          <EntitySet Name="Cars_Info" EntityType="CarsBiddingModel.Cars_Info" />
+          <AssociationSet Name="FK__Bidding__CarId__4E88ABD4" Association="CarsBiddingModel.FK__Bidding__CarId__4E88ABD4">
+            <End Role="Cars_Info" EntitySet="Cars_Info" />
+            <End Role="Bidding" EntitySet="Biddings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Bidding__UserId__4D94879B" Association="CarsBiddingModel.FK__Bidding__UserId__4D94879B">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Bidding" EntitySet="Biddings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Cars_Info__UserI__2E1BDC42" Association="CarsBiddingModel.FK__Cars_Info__UserI__2E1BDC42">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Cars_Info" EntitySet="Cars_Info" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Insurance__CarId__4AB81AF0" Association="CarsBiddingModel.FK__Insurance__CarId__4AB81AF0">
+            <End Role="Cars_Info" EntitySet="Cars_Info" />
+            <End Role="Insurance" EntitySet="Insurances" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Notificat__CarId__6E01572D" Association="CarsBiddingModel.FK__Notificat__CarId__6E01572D">
+            <End Role="Cars_Info" EntitySet="Cars_Info" />
+            <End Role="NotificationHistory" EntitySet="NotificationHistories" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Bidding">
+          <Key>
             <PropertyRef Name="CarId" />
           </Key>
           <Property Name="BiddingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="UserId" Type="Int32" Nullable="false" />
           <Property Name="CarId" Type="Int32" Nullable="false" />
-          <Property Name="CurrentPrice" Type="Int32" />
-          <NavigationProperty Name="Cars_Info" Relationship="Self.FK__Bidding__CarId__4E88ABD4" FromRole="Bidding" ToRole="Cars_Info" />
-          <NavigationProperty Name="User" Relationship="Self.FK__Bidding__UserId__4D94879B" FromRole="Bidding" ToRole="Users" />
+          <Property Name="CurrentPrice" Type="Double" />
+          <Property Name="UserType" Type="Int32" />
+          <NavigationProperty Name="Cars_Info" Relationship="CarsBiddingModel.FK__Bidding__CarId__4E88ABD4" FromRole="Bidding" ToRole="Cars_Info" />
+          <NavigationProperty Name="User" Relationship="CarsBiddingModel.FK__Bidding__UserId__4D94879B" FromRole="Bidding" ToRole="User" />
         </EntityType>
         <EntityType Name="Cars_Info">
           <Key>
@@ -225,7 +330,7 @@
           <Property Name="ColorOfCar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EngineCapacity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="YearOfManufacture" Type="Int32" />
-          <Property Name="InitialPrice" Type="Int32" />
+          <Property Name="InitialPrice" Type="Double" />
           <Property Name="CarChecking" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Description" Type="String" MaxLength="360" FixedLength="false" Unicode="true" />
           <Property Name="MainPhoto" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
@@ -241,46 +346,16 @@
           <Property Name="CarLicense" Type="Boolean" />
           <Property Name="TypeOfTransmissionGear" Type="Boolean" />
           <Property Name="Kilometers" Type="Int32" />
-          <NavigationProperty Name="Biddings" Relationship="Self.FK__Bidding__CarId__4E88ABD4" FromRole="Cars_Info" ToRole="Bidding" />
-          <NavigationProperty Name="User" Relationship="Self.FK__Cars_Info__UserI__2E1BDC42" FromRole="Cars_Info" ToRole="Users" />
-          <NavigationProperty Name="Insurances" Relationship="Self.FK__Insurance__CarId__4AB81AF0" FromRole="Cars_Info" ToRole="Insurance" />
           <Property Name="Create_Date" Type="DateTime" Precision="3" />
           <Property Name="Timer_Status" Type="Boolean" />
+          <NavigationProperty Name="Bidding" Relationship="CarsBiddingModel.FK__Bidding__CarId__4E88ABD4" FromRole="Cars_Info" ToRole="Bidding" />
+          <NavigationProperty Name="User" Relationship="CarsBiddingModel.FK__Cars_Info__UserI__2E1BDC42" FromRole="Cars_Info" ToRole="User" />
+          <NavigationProperty Name="Insurances" Relationship="CarsBiddingModel.FK__Insurance__CarId__4AB81AF0" FromRole="Cars_Info" ToRole="Insurance" />
           <NavigationProperty Name="NotificationHistories" Relationship="CarsBiddingModel.FK__Notificat__CarId__6E01572D" FromRole="Cars_Info" ToRole="NotificationHistory" />
         </EntityType>
-        <EntityType Name="Insurance">
-          <Key>
-            <PropertyRef Name="UserId" />
-            <PropertyRef Name="CarId" />
-          </Key>
-          <Property Name="InsuranceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="UserId" Type="Int32" Nullable="false" />
-          <Property Name="CarId" Type="Int32" Nullable="false" />
-          <Property Name="IsInsuranceForPurchase" Type="Boolean" />
-          <NavigationProperty Name="Cars_Info" Relationship="Self.FK__Insurance__CarId__4AB81AF0" FromRole="Insurance" ToRole="Cars_Info" />
-          <NavigationProperty Name="User" Relationship="Self.FK__Insurance__UserI__49C3F6B7" FromRole="Insurance" ToRole="Users" />
-        </EntityType>
-        <EntityType Name="User">
-          <Key>
-            <PropertyRef Name="UserId" />
-          </Key>
-          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Fname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Lname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Birthday" Type="DateTime" Precision="3" />
-          <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Biddings" Relationship="Self.FK__Bidding__UserId__4D94879B" FromRole="Users" ToRole="Bidding" />
-          <NavigationProperty Name="Cars_Info" Relationship="Self.FK__Cars_Info__UserI__2E1BDC42" FromRole="Users" ToRole="Cars_Info" />
-          <NavigationProperty Name="Insurances" Relationship="Self.FK__Insurance__UserI__49C3F6B7" FromRole="Users" ToRole="Insurance" />
-          <NavigationProperty Name="NotificationHistories" Relationship="CarsBiddingModel.FK__Notificat__UserI__5FB337D6" FromRole="User" ToRole="NotificationHistory" />
-        </EntityType>
         <Association Name="FK__Bidding__CarId__4E88ABD4">
-          <End Role="Cars_Info" Type="Self.Cars_Info" Multiplicity="1" />
-          <End Role="Bidding" Type="Self.Bidding" Multiplicity="*" />
+          <End Type="CarsBiddingModel.Cars_Info" Role="Cars_Info" Multiplicity="1" />
+          <End Type="CarsBiddingModel.Bidding" Role="Bidding" Multiplicity="0..1" />
           <ReferentialConstraint>
             <Principal Role="Cars_Info">
               <PropertyRef Name="CarId" />
@@ -291,10 +366,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Bidding__UserId__4D94879B">
-          <End Role="Users" Type="Self.User" Multiplicity="1" />
-          <End Role="Bidding" Type="Self.Bidding" Multiplicity="*" />
+          <End Type="CarsBiddingModel.User" Role="User" Multiplicity="1" />
+          <End Type="CarsBiddingModel.Bidding" Role="Bidding" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Users">
+            <Principal Role="User">
               <PropertyRef Name="UserId" />
             </Principal>
             <Dependent Role="Bidding">
@@ -303,10 +378,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Cars_Info__UserI__2E1BDC42">
-          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
-          <End Role="Cars_Info" Type="Self.Cars_Info" Multiplicity="*" />
+          <End Type="CarsBiddingModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="CarsBiddingModel.Cars_Info" Role="Cars_Info" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Users">
+            <Principal Role="User">
               <PropertyRef Name="UserId" />
             </Principal>
             <Dependent Role="Cars_Info">
@@ -315,89 +390,14 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Insurance__CarId__4AB81AF0">
-          <End Role="Cars_Info" Type="Self.Cars_Info" Multiplicity="1" />
-          <End Role="Insurance" Type="Self.Insurance" Multiplicity="*" />
+          <End Type="CarsBiddingModel.Cars_Info" Role="Cars_Info" Multiplicity="1" />
+          <End Type="CarsBiddingModel.Insurance" Role="Insurance" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Cars_Info">
               <PropertyRef Name="CarId" />
             </Principal>
             <Dependent Role="Insurance">
               <PropertyRef Name="CarId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__Insurance__UserI__49C3F6B7">
-          <End Role="Users" Type="Self.User" Multiplicity="1" />
-          <End Role="Insurance" Type="Self.Insurance" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Users">
-              <PropertyRef Name="UserId" />
-            </Principal>
-            <Dependent Role="Insurance">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityContainer Name="CarsBiddingEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Biddings" EntityType="Self.Bidding" />
-          <EntitySet Name="Cars_Info" EntityType="Self.Cars_Info" />
-          <EntitySet Name="Insurances" EntityType="Self.Insurance" />
-          <EntitySet Name="Users" EntityType="Self.User" />
-          <AssociationSet Name="FK__Bidding__CarId__4E88ABD4" Association="Self.FK__Bidding__CarId__4E88ABD4">
-            <End Role="Cars_Info" EntitySet="Cars_Info" />
-            <End Role="Bidding" EntitySet="Biddings" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Bidding__UserId__4D94879B" Association="Self.FK__Bidding__UserId__4D94879B">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Bidding" EntitySet="Biddings" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Cars_Info__UserI__2E1BDC42" Association="Self.FK__Cars_Info__UserI__2E1BDC42">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Cars_Info" EntitySet="Cars_Info" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Insurance__CarId__4AB81AF0" Association="Self.FK__Insurance__CarId__4AB81AF0">
-            <End Role="Cars_Info" EntitySet="Cars_Info" />
-            <End Role="Insurance" EntitySet="Insurances" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Insurance__UserI__49C3F6B7" Association="Self.FK__Insurance__UserI__49C3F6B7">
-            <End Role="Users" EntitySet="Users" />
-            <End Role="Insurance" EntitySet="Insurances" />
-          </AssociationSet>
-          <EntitySet Name="NotificationHistories" EntityType="CarsBiddingModel.NotificationHistory" />
-          <AssociationSet Name="FK__Notificat__UserI__5FB337D6" Association="CarsBiddingModel.FK__Notificat__UserI__5FB337D6">
-            <End Role="User" EntitySet="Users" />
-            <End Role="NotificationHistory" EntitySet="NotificationHistories" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Notificat__CarId__6E01572D" Association="CarsBiddingModel.FK__Notificat__CarId__6E01572D">
-            <End Role="Cars_Info" EntitySet="Cars_Info" />
-            <End Role="NotificationHistory" EntitySet="NotificationHistories" />
-          </AssociationSet>
-        </EntityContainer>
-        <EntityType Name="NotificationHistory">
-          <Key>
-            <PropertyRef Name="NotificationId" />
-          </Key>
-          <Property Name="NotificationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="UserId" Type="Int32" />
-          <Property Name="EnglishMessage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="NativeMessage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="MainPhoto" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
-          <Property Name="Time" Type="DateTime" Precision="3" />
-          <Property Name="NotificationStatus" Type="Boolean" />
-          <NavigationProperty Name="User" Relationship="CarsBiddingModel.FK__Notificat__UserI__5FB337D6" FromRole="NotificationHistory" ToRole="User" />
-          <Property Name="NotificationType" Type="Int32" />
-          <Property Name="CarId" Type="Int32" />
-          <NavigationProperty Name="Cars_Info" Relationship="CarsBiddingModel.FK__Notificat__CarId__6E01572D" FromRole="NotificationHistory" ToRole="Cars_Info" />
-        </EntityType>
-        <Association Name="FK__Notificat__UserI__5FB337D6">
-          <End Type="CarsBiddingModel.User" Role="User" Multiplicity="0..1" />
-          <End Type="CarsBiddingModel.NotificationHistory" Role="NotificationHistory" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="User">
-              <PropertyRef Name="UserId" />
-            </Principal>
-            <Dependent Role="NotificationHistory">
-              <PropertyRef Name="UserId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -413,51 +413,12 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="CarsBiddingModelStoreContainer" CdmEntityContainer="CarsBiddingEntities">
-          <EntitySetMapping Name="Biddings">
-            <EntityTypeMapping TypeName="CarsBiddingModel.Bidding">
-              <MappingFragment StoreEntitySet="Bidding">
-                <ScalarProperty Name="BiddingId" ColumnName="BiddingId" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="CarId" ColumnName="CarId" />
-                <ScalarProperty Name="CurrentPrice" ColumnName="CurrentPrice" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Cars_Info">
-            <EntityTypeMapping TypeName="CarsBiddingModel.Cars_Info">
-              <MappingFragment StoreEntitySet="Cars_Info">
-                <ScalarProperty Name="Timer_Status" ColumnName="Timer_Status" />
-                <ScalarProperty Name="Create_Date" ColumnName="Create_Date" />
-                <ScalarProperty Name="CarId" ColumnName="CarId" />
-                <ScalarProperty Name="TypeOfCar" ColumnName="TypeOfCar" />
-                <ScalarProperty Name="ColorOfCar" ColumnName="ColorOfCar" />
-                <ScalarProperty Name="EngineCapacity" ColumnName="EngineCapacity" />
-                <ScalarProperty Name="YearOfManufacture" ColumnName="YearOfManufacture" />
-                <ScalarProperty Name="InitialPrice" ColumnName="InitialPrice" />
-                <ScalarProperty Name="CarChecking" ColumnName="CarChecking" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="MainPhoto" ColumnName="MainPhoto" />
-                <ScalarProperty Name="Photo1" ColumnName="Photo1" />
-                <ScalarProperty Name="Photo2" ColumnName="Photo2" />
-                <ScalarProperty Name="Photo3" ColumnName="Photo3" />
-                <ScalarProperty Name="Photo4" ColumnName="Photo4" />
-                <ScalarProperty Name="Photo5" ColumnName="Photo5" />
-                <ScalarProperty Name="InsuranceForSale" ColumnName="InsuranceForSale" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="CarCustoms" ColumnName="CarCustoms" />
-                <ScalarProperty Name="CarInsurance" ColumnName="CarInsurance" />
-                <ScalarProperty Name="CarLicense" ColumnName="CarLicense" />
-                <ScalarProperty Name="TypeOfTransmissionGear" ColumnName="TypeOfTransmissionGear" />
-                <ScalarProperty Name="Kilometers" ColumnName="Kilometers" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Insurances">
             <EntityTypeMapping TypeName="CarsBiddingModel.Insurance">
               <MappingFragment StoreEntitySet="Insurance">
@@ -465,6 +426,21 @@
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="CarId" ColumnName="CarId" />
                 <ScalarProperty Name="IsInsuranceForPurchase" ColumnName="IsInsuranceForPurchase" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NotificationHistories">
+            <EntityTypeMapping TypeName="CarsBiddingModel.NotificationHistory">
+              <MappingFragment StoreEntitySet="NotificationHistory">
+                <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="EnglishMessage" ColumnName="EnglishMessage" />
+                <ScalarProperty Name="NativeMessage" ColumnName="NativeMessage" />
+                <ScalarProperty Name="MainPhoto" ColumnName="MainPhoto" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="NotificationStatus" ColumnName="NotificationStatus" />
+                <ScalarProperty Name="NotificationType" ColumnName="NotificationType" />
+                <ScalarProperty Name="CarId" ColumnName="CarId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -483,18 +459,43 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="NotificationHistories">
-            <EntityTypeMapping TypeName="CarsBiddingModel.NotificationHistory">
-              <MappingFragment StoreEntitySet="NotificationHistory">
+          <EntitySetMapping Name="Biddings">
+            <EntityTypeMapping TypeName="CarsBiddingModel.Bidding">
+              <MappingFragment StoreEntitySet="Bidding">
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="CurrentPrice" ColumnName="CurrentPrice" />
                 <ScalarProperty Name="CarId" ColumnName="CarId" />
-                <ScalarProperty Name="NotificationType" ColumnName="NotificationType" />
-                <ScalarProperty Name="NotificationStatus" ColumnName="NotificationStatus" />
-                <ScalarProperty Name="Time" ColumnName="Time" />
-                <ScalarProperty Name="MainPhoto" ColumnName="MainPhoto" />
-                <ScalarProperty Name="NativeMessage" ColumnName="NativeMessage" />
-                <ScalarProperty Name="EnglishMessage" ColumnName="EnglishMessage" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+                <ScalarProperty Name="BiddingId" ColumnName="BiddingId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cars_Info">
+            <EntityTypeMapping TypeName="CarsBiddingModel.Cars_Info">
+              <MappingFragment StoreEntitySet="Cars_Info">
+                <ScalarProperty Name="Timer_Status" ColumnName="Timer_Status" />
+                <ScalarProperty Name="Create_Date" ColumnName="Create_Date" />
+                <ScalarProperty Name="Kilometers" ColumnName="Kilometers" />
+                <ScalarProperty Name="TypeOfTransmissionGear" ColumnName="TypeOfTransmissionGear" />
+                <ScalarProperty Name="CarLicense" ColumnName="CarLicense" />
+                <ScalarProperty Name="CarInsurance" ColumnName="CarInsurance" />
+                <ScalarProperty Name="CarCustoms" ColumnName="CarCustoms" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="InsuranceForSale" ColumnName="InsuranceForSale" />
+                <ScalarProperty Name="Photo5" ColumnName="Photo5" />
+                <ScalarProperty Name="Photo4" ColumnName="Photo4" />
+                <ScalarProperty Name="Photo3" ColumnName="Photo3" />
+                <ScalarProperty Name="Photo2" ColumnName="Photo2" />
+                <ScalarProperty Name="Photo1" ColumnName="Photo1" />
+                <ScalarProperty Name="MainPhoto" ColumnName="MainPhoto" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CarChecking" ColumnName="CarChecking" />
+                <ScalarProperty Name="InitialPrice" ColumnName="InitialPrice" />
+                <ScalarProperty Name="YearOfManufacture" ColumnName="YearOfManufacture" />
+                <ScalarProperty Name="EngineCapacity" ColumnName="EngineCapacity" />
+                <ScalarProperty Name="ColorOfCar" ColumnName="ColorOfCar" />
+                <ScalarProperty Name="TypeOfCar" ColumnName="TypeOfCar" />
+                <ScalarProperty Name="CarId" ColumnName="CarId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

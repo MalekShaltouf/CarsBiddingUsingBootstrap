@@ -252,6 +252,7 @@
     <Compile Include="Classes\Enumeration.cs" />
     <Compile Include="Classes\ErrorLog.cs" />
     <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Classes\WinnerOwnerCarDetails.cs" />
     <Compile Include="Controllers\BiddingProcessController.cs" />
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -270,18 +271,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Localization.resx</DependentUpon>
     </Compile>
+    <Compile Include="Classes\CarOwnerDetails.cs" />
+    <Compile Include="Classes\CarWinnerDetails.cs" />
     <Compile Include="Models\Bidding.cs">
       <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Classes\CarOwnerDetails.cs" />
-    <Compile Include="Classes\CarWinnerDetails.cs" />
-    <Compile Include="Interfaces\IWinner_Owner_Car_Details.cs" />
-    <Compile Include="Models\NotificationHistory.cs">
-      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UI\NotificationHistoryUI.cs" />
-    <Compile Include="Models\MetaDataClasses\UserMetaDataType.cs" />
-    <Compile Include="Models\ViewModelClasses\BiddingViewModel.cs" />
     <Compile Include="Models\CarsBiddingEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -303,15 +297,21 @@
     <Compile Include="Models\Insurance.cs">
       <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\NotificationHistory.cs">
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NotificationHistoryUI.cs" />
+    <Compile Include="Models\MetaDataClasses\UserMetaDataType.cs" />
+    <Compile Include="Models\ViewModelClasses\BiddingViewModel.cs" />
     <Compile Include="Classes\NotificationParameter.cs" />
     <Compile Include="Models\ViewModelClasses\CarsInfoViewModel.cs" />
     <Compile Include="Models\MetaDataClasses\Cars_InfoMetaDataType.cs" />
     <Compile Include="Models\ViewModelClasses\ContactViewModel.cs" />
     <Compile Include="Models\ViewModelClasses\GalleryViewModel.cs" />
     <Compile Include="Models\ViewModelClasses\InsuranceViewModel.cs" />
-    <Compile Include="Models\User.cs">
-      <DependentUpon>CarsBiddingEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\ViewModelClasses\NotificationHistoryViewModel.cs" />
     <Compile Include="Models\ViewModelClasses\SignInViewModel.cs" />
     <Compile Include="Models\ViewModelClasses\SignUpViewModel.cs" />
@@ -337,9 +337,9 @@
     <Content Include="Views\Gallery\CarPanel.cshtml" />
     <Content Include="Views\Gallery\PagingCarPanel.cshtml" />
     <Content Include="Views\NotificationHistory\GetAllUserNotification.cshtml" />
-    <Content Include="Views\NotificationHistory\NotificationDetails.cshtml" />
     <Content Include="Views\NotificationHistory\CarWinnerInfo.cshtml" />
     <Content Include="Views\NotificationHistory\CarOwnerInfo.cshtml" />
+    <Content Include="Views\NotificationHistory\NotificationDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

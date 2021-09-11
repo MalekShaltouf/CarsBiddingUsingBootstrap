@@ -17,7 +17,6 @@ namespace CarsBiddingUsingBootstrap.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cars_Info()
         {
-            this.Biddings = new HashSet<Bidding>();
             this.Insurances = new HashSet<Insurance>();
             this.NotificationHistories = new HashSet<NotificationHistory>();
         }
@@ -27,7 +26,7 @@ namespace CarsBiddingUsingBootstrap.Models
         public string ColorOfCar { get; set; }
         public string EngineCapacity { get; set; }
         public Nullable<int> YearOfManufacture { get; set; }
-        public Nullable<int> InitialPrice { get; set; }
+        public Nullable<double> InitialPrice { get; set; }
         public string CarChecking { get; set; }
         public string Description { get; set; }
         public string MainPhoto { get; set; }
@@ -46,8 +45,7 @@ namespace CarsBiddingUsingBootstrap.Models
         public Nullable<System.DateTime> Create_Date { get; set; }
         public Nullable<bool> Timer_Status { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bidding> Biddings { get; set; }
+        public virtual Bidding Bidding { get; set; }
         public virtual User User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Insurance> Insurances { get; set; }

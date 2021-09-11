@@ -19,7 +19,7 @@ namespace CarsBiddingUsingBootstrap.Models
         public int CarId { get; set; }
         public Nullable<bool> IsInsuranceForPurchase { get; set; }
     
-        public virtual Cars_Info Cars_Info { get; set; }
         public virtual User User { get; set; }
+        public virtual Cars_Info Cars_Info { get; set; }
     }
 }

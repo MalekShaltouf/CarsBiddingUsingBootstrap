@@ -169,11 +169,13 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         /*[start 2]*/
                         /* we wants fill column bidding table */
 
-                        Bidding bd = new Bidding();
-                        bd.CarId = CarIdForNewCar;
-                        bd.UserId = UserId;
-                        bd.CurrentPrice = carsInfoViewModel.InitialPrice;
-
+                        Bidding bd = new Bidding() 
+                        {
+                            CarId = CarIdForNewCar,
+                            UserId = UserId,
+                            UserType = Convert.ToInt32(BiddingUserType.CarOwner),
+                            CurrentPrice = carsInfoViewModel.InitialPrice
+                        };
 
                         /*[end 2]*/
                         /*[Start 1]*/

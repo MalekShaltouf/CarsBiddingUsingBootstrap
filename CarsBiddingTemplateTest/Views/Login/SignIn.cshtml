@@ -38,7 +38,7 @@
 @section Scripts {
     <script src="~/Scripts/TemplateFromStyle.js"></script>
     <script>
-        let requestType = "@ViewBag.RequestType",
+        let requestType = "@Model.RequestType",
             type = "@Model.Type",
             msg = "@Model.Msg";
         if (requestType == 'POST')

@@ -1,40 +1,50 @@
-﻿@using CarsBiddingUsingBootstrap.Classes
+﻿@using PagedList;
+@using PagedList.Mvc;
+@using CarsBiddingUsingBootstrap.Classes
 @using CarsBiddingUsingBootstrap.Models.ViewModelClasses
-@model List<NotificationHistoryViewModel>
+@model IPagedList<NotificationHistoryViewModel>
 @{
-    ViewBag.Title = "NotificationDetails";
+    ViewBag.Title = CarsBiddingUsingBootstrap.Localization.NotificationDetails;
+    int counter = 1;
 }
-
 <section class="Notification-Details">
     <div class="container">
-        <h3 class="agileits-title PageHeading">NotificationDetails<span class="w3lshr-line"></span></h3>
+        <h3 class="agileits-title PageHeading">@CarsBiddingUsingBootstrap.Localization.NotificationDetails<span class="w3lshr-line"></span></h3>
         <div class="row">
             @foreach (NotificationHistoryViewModel notiHis in Model)
             {
                 <div class="col-md-12">
-                    <div class="notifications-details-card">
+                    <div class="notifications-details-card @(counter == 1 ? "animate__animated animate__pulse" : "")">
                         <img src="@Url.Content("~/CarImage/BMW/MainPhoto/prc.jpg")" alt="Main img">
                         <div class="notifications-details-body">
-                            <h3>Your Car Sold Successfully</h3>
+                            <h3>@notiHis.Eng_ArMessage</h3>
                             <div class="notifications-details-text">
                                 @if (notiHis.NotificationType == Convert.ToInt32(NotificationType.CarOwnerNotification))
                                 {
-                                    @Html.Partial("~/Views/NotificationHistory/CarWinnerInfo.cshtml", notiHis.carWinnerDetails)
+                                    //that mean => that we need to return User Winner info for Car owner
+                                    Html.RenderAction("GetCarWinnerInfo", "NotificationHistory", new { WinnerUserId = notiHis.WinnerUserId });
                                 }
                                 else
                                 {
-                                    @Html.Partial("~/Views/NotificationHistory/CarOwnerInfo.cshtml", notiHis.carOwnerDetails)
+                                    //that mean => that we need to return Car Owner info for User that win the car
+                                    Html.RenderAction("GetCarOwnerInfo", "NotificationHistory", new { CarId = notiHis.CarId });
                                 }
-                                <div><label class="column-name">Final Price</label><span class="colon">:</span><label class="column-value">@notiHis.FinalPrice</label></div>
+                                <div><label class="column-name">@CarsBiddingUsingBootstrap.Localization.FinalPrice</label><span class="colon">:</span><label class="column-value">@notiHis.FinalPrice</label></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                counter++;
             }
+        </div>
+        <div class="text-center">
+            @Html.PagedListPager(Model, Page => Url.Action("NotificationDetails", "NotificationHistory", new { page = Page }), new PagedListRenderOptions()
+       {
+           Display = PagedListDisplayMode.IfNeeded,
+           DisplayPageCountAndCurrentLocation = true,
+       })
         </div>
     </div>
 </section>
-
-
 
 

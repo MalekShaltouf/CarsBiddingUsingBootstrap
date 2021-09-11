@@ -45,6 +45,17 @@
             $("#InsuranceDetails").removeClass("in");
         }
     });
+    $("#BiddingProcessForm").on("submit", function (e) {
+        debugger;
+        if ($("#BiddingProcessForm").valid()) {
+            /*
+             * when click on confirmBtn & the
+             * FormValidation was valid so we want to close
+             * BiddingProcessModal
+             */
+            $('#BiddingProcess').modal('hide');
+        }
+    });
     $(".CarDetails").on("click", "#biddingBtn", function () {
         /*
          * here we want to check if user Authoirze or not
@@ -154,7 +165,7 @@
     $('#timer').countdown(endDate).on('finish.countdown', function (event) {
         //step1:we want to remove BiddingProcess Btn and display warning alert
         $("#biddingBtn").remove();
-        addNotification("WARNING", $("#TimerStatusLocalization").data("timer-status-localization"));
+       
      
         //step2:we want to make Timer_Status flag false
         $.ajax({
@@ -163,41 +174,54 @@
             data: { CarId: $("#CarId").val() },
             success: function (response)
             {
+                if (response.Type == "ERROR") {
+                    addNotification("ERROR", response.Msg);
+                }
+                else
+                {
+                    /*
+                     * we want to send notification to Owner Car & Buyer winning car
+                     * case 1 => when Car Sold Successfully we will do:
+                     * A- send Notification for onwer car that car sold Successfully and send last price
+                     * & buyer info
+                     *
+                     * B- send Notification for Buyer winning that he is won & owner car info
+                     *
+                     * case 2 => if car not sold successfully (The car did not receive any bid)
+                     * will send notification for onwer car that Failed to sell the car
+                     *
+                     * case 3 => when the wining buyer cancel the sell Process
+                     *
+                     * case4 => when the owner car cancel sell Process after become there are wininng buyer
+                     *
+                     * case 3 & case 4 will be handing in future
+                     */
+                    generateNotification();
+                }
             }
         });
-
-        
-        /*
-         * we want to send notification to Owner Car & Buyer winning car
-         * case 1 => when Car Sold Successfully we will do:
-         * A- send Notification for onwer car that car sold Successfully and send last price 
-         * & buyer info
-         * 
-         * B- send Notification for Buyer winning that he is won & owner car info
-         * 
-         * case 2 => if car not sold successfully (The car did not receive any bid)
-         * will send notification for onwer car that Failed to sell the car
-         * 
-         * case 3 => when the wining buyer cancel the sell Process
-         * 
-         * case4 => when the owner car cancel sell Process after become there are wininng buyer
-         * 
-         * case 3 & case 4 will be handing in future 
-         */
-
-        //case1 => A
-        generateNotificationForOwner();
     });
 });
-function generateNotificationForOwner()
+function generateNotification()
 {
     $.ajax({
-        url: '/EndTimerOperations/GenerateNotificationForOwner',
+        url: '/EndTimerOperations/GenerateNotification',
         type: 'GET',
-        data: { CarId: $("#CarId").val() },
+        data: { CarId: $("#CarId").val()},
         success: function (response)
         {
-
+            let Type = null,
+                Msg = null;
+            if (response.Type == "ERROR") {
+                Type = "ERROR";
+                Msg = response.Msg;
+            }
+            else
+            {
+                Type = "WARNING";
+                Msg = $("#TimerStatusLocalization").data("timer-status-localization");
+            }
+            addNotification(Type, Msg);
         }
     });
 }
@@ -208,7 +232,6 @@ function isTimerEnd()
         type: 'GET',
         data: { CarId: $("#CarId").val() },
         success: function (response) {
-            debugger;
             if (response)
             {
                 addNotification("WARNING", $("#TimerStatusLocalization").data("timer-status-localization"));
@@ -218,21 +241,18 @@ function isTimerEnd()
     });
 }
 function BiddingOnSuccess(response) {
-    if (response.Type == "SUCCESS") {
-        document.getElementById("currentPriceHeader").textContent = response.NewPrice;
-    }
-    document.getElementById("NewPrice").value = '';
-    document.querySelector("#BiddingProcess .modal-body .form-group").classList.remove("not-empty");
     addNotification(response.Type, response.Msg);
 }
 
 function PurchaseOnSuccess(response) {
     if (response.Type == "SUCCESS") {
-        document.querySelector("#NotificationPopUp #CloseBtn").onclick = function () {
-            /*
-            * we want to get latest Current Price
-            * in order display it in BiddingProcess Bootstrap Modal
-            */
+        $("#NotificationPopUp #CloseBtn").one("click", function ()
+        {
+            //why we use $("#NotificationPopUp #CloseBtn").one("click") event?? you will the explain at bottom of page
+           /*
+           * we want to get latest Current Price
+           * in order display it in BiddingProcess Bootstrap Modal
+           */
             $.ajax({
                 url: '/BiddingProcess/LatestPrice',
                 type: 'GET',
@@ -250,7 +270,7 @@ function PurchaseOnSuccess(response) {
                 keyboard: false
             });
             //[End]
-        }
+        });
     }
     addNotification(response.Type, response.Msg);
 }
@@ -259,3 +279,21 @@ let type = document.querySelector("#NotificationParameterLocalization").getAttri
 if (type == "ERROR") {
     addNotification(type, msg);
 }
+
+
+/*
+ * why we use $("#NotificationPopUp #CloseBtn").one("click") event??
+ * 
+ * as a first $("element").one("click") => this event occured just one time
+ * we use it because we want to execute this event just one time(just when 
+ * PurchaseOnSuccess return  response.Type = "SUCCESS") so if we use
+ * normal click event such as $("#NotificationPopUp #CloseBtn").click("click") => so 
+ * yes after PurchaseOnSuccess return  response.Type = "SUCCESS" will execute the click event
+ * but for every time we click on $("#NotificationPopUp #CloseBtn") not just one time
+ * for example after that will show Warning popup => so when click on close 
+ * will execute click event again although we don't want that so for that reason we use 
+ * $("#NotificationPopUp #CloseBtn").one("click") event
+ * 
+ * summary we want to execute the code that exists in $("#NotificationPopUp #CloseBtn").one("click") 
+ * function for one time so for that reason we used it
+ */

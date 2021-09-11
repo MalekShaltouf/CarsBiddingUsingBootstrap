@@ -25,10 +25,10 @@ namespace CarsBiddingUsingBootstrap.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Insurance> Insurances { get; set; }
+        public virtual DbSet<NotificationHistory> NotificationHistories { get; set; }
+        public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Bidding> Biddings { get; set; }
         public virtual DbSet<Cars_Info> Cars_Info { get; set; }
-        public virtual DbSet<Insurance> Insurances { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<NotificationHistory> NotificationHistories { get; set; }
     }
 }

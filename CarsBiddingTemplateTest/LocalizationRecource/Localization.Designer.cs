@@ -484,6 +484,15 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Final Price.
+        /// </summary>
+        public static string FinalPrice {
+            get {
+                return ResourceManager.GetString("FinalPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
         public static string FirstName {
@@ -844,6 +853,42 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Notification Details.
+        /// </summary>
+        public static string NotificationDetails {
+            get {
+                return ResourceManager.GetString("NotificationDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Owner Email.
+        /// </summary>
+        public static string OwnerEmail {
+            get {
+                return ResourceManager.GetString("OwnerEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Owner Name.
+        /// </summary>
+        public static string OwnerName {
+            get {
+                return ResourceManager.GetString("OwnerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Owner Phone Number.
+        /// </summary>
+        public static string OwnerPhoneNumber {
+            get {
+                return ResourceManager.GetString("OwnerPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string Password {
@@ -1069,6 +1114,15 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There are&apos;nt any notification..
+        /// </summary>
+        public static string ThereAre_ntAnyNotification_ {
+            get {
+                return ResourceManager.GetString("ThereAre\'ntAnyNotification.", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The Remaining Time For Auction Ending.
         /// </summary>
         public static string TheRemainingTimeForAuctionEnding {
@@ -1146,6 +1200,33 @@ namespace CarsBiddingUsingBootstrap {
         public static string WEEKS {
             get {
                 return ResourceManager.GetString("WEEKS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Winner Email.
+        /// </summary>
+        public static string WinnerEmail {
+            get {
+                return ResourceManager.GetString("WinnerEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Winner Name.
+        /// </summary>
+        public static string WinnerName {
+            get {
+                return ResourceManager.GetString("WinnerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Winner Phone Number.
+        /// </summary>
+        public static string WinnerPhoneNumber {
+            get {
+                return ResourceManager.GetString("WinnerPhoneNumber", resourceCulture);
             }
         }
         
