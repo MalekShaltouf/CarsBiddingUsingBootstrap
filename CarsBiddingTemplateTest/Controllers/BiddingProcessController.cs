@@ -24,6 +24,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
                 {
                     using (CarsBiddingEntities context = new CarsBiddingEntities())
                     {
+                        int CurrentUser = int.Parse(User.Identity.Name.Split('|').LastOrDefault());
                         Bidding PreviousbiddingProcess = context.Biddings.AsNoTracking().SingleOrDefault(bid => bid.CarId == biddingModel.CarId);
                         /*
                          * why we used AsNoTracking()??
@@ -39,7 +40,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
                          */
                         Bidding bidding = new Bidding()
                         {
-                            UserId = int.Parse(User.Identity.Name.Split('|').LastOrDefault()),
+                            UserId = CurrentUser,
                             CarId = biddingModel.CarId,
                             UserType = Convert.ToInt32(BiddingUserType.LastUserBidToCar),
                             CurrentPrice = biddingModel.NewPrice
@@ -48,7 +49,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         context.SaveChanges();
 
                         /*
-                         * after any user increase car price and there are previsou user
+                         * after any user increase car price and there are previous user
                          * also increase on car
                          * example to explain => suppose the owner he want enter car with initial 
                          * price = 5000 then =>UserA => increase price to 6000 then 
@@ -89,8 +90,13 @@ namespace CarsBiddingUsingBootstrap.Controllers
                             NotificationHistory previoususernotification = NotificationHistoryViewModel.PopulateNotificationInfo(previoususerid, carmodel.CarId, englishmessage, nativemessage, carmodel.MainPhoto);
                             context.NotificationHistories.Add(previoususernotification);
                             context.SaveChanges();
-                        }
 
+                            /*
+                             * after gnerate new Notification we want to refresh UserNotification Menu
+                             * for Current User so we will refresh AllUserNotification static property
+                             */
+                            //NotificationHistoryViewModel.PopulateAllUserNotificationInMemory(CurrentUser);
+                        }
                         biddingModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
                         biddingModel.Msg = CarsBiddingUsingBootstrap.Localization.BidProcessSuccessfully;
                     }

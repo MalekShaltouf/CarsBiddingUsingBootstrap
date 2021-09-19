@@ -49,11 +49,12 @@ function addNotEmptyClass()
         });
 }
 
-function GetAllUserNotification() {
+function FillUserNotificationInNavbarUI() {
     $.ajax({
-        url: '/NotificationHistory/GetAllUserNotification',
+        url: '/NotificationHistory/FillAllUserNotificationInUI',
         type: 'GET',
         success: function (response) {
+            debugger;
             //the response represent notificationHistoryUI object
 
             //step1:fill Notification in navbar <ul>

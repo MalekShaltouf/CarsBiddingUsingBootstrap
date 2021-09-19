@@ -2011,3 +2011,48 @@ Message: Exception of type 'System.Exception' was thrown.
 ExceptionTrackStack: at CarsBiddingUsingBootstrap.Controllers.EndTimerOperationsController.GenerateNotification(Int32 CarId) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\EndTimerOperationsController.cs:line 62
 Date: 9/8/2021 10:51:09 PM
 ===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingUsingBootstrap.Models.ViewModelClasses.NotificationHistoryViewModel.<>c.<PopulateAllUserNotification>b__66_0(NotificationHistory noti) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Models\ViewModelClasses\NotificationHistoryViewModel.cs:line 79
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Models.ViewModelClasses.NotificationHistoryViewModel.PopulateAllUserNotification() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Models\ViewModelClasses\NotificationHistoryViewModel.cs:line 79
+   at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(SignInViewModel signInModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 120
+Date: 9/11/2021 12:10:26 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingUsingBootstrap.Models.ViewModelClasses.NotificationHistoryViewModel.<>c.<PopulateAllUserNotification>b__66_0(NotificationHistory noti) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Models\ViewModelClasses\NotificationHistoryViewModel.cs:line 79
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Models.ViewModelClasses.NotificationHistoryViewModel.PopulateAllUserNotification() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Models\ViewModelClasses\NotificationHistoryViewModel.cs:line 79
+   at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(SignInViewModel signInModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 120
+Date: 9/11/2021 12:11:53 PM
+===========================================================================
+PageName: [Post] Sign In action,Login Controller
+Message: Input string was not in a correct format.
+ExceptionTrackStack: at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CarsBiddingUsingBootstrap.Models.ViewModelClasses.NotificationHistoryViewModel.<>c.<PopulateAllUserNotification>b__66_0(NotificationHistory noti) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Models\ViewModelClasses\NotificationHistoryViewModel.cs:line 79
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.OrderedEnumerable`1.<GetEnumerator>d__1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CarsBiddingUsingBootstrap.Models.ViewModelClasses.NotificationHistoryViewModel.PopulateAllUserNotification() in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Models\ViewModelClasses\NotificationHistoryViewModel.cs:line 79
+   at CarsBiddingUsingBootstrap.Controllers.LoginController.SignIn(SignInViewModel signInModel) in C:\Users\DELL\source\repos\CarsBiddingTemplateTest\CarsBiddingTemplateTest\Controllers\LoginController.cs:line 120
+Date: 9/11/2021 12:12:30 PM
+===========================================================================

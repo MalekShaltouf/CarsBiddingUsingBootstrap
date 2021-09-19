@@ -122,6 +122,12 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         context.NotificationHistories.Add(CaWinnerNotificationHistory);
                     }
                     context.SaveChanges();
+                    /*
+                     * after gnerate new Notification we want to refresh UserNotification Menu
+                     * for current user so we will refresh AllUserNotification static property
+                     */
+                    int CurrentUser = int.Parse(User.Identity.Name.Split('|').LastOrDefault());
+                    NotificationHistoryViewModel.PopulateAllUserNotificationInMemory(CurrentUser);
                     carModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
                 }
             }

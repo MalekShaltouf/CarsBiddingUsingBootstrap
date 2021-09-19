@@ -111,7 +111,13 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         }
                         if (user != null)
                         {
+                            //here mean that user authenticated
                             FormsAuthentication.SetAuthCookie(user.UserName + "|" + user.UserId, true);
+                            /*
+                             * after the user become authenticated we want to get user notification 
+                             * and store it in Memory(static property)
+                             */
+                            NotificationHistoryViewModel.PopulateAllUserNotificationInMemory(user.UserId);
                             return RedirectToAction("Index", "Home");
 
                         }

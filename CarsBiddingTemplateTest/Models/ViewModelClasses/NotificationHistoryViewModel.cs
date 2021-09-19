@@ -23,6 +23,7 @@ namespace CarsBiddingUsingBootstrap.Models.ViewModelClasses
         public int OwnerUserId { get; set; }
         public CarOwnerDetails carOwnerDetails { get; set; }
         public CarWinnerDetails carWinnerDetails { get; set; }
+        public static List<NotificationHistoryViewModel> AllUserNotification { get; set; }
 
         public static void makeNotificationOpened(string NotificationId)
         {
@@ -62,6 +63,38 @@ namespace CarsBiddingUsingBootstrap.Models.ViewModelClasses
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "PopulateNotificationInfo function,NotificationHistoryViewModel class");
                 throw ex;
+            }
+        }
+
+        public static void PopulateAllUserNotificationInMemory(int UserId) 
+        {
+            try
+            {
+                using (CarsBiddingEntities context = new CarsBiddingEntities())
+                {
+                    /*
+                    * Why we are use AsEnumerable()?
+                    * Entity Framework is trying to execute your projection on the SQL side,
+                    * where there is no equivalent to GetTimeSince(Convert.ToDateTime(noti.Time)) or int.Parse() functions in Database.
+                    * so wo we need to use AsEnumerable() to force evaluation of that part with Linq to Objects.
+                    */
+                    AllUserNotification = context.NotificationHistories.AsEnumerable().Where(noti => noti.UserId == UserId).Select(noti => new NotificationHistoryViewModel()
+                    {
+                        NotificationId = noti.NotificationId,
+                        UserId = noti.UserId,
+                        EnglishMessage = noti.EnglishMessage,
+                        NativeMessage = noti.NativeMessage,
+                        Eng_ArMessage = Localization.isRTL == "true" ? noti.NativeMessage : noti.EnglishMessage,
+                        MainPhoto = noti.MainPhoto,
+                        NotificationStatus = noti.NotificationStatus,
+                        Time = noti.Time,
+                        TimeSince = Helper.GetTimeSince(Convert.ToDateTime(noti.Time))
+                    }).OrderByDescending(noti => noti.Time).ToList();
+                }
+            }
+            catch (Exception ex) 
+            {
+                ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[GET] PopulateAllUserNotificationInMemory function,NotificationHistoryViewModel Class");
             }
         }
     }

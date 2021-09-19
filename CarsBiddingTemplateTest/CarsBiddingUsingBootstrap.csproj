@@ -336,7 +336,7 @@
     <Content Include="Views\Car\CarDetails.cshtml" />
     <Content Include="Views\Gallery\CarPanel.cshtml" />
     <Content Include="Views\Gallery\PagingCarPanel.cshtml" />
-    <Content Include="Views\NotificationHistory\GetAllUserNotification.cshtml" />
+    <Content Include="Views\NotificationHistory\FillAllUserNotificationInUI.cshtml" />
     <Content Include="Views\NotificationHistory\CarWinnerInfo.cshtml" />
     <Content Include="Views\NotificationHistory\CarOwnerInfo.cshtml" />
     <Content Include="Views\NotificationHistory\NotificationDetails.cshtml" />

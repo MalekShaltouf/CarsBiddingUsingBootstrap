@@ -195,7 +195,7 @@
                      *
                      * case 3 & case 4 will be handing in future
                      */
-                    generateNotification();
+                     generateNotification();
                 }
             }
         });
