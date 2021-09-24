@@ -194,6 +194,11 @@
                      * case4 => when the owner car cancel sell Process after become there are wininng buyer
                      *
                      * case 3 & case 4 will be handing in future
+                     * 
+                     * case 5 => after any user increase car price and there are previous user
+                     * also increase on car so we want to send to previous user(UserA)
+                     * notification that car price has been increased => we handled it in 
+                     * BiddingProcess Controller(in BiddingProcess [POST] action)
                      */
                     generateNotification();
                 }

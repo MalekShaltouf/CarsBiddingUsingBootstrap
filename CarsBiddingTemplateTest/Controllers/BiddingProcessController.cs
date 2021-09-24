@@ -48,7 +48,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         context.SaveChanges();
 
                         /*
-                         * after any user increase car price and there are previsou user
+                         * after any user increase car price and there are previous user
                          * also increase on car
                          * example to explain => suppose the owner he want enter car with initial 
                          * price = 5000 then =>UserA => increase price to 6000 then 
