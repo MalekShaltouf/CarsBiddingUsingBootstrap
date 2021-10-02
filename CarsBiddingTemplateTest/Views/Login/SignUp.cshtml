@@ -107,12 +107,13 @@
 
         let requestType = "@Model.RequestType",
             type = "@Model.Type",
-            msg = "@Model.Msg";
+            msg = "@Model.Msg"
+            localizedType = "@Model.LocalizedType";
         if (requestType == 'POST')
         {
-            addNotification(type, msg);
+            addNotification(type, msg, localizedType);
 
-            if (type == "@CarsBiddingUsingBootstrap.Localization.SUCCESS") {
+            if (type == "SUCCESS") {
                 document.getElementById("CloseBtn").onclick = function () {
                     window.location.href = "@Url.Action("SignIn","Login")";
                 }

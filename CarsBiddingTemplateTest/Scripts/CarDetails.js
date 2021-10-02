@@ -135,7 +135,7 @@
                     });
                 }
                 else {
-                    addNotification("ERROR", document.querySelector('#BiddingProcessErrorLocalization').getAttribute("data-bidding-process-msg"));
+                    addNotification("ERROR", document.querySelector('#BiddingProcessErrorLocalization').getAttribute("data-bidding-process-msg"), document.getElementById("ErrorLocalized").textContent);
                 }
             }
         });
@@ -174,8 +174,8 @@
             success: function (response)
             {
                 if (response.Type == "ERROR") {
-                    addNotification("ERROR", response.Msg);
-                }
+                    addNotification("ERROR", response.Msg, document.getElementById("ErrorLocalized").textContent);
+                } 
                 else
                 {
                     /*
@@ -214,18 +214,23 @@ function generateNotification()
         data: { CarId: $("#CarId").val()},
         success: function (response)
         {
+            debugger;
             let Type = null,
-                Msg = null;
+                Msg = null,
+                localizedType = null;
             if (response.Type == "ERROR") {
                 Type = "ERROR";
+                localizedType = response.localizedType;
                 Msg = response.Msg;
+                
             }
             else
             {
                 Type = "WARNING";
-                Msg = $("#TimerStatusLocalization").data("timer-status-localization");
+                localizedType = response.localizedType;
+                Msg = response.Msg;
             }
-            addNotification(Type, Msg);
+            addNotification(Type, Msg, localizedType);
         }
     });
 }
@@ -238,14 +243,14 @@ function isTimerEnd()
         success: function (response) {
             if (response)
             {
-                addNotification("WARNING", $("#TimerStatusLocalization").data("timer-status-localization"));
+                addNotification("WARNING", $("#TimerStatusLocalization").data("timer-status-localization"), $("#WarningLocalized").text());
                 $("#biddingBtn").remove();
             }
         }
     });
 }
 function BiddingOnSuccess(response) {
-    addNotification(response.Type, response.Msg);
+    addNotification(response.Type, response.Msg, response.LocalizedType);
 }
 function isUserCarOwner()
 {
@@ -317,12 +322,12 @@ function PurchaseOnSuccess(response) {
             //[End]
         });
     }
-    addNotification(response.Type, response.Msg);
+    addNotification(response.Type, response.Msg, response.LocalizedType);
 }
 let type = document.querySelector("#NotificationParameterLocalization").getAttribute("data-type"),
     msg = document.querySelector("#NotificationParameterLocalization").getAttribute("data-msg");
 if (type == "ERROR") {
-    addNotification(type, msg);
+    addNotification(type, msg, document.getElementById("ErrorLocalized").textContent);
 }
 
 

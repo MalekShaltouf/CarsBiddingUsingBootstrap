@@ -70,11 +70,12 @@
     <!-- //pop-up-script -->
     <script>
         let type = '@ViewBag.Type',
-                msg = '@ViewBag.Msg';
+            msg = '@ViewBag.Msg',
+            localizedType = "@ViewBag.LocalizedType";
 
         if (type == "@CarsBiddingUsingBootstrap.Localization.ERROR")
         {
-           addNotification(type, msg);
+           addNotification(type, msg, localizedType);
         }
         function details(eventSource) {
             let carId = eventSource.getAttribute("data-car-id");
@@ -87,10 +88,10 @@
                 'noneText': '@CarsBiddingUsingBootstrap.Localization.SearchType',
             });
         });
-        
+
         $(".Main-Gallery").on("click", ".pagination li", function () {
             /*
-             * here we used this click event way 
+             * here we used this click event way
              * $(".Main-Gallery").on("click", ".pagination li", function (){}); instead of
              * $(".pagination li").click(function(){});
              * in order ensure click event keeping working after ajax request
@@ -107,7 +108,7 @@
                 success: function (data) {
                     if (typeof data == "object") {
                         //here mean that occured error in action so we want to display it
-                        addNotification("ERROR", data);
+                        addNotification("ERROR", data,@CarsBiddingUsingBootstrap.Localization.ERROR);
                     }
                     else
                     {

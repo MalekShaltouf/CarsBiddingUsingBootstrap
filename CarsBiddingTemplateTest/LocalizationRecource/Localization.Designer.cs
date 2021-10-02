@@ -106,6 +106,24 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Any electronic process aimed at reducing the time and effort on the user, and thus Bidding Cars aims to speed up the process of selling cars in less time and effort on the user..
+        /// </summary>
+        public static string AnyElectronicProcessAimedAtReducingThe {
+            get {
+                return ResourceManager.GetString("AnyElectronicProcessAimedAtReducingThe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arabic.
+        /// </summary>
+        public static string Arabic {
+            get {
+                return ResourceManager.GetString("Arabic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Auction Time Ended..
         /// </summary>
         public static string AuctionTimeEnded {
@@ -223,6 +241,15 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cars Bidding.
+        /// </summary>
+        public static string CarsBidding {
+            get {
+                return ResourceManager.GetString("CarsBidding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your {0} Car sold successfully..
         /// </summary>
         public static string CarSoldSuccessfully {
@@ -237,6 +264,15 @@ namespace CarsBiddingUsingBootstrap {
         public static string CarType {
             get {
                 return ResourceManager.GetString("CarType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CB.
+        /// </summary>
+        public static string CB {
+            get {
+                return ResourceManager.GetString("CB", resourceCulture);
             }
         }
         
@@ -448,6 +484,24 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        public static string English {
+            get {
+                return ResourceManager.GetString("English", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your Email....
+        /// </summary>
+        public static string EnterYourEmail {
+            get {
+                return ResourceManager.GetString("EnterYourEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ERROR.
         /// </summary>
         public static string ERROR {
@@ -633,6 +687,15 @@ namespace CarsBiddingUsingBootstrap {
         public static string InsurancePaidSuccessfully {
             get {
                 return ResourceManager.GetString("InsurancePaidSuccessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to is a system directed mainly to those who want to sell or buy their used cars through an auction.
+        /// </summary>
+        public static string IsASystemDirectedMainlyToThoseWhoWantToSellOrBuyTheirUsedCarsThroughAnAuction {
+            get {
+                return ResourceManager.GetString("IsASystemDirectedMainlyToThoseWhoWantToSellOrBuyTheirUsedCarsThroughAnAuction", resourceCulture);
             }
         }
         
@@ -1087,6 +1150,24 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Subscribe.
+        /// </summary>
+        public static string Subscribe {
+            get {
+                return ResourceManager.GetString("Subscribe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscribe Our News letter.
+        /// </summary>
+        public static string SubscribeOurNewsletter {
+            get {
+                return ResourceManager.GetString("SubscribeOurNewsletter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SUCCESS.
         /// </summary>
         public static string SUCCESS {
@@ -1128,6 +1209,15 @@ namespace CarsBiddingUsingBootstrap {
         public static string TheRemainingTimeForAuctionEnding {
             get {
                 return ResourceManager.GetString("TheRemainingTimeForAuctionEnding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The system of sale and purchase of used cars by auction,is a system directed mainly to those who want to sell or buy their used cars through an auction. Working on the system of buying and selling by bidding, solve problems in other traditional systems, such as: Credibility and seriousness in selling and buying.
+        /// </summary>
+        public static string TheSystemOfSaleAndPurchaseOfUsedCarsByAuctionIsASyst {
+            get {
+                return ResourceManager.GetString("TheSystemOfSaleAndPurchaseOfUsedCarsByAuctionIsASyst", resourceCulture);
             }
         }
         
@@ -1200,6 +1290,15 @@ namespace CarsBiddingUsingBootstrap {
         public static string WEEKS {
             get {
                 return ResourceManager.GetString("WEEKS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What&apos;s the Cars Bidding?.
+        /// </summary>
+        public static string What_sTheCarsBidding {
+            get {
+                return ResourceManager.GetString("What\'sTheCarsBidding", resourceCulture);
             }
         }
         
@@ -1281,6 +1380,16 @@ namespace CarsBiddingUsingBootstrap {
         public static string WithoutSpaceRgexValidation {
             get {
                 return ResourceManager.GetString("WithoutSpaceRgexValidation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Working on the system of buying and selling by bidding, solve problems in other traditional systems, such as: Credibility and seriousness in selling and buying.
+        /// </summary>
+        public static string WorkingOnTheSystemOfBuyingAndSellingByBiddingSolveProblemsInOtherTraditionalSystemsSuchAsCredibilityAndSeriousnessInSellingAndBuying {
+            get {
+                return ResourceManager.GetString("WorkingOnTheSystemOfBuyingAndSellingByBiddingSolveProblemsInOtherTraditionalSyste" +
+                        "msSuchAsCredibilityAndSeriousnessInSellingAndBuying", resourceCulture);
             }
         }
         

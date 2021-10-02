@@ -157,10 +157,11 @@
     <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
     <script src="~/Scripts/TemplateFromStyle.js"></script>
     <script>
+        let errorTextLocalied = @CarsBiddingUsingBootstrap.Localization.ERROR;
         document.getElementById("NewCarForm").onsubmit = function ()
         {
             let msgNotification = "@CarsBiddingUsingBootstrap.Localization.ImageNumberValidation";
-            NewCarformValidation(msgNotification);
+            NewCarformValidation(msgNotification, errorTextLocalied);
         }
 
         document.getElementById("HowLink").onclick = function () {
@@ -171,18 +172,18 @@
                                 ${"@CarsBiddingUsingBootstrap.Localization.MainPhotoField"}|${"@CarsBiddingUsingBootstrap.Localization.MainPhotoToolTip"}|
                                 ${"@CarsBiddingUsingBootstrap.Localization.AddNewCarFigure"}`;
 
-            HowLinkEvent(ModelContent);
+            HowLinkEvent(ModelContent, errorTextLocalied);
         };
 
         let requestType = "@Model.RequestType",
             type = "@Model.Type",
-            msg = "@Model.Msg";
+            msg = "@Model.Msg",
+            localizedType = "@Model.LocalizedType";
         if (requestType == 'POST') {
             addNotEmptyClass();
-            debugger;
             if (type != '')
             {
-                addNotification(type, msg);
+                addNotification(type, msg, localizedType);
                 if (type == "@CarsBiddingUsingBootstrap.Localization.SUCCESS") {
                     document.getElementById("CloseBtn").onclick = function () {
                         window.location.href = "@Url.Action("Gallery", "Gallery")";

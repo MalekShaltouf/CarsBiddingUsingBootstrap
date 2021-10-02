@@ -132,6 +132,12 @@
   <data name="AddNewCarSuccessfully" xml:space="preserve">
     <value>.تم إضافة سيارة جديدة للمعرض بنجاح</value>
   </data>
+  <data name="AnyElectronicProcessAimedAtReducingThe" xml:space="preserve">
+    <value>اي عملية إلكترونية تهدف إلى تقليل الوقت والجهد على المستخدم،وبالتالي فإن استخدام نظامنايعمل على تسريع عملية بيع او شراء السيارات في وقت وجهد قليل</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>عربي</value>
+  </data>
   <data name="AuctionTimeEnded" xml:space="preserve">
     <value>انتهى وقت المزايدة</value>
   </data>
@@ -171,11 +177,17 @@
   <data name="Cars Bidding" xml:space="preserve">
     <value>مزاد السيارات</value>
   </data>
+  <data name="CarsBidding" xml:space="preserve">
+    <value>بيع وشراء السيارات عن طريق المزايدة</value>
+  </data>
   <data name="CarSoldSuccessfully" xml:space="preserve">
     <value>.{0} تم بيع سيارة</value>
   </data>
   <data name="CarType" xml:space="preserve">
     <value>نوع السيارة</value>
+  </data>
+  <data name="CB" xml:space="preserve">
+    <value>مزاد السيارات</value>
   </data>
   <data name="CheckingCar" xml:space="preserve">
     <value>فحص السيارة</value>
@@ -246,6 +258,12 @@
   <data name="EngineCar" xml:space="preserve">
     <value>محرك السيارة</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>إنجليزي</value>
+  </data>
+  <data name="EnterYourEmail" xml:space="preserve">
+    <value>ادخل البريد الإلكتروني</value>
+  </data>
   <data name="ERROR" xml:space="preserve">
     <value>خطأ</value>
   </data>
@@ -308,6 +326,9 @@
   </data>
   <data name="InsurancePaidSuccessfully" xml:space="preserve">
     <value>.تم دفع التأمين بنجاح ، يمكنك الآن المشاركة في عملية المزايدة</value>
+  </data>
+  <data name="IsASystemDirectedMainlyToThoseWhoWantToSellOrBuyTheirUsedCarsThroughAnAuction" xml:space="preserve">
+    <value>هو نظام موجه بشكل أساسي الى أولئك الذين يرغبون في بيع اوشراء السيارات المستعملة من خلال مزاد مدته 7 أيام</value>
   </data>
   <data name="isRTL" xml:space="preserve">
     <value>true</value>
@@ -462,6 +483,12 @@
   <data name="Sorry" xml:space="preserve">
     <value>!نأسف</value>
   </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>إشترك</value>
+  </data>
+  <data name="SubscribeOurNewsletter" xml:space="preserve">
+    <value>إشترك ليصلك كل جديد</value>
+  </data>
   <data name="SUCCESS" xml:space="preserve">
     <value>نجاح</value>
   </data>
@@ -476,6 +503,9 @@
   </data>
   <data name="TheRemainingTimeForAuctionEnding" xml:space="preserve">
     <value>الوقت المتبقي لإنتهاء المزاد</value>
+  </data>
+  <data name="TheSystemOfSaleAndPurchaseOfUsedCarsByAuctionIsASyst" xml:space="preserve">
+    <value>نظام بيع وشراء السيارات المستعملة عن طريق المزايدة،هو نظام موجه بشكل أساسي الى أولئك الذين يرغبون في بيع اوشراء السيارات المستعملة من خلال مزاد مدته 7 أيام، استخدامك لنظامنا سوف يعمل على حل المشاكل التقليدية التي تواجه العملاء عند بيع او شراء السيارات مثل ضمان المصدافية والجدية في عملية البيع والشراء</value>
   </data>
   <data name="TypeOfTransmissionGear" xml:space="preserve">
     <value>نوع ناقل الحركة</value>
@@ -500,6 +530,9 @@
   </data>
   <data name="WEEKS" xml:space="preserve">
     <value>منذ {0} أسبوع</value>
+  </data>
+  <data name="What'sTheCarsBidding" xml:space="preserve">
+    <value>ما هو نظام بيع السيارات عن طريق المزايدة؟</value>
   </data>
   <data name="WinnerEmail" xml:space="preserve">
     <value>البريد الإلكتروني للرابح</value>
@@ -527,6 +560,9 @@
   </data>
   <data name="WithoutSpaceRgexValidation" xml:space="preserve">
     <value>.يجب إدخال {0} بدون فراغ</value>
+  </data>
+  <data name="WorkingOnTheSystemOfBuyingAndSellingByBiddingSolveProblemsInOtherTraditionalSystemsSuchAsCredibilityAndSeriousnessInSellingAndBuying" xml:space="preserve">
+    <value>استخدامك لنظامنا سوف يعمل على حل المشاكل التقليدية التي تواجه العملاء عند بيع او شراء السيارات مثل ضمان المصدافية والجدية في عملية البيع والشراء</value>
   </data>
   <data name="YEARS" xml:space="preserve">
     <value>منذ {0} سنة</value>

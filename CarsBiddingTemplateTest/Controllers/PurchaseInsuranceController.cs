@@ -31,15 +31,17 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         context.Insurances.Add(insurance);
                         context.SaveChanges();
 
-                        notification.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
-                        notification.Msg = CarsBiddingUsingBootstrap.Localization.InsurancePaidSuccessfully;
+                        notification.Type = "SUCCESS";
+                        notification.LocalizedType = Localization.SUCCESS;
+                        notification.Msg = Localization.InsurancePaidSuccessfully;
                     }
                 }
             }
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Post] PurchaseInsurance action,PurchaseInsurance Controller");
-                notification.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                notification.Type = "ERROR";
+                notification.LocalizedType = Localization.ERROR;
                 notification.Msg = ex.Message;
             }
             

@@ -91,15 +91,17 @@ namespace CarsBiddingUsingBootstrap.Controllers
                             context.SaveChanges();
                         }
 
-                        biddingModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
-                        biddingModel.Msg = CarsBiddingUsingBootstrap.Localization.BidProcessSuccessfully;
+                        biddingModel.Type = "SUCCESS";
+                        biddingModel.LocalizedType = Localization.SUCCESS;
+                        biddingModel.Msg = Localization.BidProcessSuccessfully;
                     }
                 }
             }
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Post] BiddingProcess action,BiddingProcess Controller");
-                biddingModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                biddingModel.Type = "ERROR";
+                biddingModel.LocalizedType = Localization.ERROR;
                 biddingModel.Msg = ex.Message;
             }
             return Json(biddingModel);

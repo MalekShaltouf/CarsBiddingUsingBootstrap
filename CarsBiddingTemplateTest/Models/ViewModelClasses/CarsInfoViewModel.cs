@@ -64,7 +64,7 @@ namespace CarsBiddingUsingBootstrap.Models.ViewModelClasses
         public string CarInsurance { get; set; }
         public Nullable<double> CurrentPrice { get; set; }
         public Nullable<DateTime> Create_Date { get; set; }
-        public Nullable<DateTime> Auction_End_Date { get; set; }
+        public string Auction_End_Date { get; set; }
         public Nullable<bool> Timer_Status { get; set; }
         public Nullable<int> PageNumber { get; set; }
         public string RequestType { get; set; }

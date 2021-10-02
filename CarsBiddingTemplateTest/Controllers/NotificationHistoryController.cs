@@ -13,7 +13,7 @@ using System.Web.Mvc;
 namespace CarsBiddingUsingBootstrap.Controllers
 {
     [Authorize]
-    public class NotificationHistoryController : Controller
+    public class NotificationHistoryController : CultureController
     {
         public ActionResult GetAllUserNotification()
         {

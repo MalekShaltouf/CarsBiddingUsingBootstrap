@@ -129,6 +129,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\NotFoundStyle.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\RTL_Style.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\Sky_Style.css" />
     <Content Include="Content\style.css" />
@@ -252,10 +253,13 @@
     <Compile Include="Classes\Enumeration.cs" />
     <Compile Include="Classes\ErrorLog.cs" />
     <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Classes\LanguageManager.cs" />
     <Compile Include="Classes\WinnerOwnerCarDetails.cs" />
     <Compile Include="Controllers\BiddingProcessController.cs" />
     <Compile Include="Controllers\CarController.cs" />
+    <Compile Include="Controllers\LanguageController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CultureController.cs" />
     <Compile Include="Controllers\EndTimerOperationsController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HelperController.cs" />
@@ -265,6 +269,11 @@
     <Compile Include="Controllers\PurchaseInsuranceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizationRecource\Localization.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.ar.resx</DependentUpon>
     </Compile>
     <Compile Include="LocalizationRecource\Localization.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -359,6 +368,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LocalizationRecource\Localization.ar.resx">
       <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

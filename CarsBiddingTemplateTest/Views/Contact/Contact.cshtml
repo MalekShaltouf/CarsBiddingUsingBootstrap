@@ -58,7 +58,8 @@
     <script>
         let requestType = "@Model.RequestType",
             type = "@Model.Type",
-            msg = "@Html.Raw(Model.Msg)";
+            msg = "@Html.Raw(Model.Msg)",
+            localizedType = "@Model.LocalizedType";
         /*
          * here we use Html.Raw in order keeping html code(there are html code in msg)
          *
@@ -68,9 +69,9 @@
          */
         if (requestType == 'POST') {
 
-            addNotification(type, msg);
+            addNotification(type, msg, localizedType);
 
-            if (type == "@CarsBiddingUsingBootstrap.Localization.ERROR")
+            if (type == "ERROR")
              {
                 addNotEmptyClass();
             }

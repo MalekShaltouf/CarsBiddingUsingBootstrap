@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace CarsBiddingUsingBootstrap.Controllers
 {
-    public class GalleryController : Controller
+    public class GalleryController : CultureController
     {
         /*
          * in this controller we put Type & Msg in ViewBag
@@ -71,7 +71,8 @@ namespace CarsBiddingUsingBootstrap.Controllers
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Get] Gallery action,Gallery Controller");
-                ViewBag.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                ViewBag.Type = "ERROR";
+                ViewBag.LocalizedType = Localization.ERROR;
                 ViewBag.Msg = ex.Message;
             }
             return View();
@@ -235,7 +236,8 @@ namespace CarsBiddingUsingBootstrap.Controllers
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[POST] Gallery action,Gallery Controller");
-                ViewBag.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                ViewBag.Type = "ERROR";
+                ViewBag.LocalizedType = Localization.ERROR;
                 ViewBag.Msg = ex.Message;
             }
             return View();
@@ -359,7 +361,8 @@ namespace CarsBiddingUsingBootstrap.Controllers
         //    catch (Exception ex)
         //    {
         //        ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Get] Gallery action,Gallery Controller");
-        //        ViewBag.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+        //        ViewBag.Type = "ERROR";
+        //        ViewBag.LocalizedType = Localization.ERROR;
         //        ViewBag.Msg = ex.Message;
         //    }
         //    return View();

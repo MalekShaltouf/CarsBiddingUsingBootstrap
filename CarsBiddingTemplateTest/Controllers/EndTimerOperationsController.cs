@@ -34,14 +34,13 @@ namespace CarsBiddingUsingBootstrap.Controllers
                     context.Cars_Info.Attach(car_info);
                     context.Entry(car_info).Property(c => c.Timer_Status).IsModified = true;
                     context.SaveChanges();
-
-                    carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
                 }
             }
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[GET] EndTimerOperations action,EndTimerOperations Controller");
-                carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                carsInfoViewModel.Type = "ERROR";
+                carsInfoViewModel.LocalizedType = Localization.ERROR;
                 carsInfoViewModel.Msg = ex.Message;
             }
             return Json(carsInfoViewModel, JsonRequestBehavior.AllowGet);
@@ -122,19 +121,19 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         context.NotificationHistories.Add(CaWinnerNotificationHistory);
                     }
                     context.SaveChanges();
-                    carModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
+                    carModel.Type = "WARNING";
+                    carModel.LocalizedType = Localization.WARNING;
+                    carModel.Msg = Localization.AuctionTimeEnded;
                 }
             }
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[GET] GenerateNotification action,EndTimerOperations Controller");
-                carModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                carModel.Type = "ERROR";
+                carModel.LocalizedType = Localization.ERROR;
                 carModel.Msg = ex.Message;
             }
             return Json(carModel, JsonRequestBehavior.AllowGet);
         }
-
-
-
     }
 }

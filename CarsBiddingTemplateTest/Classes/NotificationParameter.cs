@@ -9,5 +9,6 @@ namespace CarsBiddingUsingBootstrap.Classes
     {
         public string Type { get; set; }
         public string Msg { get; set; }
+        public string LocalizedType { get; set; }
     }
 }

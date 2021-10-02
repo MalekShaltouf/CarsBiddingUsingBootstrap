@@ -1,6 +1,6 @@
 ﻿function HowLinkEvent(ModelContent) {
 
-    addNotification("INFO", null, ModelContent);
+    addNotification("INFO", null, errorTextLocalied, ModelContent);
     document.querySelector(".gallery_pics").onclick = function (e) {
         if (e.target.tagName == "IMG") {
 
@@ -22,12 +22,12 @@
         }
     }
 }
-function NewCarformValidation(msgNotification) {
+function NewCarformValidation(msgNotification,errorTextLocalied) {
     let additionalPhoto = document.querySelector(".additionalPhoto .file-upload-input").getAttribute("title");
 
     if (additionalPhoto != null) {
         if (additionalPhoto.split(',').length > 5) {
-            addNotification("ERROR", msgNotification);
+            addNotification("ERROR", msgNotification, errorTextLocalied);
             return false;
         }
     }

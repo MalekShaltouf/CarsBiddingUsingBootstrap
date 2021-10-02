@@ -12,7 +12,7 @@ using System.Web.Security;
 
 namespace CarsBiddingUsingBootstrap.Controllers
 {
-    public class LoginController : Controller
+    public class LoginController : CultureController
     {
 
         // GET: Login
@@ -46,8 +46,9 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         context.SaveChanges();
 
                         signUpViewModel = new SignUpViewModel();
-                        signUpViewModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
-                        signUpViewModel.Msg = CarsBiddingUsingBootstrap.Localization.DefinedUserSuccessfully;
+                        signUpViewModel.Type = "SUCCESS";
+                        signUpViewModel.LocalizedType = Localization.SUCCESS;
+                        signUpViewModel.Msg = Localization.DefinedUserSuccessfully;
                         ModelState.Clear();
                     }
                 }
@@ -55,7 +56,8 @@ namespace CarsBiddingUsingBootstrap.Controllers
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Post] Sign Up action,Login Controller");
-                signUpViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                signUpViewModel.Type = "ERROR";
+                signUpViewModel.LocalizedType = Localization.ERROR;
                 signUpViewModel.Msg = ex.Message;
             }
             signUpViewModel.GenderMenu = Helper.fillGenderDropDownList();
@@ -116,15 +118,17 @@ namespace CarsBiddingUsingBootstrap.Controllers
 
                         }
                         signInModel = new SignInViewModel();
-                        signInModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
-                        signInModel.Msg = CarsBiddingUsingBootstrap.Localization.UserLoginValidation;
+                        signInModel.Type = "ERROR";
+                        signInModel.LocalizedType = Localization.ERROR;
+                        signInModel.Msg = Localization.UserLoginValidation;
                     }
                 }
             }
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Post] Sign In action,Login Controller");
-                signInModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                signInModel.Type = "ERROR";
+                signInModel.LocalizedType = Localization.ERROR;
                 signInModel.Msg = ex.Message;
             }
             signInModel.RequestType = "POST";

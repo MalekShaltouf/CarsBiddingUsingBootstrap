@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace CarsBiddingUsingBootstrap.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : CultureController
     {
         // GET: Home
         public ViewResult Index()
@@ -29,6 +29,5 @@ namespace CarsBiddingUsingBootstrap.Controllers
                 return View(cars);
             }
         }
-
     }
 }

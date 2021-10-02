@@ -8,6 +8,8 @@
 }
 <section class="CarDetails">
     <div class="container">
+        <span id="ErrorLocalized">@CarsBiddingUsingBootstrap.Localization.ERROR</span>
+        <span id="WarningLocalized">@CarsBiddingUsingBootstrap.Localization.WARNING</span>
         @Html.HiddenFor(model => model.CarId)
         @Html.HiddenFor(model => model.Auction_End_Date)
         <span id="NotificationParameterLocalization" data-type="@Model.Type" data-msg="@Model.Msg"></span>
@@ -102,7 +104,6 @@
                     </div>
                 </div>
                 <!-- //timer -->
-                <span id="TimerStatusLocalization" data-timer-status-localization="@CarsBiddingUsingBootstrap.Localization.AuctionTimeEnded"></span>
             </div>
         </div>
         <!--Timer-->

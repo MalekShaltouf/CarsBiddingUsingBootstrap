@@ -1,4 +1,4 @@
-﻿function addNotification(type, msg = null, info = null) {
+﻿function addNotification(type, msg = null, localizedType, info = null) {
     switch (type)
     {
         case "SUCCESS":
@@ -137,7 +137,7 @@
             break;
     }
     
-    document.getElementById("NotificationPopUpTitle").textContent = type;
+    document.getElementById("NotificationPopUpTitle").textContent = localizedType;
 
 
     $(document).ready(function () {

@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace CarsBiddingUsingBootstrap.Controllers
 {
-    public class ContactController : Controller
+    public class ContactController : CultureController
     {
         // GET: Contact
         public ViewResult Contact()
@@ -40,14 +40,16 @@ namespace CarsBiddingUsingBootstrap.Controllers
 
                     ModelState.Clear();
                     ContactModel = new ContactViewModel();
-                    ContactModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
-                    ContactModel.Msg = CarsBiddingUsingBootstrap.Localization.ContactResponseMessage;
+                    ContactModel.Type = "SUCCESS";
+                    ContactModel.LocalizedType = Localization.SUCCESS;
+                    ContactModel.Msg = Localization.ContactResponseMessage;
                 }
             }
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Post] Contact action,Contact Controller");
-                ContactModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                ContactModel.Type = "ERROR";
+                ContactModel.LocalizedType = Localization.ERROR;
                 ContactModel.Msg = ex.Message;
             }
             ContactModel.RequestType = "POST";

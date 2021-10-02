@@ -1,3 +1,4 @@
+using CarsBiddingUsingBootstrap.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace CarsBiddingUsingBootstrap
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+        
     }
 }

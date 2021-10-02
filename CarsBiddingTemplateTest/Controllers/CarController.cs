@@ -4,6 +4,7 @@ using CarsBiddingUsingBootstrap.Models.ViewModelClasses;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -12,7 +13,7 @@ using System.Web.Mvc;
 
 namespace CarsBiddingUsingBootstrap.Controllers
 {
-    public class CarController : Controller
+    public class CarController : CultureController
     {
         [Authorize]
         // GET: Car
@@ -43,8 +44,9 @@ namespace CarsBiddingUsingBootstrap.Controllers
                     carsInfoViewModel.RequestType = "POST";
                     if (carsInfoViewModel.UploadAdditionalPhoto.Count() > 5)
                     {
-                        carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
-                        carsInfoViewModel.Msg = CarsBiddingUsingBootstrap.Localization.ImageNumberValidation;
+                        carsInfoViewModel.Type = "ERROR";
+                        carsInfoViewModel.LocalizedType = Localization.ERROR;
+                        carsInfoViewModel.Msg = Localization.ImageNumberValidation;
                         return View(carsInfoViewModel);
                     }
 
@@ -75,15 +77,17 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         }
                         else
                         {
-                            carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
-                            carsInfoViewModel.Msg = CarsBiddingUsingBootstrap.Localization.ImageSize;
+                            carsInfoViewModel.Type = "ERROR";
+                            carsInfoViewModel.LocalizedType = Localization.ERROR;
+                            carsInfoViewModel.Msg = Localization.ImageSize;
                             return View(carsInfoViewModel);
                         }
                     }
                     else
                     {
-                        carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
-                        carsInfoViewModel.Msg = CarsBiddingUsingBootstrap.Localization.FileTypeValidation;
+                        carsInfoViewModel.Type = "ERROR";
+                        carsInfoViewModel.LocalizedType = Localization.ERROR;
+                        carsInfoViewModel.Msg = Localization.FileTypeValidation;
                         return View(carsInfoViewModel);
                     }
                     /* Upload Single File */
@@ -112,15 +116,17 @@ namespace CarsBiddingUsingBootstrap.Controllers
                             }
                             else
                             {
-                                carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
-                                carsInfoViewModel.Msg = CarsBiddingUsingBootstrap.Localization.ImageSizeV2;
+                                carsInfoViewModel.Type = "ERROR";
+                                carsInfoViewModel.LocalizedType = Localization.ERROR;
+                                carsInfoViewModel.Msg = Localization.ImageSizeV2;
                                 return View(carsInfoViewModel);
                             }
                         }
                         else
                         {
-                            carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
-                            carsInfoViewModel.Msg = CarsBiddingUsingBootstrap.Localization.FileTypeValidation;
+                            carsInfoViewModel.Type = "ERROR";
+                            carsInfoViewModel.LocalizedType = Localization.ERROR;
+                            carsInfoViewModel.Msg = Localization.FileTypeValidation;
                             return View(carsInfoViewModel);
                         }
                     }
@@ -185,15 +191,17 @@ namespace CarsBiddingUsingBootstrap.Controllers
                         context.Biddings.Add(bd);
                         context.SaveChanges();
 
-                        carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.SUCCESS;
-                        carsInfoViewModel.Msg = CarsBiddingUsingBootstrap.Localization.AddNewCarSuccessfully;
+                        carsInfoViewModel.Type = "SUCCESS";
+                        carsInfoViewModel.LocalizedType = Localization.SUCCESS;
+                        carsInfoViewModel.Msg = Localization.AddNewCarSuccessfully;
                     }
                 }
             }
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[Post] NewCar action,Car Controller");
-                carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                carsInfoViewModel.Type = "ERROR";
+                carsInfoViewModel.LocalizedType = Localization.ERROR;
                 carsInfoViewModel.Msg = ex.Message;
             }
             
@@ -226,10 +234,10 @@ namespace CarsBiddingUsingBootstrap.Controllers
                      * 3- in this query we did inner join with Bidding table in order to get
                      *    Current Price column.
                      */
-                    CarsInfoViewModel CarModel = (from car in context.Cars_Info
+                    CarsInfoViewModel CarModel = (from car in context.Cars_Info.AsEnumerable()
                                                   join bidding in context.Biddings
                                                   on car.CarId equals bidding.CarId
-                                                  where car.CarId == Id
+                                                  where car.CarId == Id 
                                                   select new CarsInfoViewModel
                                                   {
                                                       CarId = car.CarId,
@@ -249,6 +257,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
                                                       InsuranceForSale = car.InsuranceForSale,
                                                       UserId = car.UserId,
                                                       Kilometers = car.Kilometers,
+                                                      //date = car.Create_Date.GetValueOrDefault().ToString(new CultureInfo("en")),
                                                       Create_Date = car.Create_Date,
                                                       CurrentPrice = bidding.CurrentPrice,
                                                       CarCustoms =
@@ -268,7 +277,21 @@ namespace CarsBiddingUsingBootstrap.Controllers
                                                           car.TypeOfTransmissionGear == false ? CarsBiddingUsingBootstrap.Localization.NormalGear : CarsBiddingUsingBootstrap.Localization.AutomaticGear
                                                       ),
                                                   }).FirstOrDefault();
-                    CarModel.Auction_End_Date = Convert.ToDateTime(CarModel.Create_Date).AddDays(7);
+
+                    /*[start]
+                     * when change culture(language) to arabic the date will come
+                     * from data base as Hijri(هجري) instead of Gregorian(ميلادي) date
+                     * so in order to insure that date always come as Gregorian date
+                     * we will to convert it after add 7 days on CreateDate to string
+                     * based culture('en') such as:ToString(new CultureInfo("en")
+                     * we needed to Convert Date to string after 
+                     * 
+                     * Question:why we want to insure that date come as Gregorian date?
+                     * Answer: becuase timer library($("#timer").countdown(...) function in CarDetails.js page) 
+                     * just understand date as Gregorian date not as Hijri date
+                     */
+                    CarModel.Auction_End_Date = Convert.ToDateTime(CarModel.Create_Date).AddDays(7).ToString(new CultureInfo("en"));
+                    //[End]
                     /*[start]
                      * here we want to collect the image that contains path path in array in order to 
                      * loop in it to generate image-hodler for it in View.
@@ -290,7 +313,8 @@ namespace CarsBiddingUsingBootstrap.Controllers
             catch (Exception ex)
             {
                 ErrorLog.WriteInLog(ex.Message, ex.StackTrace, "[GET] CarDetails action,Car Controller");
-                carsInfoViewModel.Type = CarsBiddingUsingBootstrap.Localization.ERROR;
+                carsInfoViewModel.Type = "ERROR";
+                carsInfoViewModel.LocalizedType = Localization.ERROR;
                 carsInfoViewModel.Msg = ex.Message;
             }
             return View(carsInfoViewModel);

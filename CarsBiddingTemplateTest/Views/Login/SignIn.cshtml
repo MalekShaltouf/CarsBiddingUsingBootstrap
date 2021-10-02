@@ -40,13 +40,15 @@
     <script>
         let requestType = "@Model.RequestType",
             type = "@Model.Type",
-            msg = "@Model.Msg";
+            msg = "@Model.Msg"
+            localizedType = "@Model.LocalizedType";
         if (requestType == 'POST')
         {
-            addNotification(type, msg);
-            if (type == "@CarsBiddingUsingBootstrap.Localization.ERROR") {
+            addNotification(type, msg, localizedType);
+            if (type == "ERROR") {
                 addNotEmptyClass();
             }
         }
+
     </script>
 }

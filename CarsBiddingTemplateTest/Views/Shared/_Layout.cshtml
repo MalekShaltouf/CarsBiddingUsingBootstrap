@@ -25,6 +25,10 @@
     @*<link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">*@
     <link href="~/Content/animate.css" rel="stylesheet" />
     <link href="~/Content/CustomeStyle.css" rel="stylesheet" />
+    @if (CarsBiddingUsingBootstrap.Localization.isRTL == "true")
+    {
+        <link href="~/Content/RTL_Style.css" rel="stylesheet" />
+    }
     @RenderSection("CssStyleTag", false)
     <!-- //Custom Theme files -->
     <!-- web-fonts -->
@@ -50,13 +54,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1 class="w3lslogo"><a href="index.html">CB<span style="bottom:15px">Cars Bidding</span></a></h1>
+                    <h1 class="w3lslogo"><a href="index.html">@CarsBiddingUsingBootstrap.Localization.CB<span style="bottom:15px">@CarsBiddingUsingBootstrap.Localization.CarsBidding</span></a></h1>
+                    @*<h1 class="w3lslogo"><a href="index.html">CB<span style="bottom:15px">Cars Bidding</span></a></h1>*@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right cl-effect-15">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.Home, "Index", "Home", null, new { @class = "page-scroll", data_hover = "Home" })</li>
+                        <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.Home, "Index", "Home", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.Home })</li>
 
                         @{
                             //we want to display About &  link just when we exists in Home Page
@@ -67,21 +72,32 @@
                             {
                                 //when access Home without enter Controller & action Name the AbsolutePath will => /
 
-                                <li><a class="page-scroll" href="#about" data-hover="About">@CarsBiddingUsingBootstrap.Localization.About</a></li>
-                                <li><a class="page-scroll" href="#gallery" data-hover="Gallery">@CarsBiddingUsingBootstrap.Localization.Gallery</a></li>
+                                <li><a class="page-scroll" href="#about" data-hover="@CarsBiddingUsingBootstrap.Localization.About">@CarsBiddingUsingBootstrap.Localization.About</a></li>
+                                <li><a class="page-scroll" href="#gallery" data-hover="@CarsBiddingUsingBootstrap.Localization.Gallery">@CarsBiddingUsingBootstrap.Localization.Gallery</a></li>
                             }
                             else
                             {
-                                <li>@Html.ActionLink("About", "Index", "Home", null, new { @class = "page-scroll", data_hover = "About" })</li>
-                                <li>@Html.ActionLink("Gallery", "Gallery", "Gallery", null, new { @class = "page-scroll", data_hover = "Gallery" })</li>
+                                <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.About, "Index", "Home", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.About})</li>
+                                <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.Gallery, "Gallery", "Gallery", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.Gallery })</li>
                             }
                         }
 
-                        <li>@Html.ActionLink("Contact", "Contact", "Contact", null, new { @class = "page-scroll", data_hover = "Contact" })</li>
+                        <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.Contact, "Contact", "Contact", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.Contact })</li>
                         @if (!User.Identity.IsAuthenticated)
                         {
-                            <li>@Html.ActionLink("Sign In", "SignIn", "Login", null, new { @class = "page-scroll", data_hover = "Sign In" })</li>
-                            <li>@Html.ActionLink("Sign Up", "SignUp", "Login", null, new { @class = "SignUp page-scroll", data_hover = "Sign Up" })</li>
+                            <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.SignIn, "SignIn", "Login", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.SignIn })</li>
+                            <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.SignUp, "SignUp", "Login", null, new { @class = "SignUp page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.SignUp })</li>
+                            <li>
+                                <div class="btn-group">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle setting-icon blue-circle-dropdown"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu">
+                                        @foreach (CarsBiddingUsingBootstrap.Classes.Language lang in CarsBiddingUsingBootstrap.Classes.LanguageManager.GetAvailableLanguages())
+                                        {
+                                            <li>@Html.ActionLink(lang.LanguageFullName, "ChangeLanguage", "Language", new { lang = lang.LanguageCultureName,returnUrl = CurrentPath },null)</li>
+                                        }
+                                    </ul>
+                                </div>
+                            </li>
                         }
                         else
                         {
@@ -92,7 +108,15 @@
                                     <ul class="dropdown-menu">
                                         <li><a href="#"><i class="fa fa-user"></i>@CarsBiddingUsingBootstrap.Localization.Profile</a></li>
                                         <li><a href="#"><i class="fa fa-paint-brush" aria-hidden="true"></i>@CarsBiddingUsingBootstrap.Localization.ThemeColor</a></li>
-                                        <li><a href="#"><i class="fa fa-language"></i>@CarsBiddingUsingBootstrap.Localization.Langauge</a></li>
+                                        <li class="sub-dropdown">
+                                            <a href="#" data-toggle="dropdown"><i class="fa fa-language"></i>@CarsBiddingUsingBootstrap.Localization.Langauge</a>
+                                            <ul class="dropdown-menu hoverable-dropdown open-right" role="menu">
+                                                @foreach (CarsBiddingUsingBootstrap.Classes.Language lang in CarsBiddingUsingBootstrap.Classes.LanguageManager.GetAvailableLanguages()) 
+                                                {
+                                                    <li>@Html.ActionLink(lang.LanguageFullName, "ChangeLanguage", "Language", new { lang = lang.LanguageCultureName, returnUrl = CurrentPath }, null)</li>
+                                                }
+                                            </ul>
+                                        </li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="@Url.Action("SignOut","Login")"><i class="fa fa-sign-out"></i>@CarsBiddingUsingBootstrap.Localization.Logout</a></li>
                                     </ul>
@@ -100,7 +124,7 @@
                             </li>
                             <li>
                                 <div class="btn-group">
-                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle bell"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle bell blue-circle-dropdown"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
                                     <ul class="notifications dropdown-menu scrollStyle" id="user-notification">
                                     </ul>
                                 </div>
@@ -120,10 +144,10 @@
     <!-- subscribe -->
     <div class="subscribe-agileinfo services jarallax">
         <div class="container">
-            <h4>Subscribe Our Newsletter</h4>
+            <h4>@CarsBiddingUsingBootstrap.Localization.SubscribeOurNewsletter</h4>
             <form action="#" method="post">
-                <input type="email" name="email" placeholder="Enter your Email..." required="">
-                <input type="submit" value="Submit">
+                <input type="email" name="email" placeholder="@CarsBiddingUsingBootstrap.Localization.EnterYourEmail" required="">
+                <input type="submit" value="@CarsBiddingUsingBootstrap.Localization.Subscribe">
                 <div class="clearfix"> </div>
             </form>
         </div>
@@ -140,7 +164,7 @@
                     <li><a href="#" class="icon icon-cube agile_t"></a></li>
                 </ul>
             </div>
-            <p>© 2017 Care Trade. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            <p>© 2021 Cars Bidding. All Rights Reserved | Developed by  <a href="" target="_blank">Sh.Malek</a> </p>
         </div>
     </div>
     <!-- //copy right end here -->

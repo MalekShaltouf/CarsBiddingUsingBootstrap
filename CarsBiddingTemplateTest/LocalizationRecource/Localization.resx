@@ -132,6 +132,12 @@
   <data name="AddNewCarSuccessfully" xml:space="preserve">
     <value>A new car has been added to gallery successfully.</value>
   </data>
+  <data name="AnyElectronicProcessAimedAtReducingThe" xml:space="preserve">
+    <value>Any electronic process aimed at reducing the time and effort on the user, and thus Bidding Cars aims to speed up the process of selling cars in less time and effort on the user.</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>Arabic</value>
+  </data>
   <data name="AuctionTimeEnded" xml:space="preserve">
     <value>Auction Time Ended.</value>
   </data>
@@ -171,11 +177,17 @@
   <data name="Cars Bidding" xml:space="preserve">
     <value>Cars Bidding</value>
   </data>
+  <data name="CarsBidding" xml:space="preserve">
+    <value>Cars Bidding</value>
+  </data>
   <data name="CarSoldSuccessfully" xml:space="preserve">
     <value>Your {0} Car sold successfully.</value>
   </data>
   <data name="CarType" xml:space="preserve">
     <value>Car Type</value>
+  </data>
+  <data name="CB" xml:space="preserve">
+    <value>CB</value>
   </data>
   <data name="CheckingCar" xml:space="preserve">
     <value>Checking Car</value>
@@ -246,6 +258,12 @@
   <data name="EngineCar" xml:space="preserve">
     <value>Engine Car</value>
   </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="EnterYourEmail" xml:space="preserve">
+    <value>Enter your Email...</value>
+  </data>
   <data name="ERROR" xml:space="preserve">
     <value>ERROR</value>
   </data>
@@ -308,6 +326,9 @@
   </data>
   <data name="InsurancePaidSuccessfully" xml:space="preserve">
     <value>The insurance has been paid successfully, you can now participate in the bidding process.</value>
+  </data>
+  <data name="IsASystemDirectedMainlyToThoseWhoWantToSellOrBuyTheirUsedCarsThroughAnAuction" xml:space="preserve">
+    <value>is a system directed mainly to those who want to sell or buy their used cars through an auction</value>
   </data>
   <data name="isRTL" xml:space="preserve">
     <value>false</value>
@@ -459,6 +480,12 @@
   <data name="Sorry" xml:space="preserve">
     <value>Sorry!</value>
   </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="SubscribeOurNewsletter" xml:space="preserve">
+    <value>Subscribe Our News letter</value>
+  </data>
   <data name="SUCCESS" xml:space="preserve">
     <value>SUCCESS</value>
   </data>
@@ -473,6 +500,9 @@
   </data>
   <data name="TheRemainingTimeForAuctionEnding" xml:space="preserve">
     <value>The Remaining Time For Auction Ending</value>
+  </data>
+  <data name="TheSystemOfSaleAndPurchaseOfUsedCarsByAuctionIsASyst" xml:space="preserve">
+    <value>The system of sale and purchase of used cars by auction,is a system directed mainly to those who want to sell or buy their used cars through an auction. Working on the system of buying and selling by bidding, solve problems in other traditional systems, such as: Credibility and seriousness in selling and buying</value>
   </data>
   <data name="TypeOfTransmissionGear" xml:space="preserve">
     <value>Type Of Transmission Gear</value>
@@ -497,6 +527,9 @@
   </data>
   <data name="WEEKS" xml:space="preserve">
     <value>{0} Weeks  ago</value>
+  </data>
+  <data name="What'sTheCarsBidding" xml:space="preserve">
+    <value>What's the Cars Bidding?</value>
   </data>
   <data name="WinnerEmail" xml:space="preserve">
     <value>Winner Email</value>
@@ -524,6 +557,9 @@
   </data>
   <data name="WithoutSpaceRgexValidation" xml:space="preserve">
     <value>The {0} must be without space.</value>
+  </data>
+  <data name="WorkingOnTheSystemOfBuyingAndSellingByBiddingSolveProblemsInOtherTraditionalSystemsSuchAsCredibilityAndSeriousnessInSellingAndBuying" xml:space="preserve">
+    <value>Working on the system of buying and selling by bidding, solve problems in other traditional systems, such as: Credibility and seriousness in selling and buying</value>
   </data>
   <data name="YEARS" xml:space="preserve">
     <value>{0} Years ago</value>
