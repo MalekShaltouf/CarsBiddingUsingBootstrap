@@ -1,0 +1,1006 @@
+﻿html {
+    direction: rtl;
+}
+/*Layout style*/
+nav.navbar.navbar-default.navbar-fixed-top {
+    /*there are not space between classes because all classes in one element*/
+    background: rgba(0, 0, 0, 0.75)
+}
+
+.RenderBody {
+    /*padding: 8em 0 0;*/
+    padding: 40px 0 100px
+}
+
+.center {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.PageHeading {
+    margin-top: 95px
+}
+
+.text-gray {
+    color: #757575
+}
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 1.25rem;
+}
+
+.bold-element {
+    font-weight: bolder;
+}
+
+.block-element {
+    display: block;
+}
+
+.modal-body {
+    padding-top: 10px
+}
+
+.formInputs {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Choco_close {
+    margin-top: 20px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+select option:first-of-type {
+    display: none
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    transform: translate(0);
+}
+
+.wthree-soon .column {
+    background-color: #0000009e;
+}
+
+.wthree-soon h5 {
+    font-weight: 900
+}
+
+.column-name,
+.column-value {
+    text-transform: capitalize;
+    font-size: 18px
+}
+
+.column-value {
+    text-indent: 10px;
+    color: #00bcd4;
+}
+
+.colon {
+    color: #00bcd4;
+    font-size: 35px;
+    font-weight: 900;
+    text-indent: 10px;
+    display: inline-block;
+}
+
+/*Layout style*/
+/*Start Home Page*/
+.sky-hover.wthree-btn {
+    background-color: #00bcd4;
+    margin-left: 3px
+}
+
+    .sky-hover.wthree-btn.btn-6 span {
+        background-color: #0292a5;
+    }
+
+.gallery .main:nth-child(3) {
+    margin: 0.3em 0 0;
+}
+.gallery .newCar,
+.gallery .more-btn {
+    text-align:left
+}
+
+.gallery #notfound,
+.Main-Gallery #notfound {
+    /*height: 52vh;*/
+    height: 465px;
+}
+
+.gallery .notfound .notfound-404 h1,
+.Main-Gallery .notfound .notfound-404 h1 {
+    top: 30%;
+}
+
+.gallery .notfound .wthree-btn,
+.Main-Gallery .notfound .wthree-btn {
+    border: none
+}
+
+.gallery .view,
+.Main-Gallery .view {
+    height: 250px
+}
+
+    .gallery .view img,
+    .Main-Gallery .view img,
+    .CarDetails .view img {
+        height: 250px
+    }
+
+    .gallery .view .mask div:last-child,
+    .Main-Gallery .view .mask div:last-child {
+        padding: 10px
+    }
+
+    .gallery .view p,
+    .Main-Gallery .view p {
+        text-transform: capitalize;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .gallery .view span,
+    .Main-Gallery .view span {
+        /*color:rgba(0, 0, 0, 0.75);*/
+        color: #FFF;
+        font-size: 16px
+    }
+.flex-viewport {
+    direction: ltr;
+}
+/*End Home Page*/
+
+/*Start Sign Up Page*/
+.Sign-up .subscribe-agileinfo input[type="submit"],
+.Sign-In .subscribe-agileinfo input[type="submit"] {
+    float: none;
+    border: 1px solid #00bcd4;
+    background: #00bcd4;
+    font-weight: bolder;
+}
+
+    .Sign-up .subscribe-agileinfo input[type="submit"]:hover,
+    .Sign-In .subscribe-agileinfo input[type="submit"]:hover {
+        background: #0292a5;
+        color: #FFF
+    }
+
+.Sign-up .input-group .form-control,
+.New-Car .input-group .form-control {
+    width: 106.3%
+}
+
+/*End Sign Up Page*/
+
+/*Start Sign In Page*/
+.Sign-In .formInputs {
+    width: 40%
+}
+/*End Sign Up Page*/
+
+/*Start Add New Car Page*/
+.New-Car textarea.form-control {
+    height: 34px
+}
+
+.New-Car .subscribe-agileinfo button {
+    margin-top: 20px
+}
+
+.New-Car h3.agileits-title {
+    margin-bottom: 0
+}
+
+.New-Car .Carinfo i {
+    display: block;
+    margin-left: 45px
+}
+
+.New-Car .DescTextArea {
+    margin-top: 26px
+}
+
+.New-Car .fa-arrow-down {
+    animation: fadeInDown 1s linear infinite -1.5s;
+    font-size: 40px;
+    color: #00bcd4
+}
+
+.New-Car .file-upload-input:focus {
+    pointer-events: none;
+}
+
+.New-Car .tooltip.bottom .tooltip-inner,
+.CarDetails .tooltip.bottom .tooltip-inner {
+    background-color: #616161;
+    text-align: right
+}
+
+.New-Car .tooltip.bottom .tooltip-arrow,
+.CarDetails .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #616161;
+}
+
+.New-Car .tooltip-inner {
+    max-width: 250px
+}
+
+@media (min-width: 768px) {
+    .modal-xl {
+        width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-xl {
+        width: 800px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-xl {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-xl {
+        width: 1300px;
+    }
+}
+/***** File Upload Style *****/
+.custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    right: -9999px;
+}
+
+.custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    margin-top: 41px;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.file-upload-input {
+    color: #000;
+    font-size: 16px;
+    padding: 11px 17px;
+    border: none;
+    border-bottom: 2px solid #00bcd4;
+    transition: all 0.2s ease-in;
+    float: right; /* IE 9 Fix */
+}
+
+.mainPhoto .form-control {
+    width: 66%;
+}
+
+.additionalPhoto .form-control {
+    width: 53%;
+}
+
+.file-upload-input:hover, .file-upload-input:focus {
+    outline: none;
+    color: #000;
+}
+
+.file-upload-button {
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    border: none;
+    margin-right: 0px;
+    background-color: #00bcd4;
+    float: right; /* IE 9 Fix */
+    transition: all 0.2s ease-in;
+}
+
+    .file-upload-button:hover {
+        background-color: #0292a5;
+    }
+
+    .file-upload-button:focus {
+        outline: none
+    }
+/***** File Upload Style *****/
+
+/***** Full Image Screen Style *****/
+.gallery_pics_holder {
+    width: 100%;
+    text-align: center;
+    height: 350px;
+    display: table;
+    padding-top: 20px;
+}
+
+.gallery_pics img {
+    width: 100%;
+}
+
+.gallery_pics:hover {
+    cursor: pointer;
+}
+
+.gallery_pics.fullscreen img {
+    width: 100%;
+}
+
+.gallery_pics.fullscreen {
+    border: 1px solid #000;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 96%;
+    height: 90%;
+    top: 5%;
+    right: 2%;
+}
+
+.gallery_pics.fullscreen {
+    background: #fff;
+    overflow-y: scroll
+}
+
+    .gallery_pics.fullscreen span {
+        color: #a94442;
+        background: #f2dede;
+        padding: 8px;
+        float: left;
+        /*position:fixed*/
+    }
+/***** Full Image Screen Style *****/
+/*End Add New Car Page*/
+
+/*Start Contact Page*/
+.Contact .agileits_w3layouts_map_pos {
+    width: unset;
+    position: static
+}
+
+.Contact textarea::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75) !important;
+    font-weight: bold;
+    text-indent: -12px;
+}
+
+.Contact textarea:-moz-placeholder { /* Firefox 18- */
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75) !important;
+    font-weight: bold
+}
+
+.Contact textarea::-moz-placeholder { /* Firefox 19+ */
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75) !important;
+    font-weight: bold
+}
+
+.Contact textarea::placeholder {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75) !important;
+    font-weight: bold;
+}
+
+.Contact textarea {
+    text-indent: -12px
+}
+
+/*End Contact Page*/
+
+/*Start Gallery Page*/
+
+.Main-Gallery .pagination > .active > a,
+.Main-Gallery .pagination > .active > span,
+.Main-Gallery .pagination > .active > a:hover,
+.Main-Gallery .pagination > .active > span:hover,
+.Main-Gallery .pagination > .active > a:focus,
+.Main-Gallery .pagination > .active > span:focus {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+.Main-Gallery .input-group-btn {
+    font-size: unset;
+    left: 1px;
+    bottom: 4px
+}
+
+.Main-Gallery .wthree-btn {
+    padding: .4em 1.5em;
+    border: 2px solid #00bcd4;
+}
+
+.Main-Gallery .searchBtn {
+    padding: .3em 1.5em;
+    margin-top: 19px;
+}
+
+.Main-Gallery .multi-select-button {
+    padding: 0.6em 0.6em;
+    border: 1px solid #00bcd4;
+    box-shadow: 0 1px 3px #00bcd42e
+}
+
+.Main-Gallery .custom-multi-select-button {
+    max-width: 14em;
+}
+
+.Main-Gallery .multi-select-button:after {
+    border-color: #00bcd4 transparent transparent transparent;
+}
+
+.Main-Gallery .multi-select-container--open .multi-select-button:after {
+    border-color: transparent transparent #00bcd4 transparent;
+}
+
+.Main-Gallery .multi-select-container {
+    top: 20px
+}
+
+.Main-Gallery .multi-select-menu {
+    top: 1.4em;
+    overflow: auto !important
+}
+
+.Main-Gallery #SearchTextBoxBehindScenes {
+    display: none
+}
+
+.Main-Gallery .custom-form-control {
+    width: 80%
+}
+
+.Main-Gallery .custom-col {
+    width: 15%
+}
+
+.Main-Gallery .pagination li a {
+    cursor: pointer
+}
+
+/*End Gallery Page*/
+
+/*Start CarDetails Page*/
+
+.CarDetails .Cars-info {
+    margin-top: 40px
+}
+
+
+
+.CarDetails .card-body {
+    position: relative;
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-top: -16px
+}
+
+    .CarDetails .card-body:before,
+    .CarDetails .card-body:after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 44%;
+        border: 11px solid transparent;
+        border-bottom-color: #dddddd;
+    }
+
+    .CarDetails .card-body:after {
+        left: 44.2%;
+        border: 10px solid transparent;
+        border-bottom-color: #ffffff;
+    }
+
+.CarDetails .PageModal .modal-header {
+    background-color: #010f51;
+    border-color: #010f51;
+    color: #FFF;
+}
+
+    .CarDetails .PageModal .modal-header h3 {
+        font-family: Tahoma, sans-serif;
+    }
+
+.CarDetails .PageModal .btn-primary {
+    background-color: #010f51;
+    border-color: #010f51;
+}
+
+    .CarDetails .PageModal .btn-primary:hover,
+    .CarDetails .PageModal .btn-primary:focus,
+    .CarDetails .PageModal .btn-primary.focus,
+    .CarDetails .PageModal .btn-primary:active,
+    .CarDetails .PageModal .btn-primary.active,
+    .CarDetails .PageModal .open > .dropdown-toggle.btn-primary {
+        background-color: #011571;
+        border-color: #011571;
+    }
+
+.CarDetails .PageModal .modal-body i {
+    margin-top: 30px;
+    cursor: pointer
+}
+
+.CarDetails .PageModal .card-body span {
+    display: block
+}
+
+.CarDetails .PageModal .modal-content {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px
+}
+
+.CarDetails .error-msg {
+    margin-top: 10px;
+}
+
+.CarDetails .PageModal .modal-body .fa-money {
+    margin-top: unset;
+    cursor: pointer;
+    color: #010f51
+}
+
+.CarDetails .PageModal .modal-body .priceBox {
+    border: 2px dashed #010f51
+}
+
+    .CarDetails .PageModal .modal-body .priceBox div {
+        margin-bottom: 10px
+    }
+
+    .CarDetails .PageModal .modal-body .priceBox h3 {
+        color: #010f51;
+        font-weight: 900;
+        font-family: unset;
+        margin-bottom: 10px;
+        font-size: 20px
+    }
+/*--Time style--*/
+.CarDetails .wthree-soon {
+    margin-bottom: 2em;
+    margin-top: 4em
+}
+
+.CarDetails .wthree-soon-agileinfo {
+    margin-top: unset;
+    z-index: unset;
+    position: unset;
+    width: 100%;
+}
+/*--Time style--*/
+/*End CarDetails Page*/
+/*Start NotificationHistory*/
+.notifications {
+    width: 300px;
+    max-height: 465px;
+    border-radius: 5px 0px 5px 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: auto;
+}
+
+.notifications-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 6px 9px;
+    margin-bottom: 0px;
+    cursor: pointer
+}
+
+    .notifications-item.not-open-notification {
+        background-color: #f7f7f79c
+    }
+
+    .notifications-item:hover {
+        background-color: #00bcd4
+    }
+
+        .notifications-item:hover .text p {
+            color: #FFF;
+        }
+
+    .notifications-item img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-left: 9px;
+        border-radius: 50%;
+        margin-top: 2px
+    }
+
+.notifications .text {
+    text-align: unset;
+}
+
+    .notifications .text p {
+        color: #029fb3;
+        font-size: 12px;
+    }
+
+.notifications .empty-Notification {
+    margin-bottom: unset
+}
+
+    .notifications .empty-Notification p {
+        margin-right: 10px;
+        cursor: default;
+    }
+
+.notifications-item .text p .TimeSince-Span {
+    font-family: 'Lato', sans-serif;
+    margin-right: 3px
+}
+
+
+/*End NotificationHistory*/
+/*Start NotificationHistory Details*/
+.Notification-Details .notifications-details-card {
+    display: flex;
+    min-height: 150px;
+    border-radius: 5px 0px 5px 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 15px
+}
+
+    .Notification-Details .notifications-details-card img {
+        display: block;
+        width: 200px;
+        height: 120px;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+.notifications-details-body h3 {
+    color: #00bcd4;
+    font-family: "Times New Roman",Serif
+}
+
+.notifications-details-body {
+    padding-top: 15px;
+    padding-right: 15px
+}
+
+.notifications-details-text {
+    padding: 0 15px;
+    margin: 10px 0;
+    border: 1px solid #00bcd4;
+    border-radius: .25rem;
+}
+
+    .notifications-details-text .column-name,
+    .notifications-details-text .column-value {
+        font-size: 14px;
+    }
+
+    .notifications-details-text .colon {
+        font-size: 22px;
+    }
+/*End NotificationHistory Details*/
+/*Start Notification popUp Style*/
+#NotificationPopUp .modal-header,
+.PageModal .modal-header {
+    padding: 15px;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px
+}
+
+    #NotificationPopUp .modal-header h2 {
+        font-family: Tahoma, sans-serif;
+        letter-spacing: 1px;
+    }
+
+#NotificationPopUp .modal-body h5 {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px
+}
+
+#NotificationPopUp .modal-footer,
+.PageModal .modal-footer {
+    border-top: none
+}
+
+#NotificationPopUp .btn:focus, .PageModal .btn:focus,
+#NotificationPopUp .btn:active:focus, .PageModal .btn:active:focus,
+#NotificationPopUp .btn.active:focus, .PageModal .btn.active:focus,
+#NotificationPopUp .btn.focus, .PageModal .btn.focus,
+#NotificationPopUp .btn:active.focus, .PageModal .btn:active.focus,
+#NotificationPopUp .btn.active.focus, .PageModal .btn.active.focus {
+    outline: none
+}
+
+
+/*End Notification popUp Style*/
+/*Start Html Input Style*/
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+    .form-group > label {
+        text-transform: uppercase;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.75);
+        transform-origin: 0 0;
+        transform: scale(1.4);
+        pointer-events: none;
+        position: relative;
+        z-index: 5;
+        transition: transform 0.4s;
+        transform-origin: 0 0;
+        transform: scale(1.4) translateY(20px);
+    }
+
+    .form-group.not-empty > label {
+        transform: none;
+    }
+
+.form-control {
+    border: 0;
+    /*border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+border-bottom: 2px solid #ccc;
+border-bottom: 2px solid #00bcd4;*/
+    border-bottom: 2px solid #00bcd4;
+    border-radius: 0;
+}
+
+    .form-control,
+    .form-control:focus,
+    .form-control:focus:hover {
+        color: #000;
+        background: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+        .form-control:focus,
+        .form-control:focus:hover {
+            border-bottom: 2px solid #017e8e;
+        }
+
+.form-group.not-empty > label {
+    color: #017e8e;
+    font-size: 12px
+}
+/*End Html Input Style*/
+
+/*Start Scroll Style*/
+.scrollStyle::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    /*border-radius: 10px;*/
+    background-color: #cccccc;
+}
+
+.scrollStyle::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+}
+
+.scrollStyle::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00bcd4;
+    background-image: -webkit-linear-gradient( 90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent );
+}
+
+/*End Scroll Style*/
+
+/*Start Navbar Menu Style*/
+.nav .btn-group img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+}
+
+.navbar-default .navbar-nav > li > .btn-group > a {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    text-shadow: none;
+    padding: 0;
+}
+    /* Effect 15: scale down, reveal */
+    .navbar-default .navbar-nav > li > .btn-group > a::before {
+        color: #fff;
+        content: attr(data-hover);
+        position: absolute;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+        -o-transition: transform 0.3s, opacity 0.3s;
+        -ms-transition: transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .navbar-default .navbar-nav > li > .btn-group > a:hover::before,
+    .navbar-default .navbar-nav > li > .btn-group > a:focus::before {
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+.navbar-default .navbar-nav > .active > .btn-group > a, .navbar-default .navbar-nav > .active > .btn-group > a:hover, .navbar-default .navbar-nav > .active > .btn-group > a:focus {
+    color: #00bcd4;
+    background: none;
+}
+
+.navbar-default .navbar-nav > li > .btn-group > a:hover, .navbar-default .navbar-nav > li > .btn-group > a:focus {
+    color: #00bcd4;
+    background-color: transparent;
+}
+
+.navbar-nav > li.active .btn-group > a.page-scroll {
+    color: #00bcd4 !important;
+}
+
+.navbar-default .navbar-nav > li.active > .btn-group > a::before {
+    color: #00bcd4;
+}
+
+.nav .LoginInfoDDMenu {
+    transform: translateY(-5px)
+}
+.nav .dropdown-menu li a {
+    color: #00bcd4;
+}
+
+.nav .LoginInfoDDMenu .btn-group i {
+    font-size: 18px;
+    color: #00bcd4;
+    margin-left: 11px
+}
+
+.nav .LoginInfoDDMenu .dropdown-menu a i {
+    transform: translateY(1px)
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover i,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:focus i {
+    
+    color: #fff!important;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus 
+{
+    background-color: #00bcd4;
+}
+h1.w3lslogo {
+    font-size: 24px
+}
+
+h1.w3lslogo a {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-left: -84px;
+}
+
+h1.w3lslogo a span {
+    font-size: .5em;
+}
+.banner-text p {
+    letter-spacing: 1px;
+    width: 45%;
+}
+
+.blue-circle-dropdown {
+    background-color: #00bcd4;
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%
+}
+
+.bell-before-content::before {
+    content: attr(data-before-selector) !important;
+    background-color: red;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    left: 15px;
+    bottom: 18px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.remove-bell-before-pseudo-element::before {
+    content: none !important
+}
+
+.navbar-default .navbar-nav > li > .btn-group > a.blue-circle-dropdown:hover,
+.navbar-default .navbar-nav > li > .btn-group > a.blue-circle-dropdown:focus {
+    color: #FFF;
+    background-color: #02a1b5;
+}
+
+.navbar-default .navbar-nav > li > .btn-group > a.blue-circle-dropdown:focus {
+    background-color: #00bcd4;
+}
+
+.navbar-default .navbar-nav > li > .btn-group > a.bell:hover::before,
+.navbar-default .navbar-nav > li > .btn-group > a.bell:focus::before {
+    transform: unset;
+    opacity: unset;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse span.TimeSince-Span {
+    font-size: unset
+}
+
+.nav .open > a.blue-circle-dropdown, .nav .open > a.blue-circle-dropdown:hover, .nav .open > a.blue-circle-dropdown:focus {
+    background: #02a1b5 !important;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: unset;
+}
+
+.sub-dropdown:hover .hoverable-dropdown {
+    /*this css selector will be make sub-dropdown hoverable insted of clickable*/
+    display: block;
+}
+
+.sub-dropdown .open-right {
+    /*the open-right class will be make sub-dropdown open in right side instead of in down side*/
+    right: 100%;
+    top: 45%;
+}
+
+.setting-icon .fa-cog {
+    line-height: 25px
+}
+.beforeLoginLanguage-dropdown .dropdown-menu,
+.bell-dropdown .dropdown-menu {
+    right: unset;
+    left: 50%
+}
+.bell-dropdown .dropdown-menu {
+    top:120%
+}
+/*End Navbar Menu Style*/
+
+@keyframes fadeInDown {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

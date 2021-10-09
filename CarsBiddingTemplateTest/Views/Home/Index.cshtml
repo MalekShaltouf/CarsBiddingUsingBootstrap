@@ -1,17 +1,31 @@
-﻿@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
+﻿@using System.Globalization
+@using System.Threading
+@using CarsBiddingUsingBootstrap.Models.ViewModelClasses
 @model List<CarsInfoViewModel>
 @{
     ViewBag.Title = CarsBiddingUsingBootstrap.Localization.Home;
-    //Layout = "~/Views/Shared/_AllTemplate.cshtml";
+    CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 
-}
-
-@section flexsliderCss{
-    <link rel="stylesheet" href="~/Content/flexslider.css" type="text/css" media="screen" />
-}
-@section linkTag{
-    <link href="~/Content/NotFoundStyle.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">
+    if (currentCulture.TwoLetterISOLanguageName == "ar")
+    {
+        @section flexsliderCss{
+                <link rel="stylesheet" href="~/Content/RTL/flexslider_RTL.css" type="text/css" media="screen" />
+            }
+            @section linkTag{
+                <link href="~/Content/RTL/NotFoundStyle_RTL.css" rel="stylesheet" />
+                <link rel="stylesheet" href="~/Content/RTL/chocolat_RTL.css" type="text/css" media="screen">
+            }
+    }
+    else
+    {
+        @section flexsliderCss{
+                <link rel="stylesheet" href="~/Content/flexslider.css" type="text/css" media="screen" />
+            }
+            @section linkTag{
+                <link href="~/Content/NotFoundStyle.css" rel="stylesheet" />
+                <link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">
+            }
+    }
 }
 @section CssStyleTag{
     <style>
@@ -19,9 +33,11 @@
             /*there are not space between classes because all classes in one element*/
             background: none;
         }
+
         .RenderBody {
             padding: 0;
         }
+
         #Choco_close {
             margin-top: 0
         }
@@ -66,33 +82,33 @@
     <div class="container">
         <div class="wthree-soon-agileinfo">
             <h5>Our Turbo Car is almost ready</h5>-->
-            <!-- timer -->
-            <!--<div class="agileits-timer">
-                <div class="clock">
-                    <div class="column days">
-                        <div class="timer" id="days"></div>
-                        <div class="text">Days</div>
-                    </div>
-                    <div class="timer days"></div>
-                    <div class="column">
-                        <div class="timer" id="hours"></div>
-                        <div class="text">Hours</div>
-                    </div>
-                    <div class="timer"></div>
-                    <div class="column">
-                        <div class="timer" id="minutes"></div>
-                        <div class="text">Minutes</div>
-                    </div>
-                    <div class="timer"></div>
-                    <div class="column">
-                        <div class="timer" id="seconds"></div>
-                        <div class="text">Seconds</div>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>-->
-            <!-- //timer -->
-            <!--<div class="w3_agile_social_icons">
+<!-- timer -->
+<!--<div class="agileits-timer">
+    <div class="clock">
+        <div class="column days">
+            <div class="timer" id="days"></div>
+            <div class="text">Days</div>
+        </div>
+        <div class="timer days"></div>
+        <div class="column">
+            <div class="timer" id="hours"></div>
+            <div class="text">Hours</div>
+        </div>
+        <div class="timer"></div>
+        <div class="column">
+            <div class="timer" id="minutes"></div>
+            <div class="text">Minutes</div>
+        </div>
+        <div class="timer"></div>
+        <div class="column">
+            <div class="timer" id="seconds"></div>
+            <div class="text">Seconds</div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>-->
+<!-- //timer -->
+<!--<div class="w3_agile_social_icons">
                 <ul>
                     <li><a href="#" class="icon icon-cube agile_facebook"></a></li>
                     <li><a href="#" class="icon icon-cube agile_rss"></a></li>
@@ -131,13 +147,13 @@
         <h3 class="agileits-title">@CarsBiddingUsingBootstrap.Localization.Gallery<span class="w3lshr-line"> </span></h3>
         @if (Model != null && Model.Count > 0)
         {
-            <div class="text-right">
+            <div class="newCar text-right">
                 <a href="/Car/NewCar" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.NewCar<span></span></a>
             </div>
         }
         @if (Model != null && Model.Count > 0)
         {
-            @Html.Partial("~/Views/Gallery/CarPanel.cshtml",Model)
+            @Html.Partial("~/Views/Gallery/CarPanel.cshtml", Model)
         }
         else
         {
@@ -154,7 +170,7 @@
 
         @if (Model != null && Model.Count > 0)
         {
-            <div class="text-right">
+            <div class="more-btn text-right">
                 <a href="/Gallery/Gallery" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.More<span></span></a>
             </div>
         }
@@ -162,11 +178,11 @@
     </div>
 </div>
 <!-- //gallery -->
-@section TimerScripts{
+@*@section TimerScripts{
     <script type="text/javascript" src="~/Scripts/moment.js"></script>
     <script type="text/javascript" src="~/Scripts/moment-timezone-with-data.js"></script>
     <script type="text/javascript" src="~/Scripts/timer.js"></script>
-}
+}*@
 
 @section FlexSliderScripts{
     <!-- FlexSlider -->
@@ -180,7 +196,7 @@
                 }
             });
         });
-        
+
     </script>
     <!-- //End-FlexSlider -->
 }

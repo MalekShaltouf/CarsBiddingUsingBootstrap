@@ -7,13 +7,9 @@
     <meta name="keywords" content="Cars Bidding" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- Custom Theme files -->
-    <link href="~/Content/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="~/Content/RTL/Bootstrap-RTL/bootstrap-rtl.css" type="text/css" rel="stylesheet" media="all">
     @*<link href="~/Content/style.css" type="text/css" rel="stylesheet" media="all">*@<!--style with yellow color-->
-    <link href="~/Content/Sky_Style.css" rel="stylesheet" /><!--style with blue color-->
-    @if (CarsBiddingUsingBootstrap.Localization.isRTL == "true")
-    {
-        <link href="~/Content/RTL/Sky_Style_RTL.css" rel="stylesheet" />
-    }
+    <link href="~/Content/RTL/Sky_Style_RTL.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
     <!-- favicon pakage -->
     <link rel="apple-touch-icon" sizes="180x180" href="~/favicon/apple-touch-icon.png">
@@ -28,11 +24,7 @@
     @RenderSection("flexsliderCss", false)<!-- flexslider-CSS -->
     @*<link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">*@
     <link href="~/Content/animate.css" rel="stylesheet" />
-    <link href="~/Content/CustomeStyle.css" rel="stylesheet" />
-    @if (CarsBiddingUsingBootstrap.Localization.isRTL == "true")
-    {
-        <link href="~/Content/RTL/CustomeStyle_RTL.css" rel="stylesheet" />
-    }
+    <link href="~/Content/RTL/CustomeStyle_RTL.css" rel="stylesheet" />
     @RenderSection("CssStyleTag", false)
     <!-- //Custom Theme files -->
     <!-- web-fonts -->
@@ -63,7 +55,7 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right cl-effect-15">
+                    <ul class="nav navbar-nav navbar-left cl-effect-15">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.Home, "Index", "Home", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.Home })</li>
 
@@ -92,7 +84,7 @@
                             <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.SignIn, "SignIn", "Login", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.SignIn })</li>
                             <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.SignUp, "SignUp", "Login", null, new { @class = "SignUp page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.SignUp })</li>
                             <li>
-                                <div class="btn-group">
+                                <div class="btn-group beforeLoginLanguage-dropdown">
                                     <a href="#" data-toggle="dropdown" class="dropdown-toggle setting-icon blue-circle-dropdown"><i class="fa fa-cog" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         @foreach (CarsBiddingUsingBootstrap.Classes.Language lang in CarsBiddingUsingBootstrap.Classes.LanguageManager.GetAvailableLanguages())
@@ -105,7 +97,6 @@
                         }
                         else
                         {
-
                             <li class="LoginInfoDDMenu">
                                 <div class="btn-group">
                                     <a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="~/images/user.png" alt="Avatar"> @User.Identity.Name.Split('|').FirstOrDefault() <b class="caret"></b></a>
@@ -127,7 +118,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="btn-group">
+                                <div class="btn-group bell-dropdown">
                                     <a href="#" data-toggle="dropdown" class="dropdown-toggle bell blue-circle-dropdown"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
                                     <ul class="notifications dropdown-menu scrollStyle" id="user-notification">
                                     </ul>

@@ -499,7 +499,7 @@
     <value>تأمين الشراء</value>
   </data>
   <data name="ThereAre'ntAnyNotification." xml:space="preserve">
-    <value>.لا يوجد إشعارات</value>
+    <value>لا يوجد إشعارات</value>
   </data>
   <data name="TheRemainingTimeForAuctionEnding" xml:space="preserve">
     <value>الوقت المتبقي لإنتهاء المزاد</value>

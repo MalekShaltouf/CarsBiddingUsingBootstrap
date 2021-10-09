@@ -1,3 +1,6 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@using System.Globalization
+@using System.Threading
+@{
+    CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+    Layout = currentCulture.TwoLetterISOLanguageName == "ar"? "~/Views/Shared/_LayoutRTL.cshtml" : "~/Views/Shared/_Layout.cshtml";
 }

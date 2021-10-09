@@ -1195,7 +1195,7 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There are&apos;nt any notification..
+        ///   Looks up a localized string similar to There are&apos;nt any notification.
         /// </summary>
         public static string ThereAre_ntAnyNotification_ {
             get {

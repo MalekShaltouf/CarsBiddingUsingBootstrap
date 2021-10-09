@@ -129,7 +129,15 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\NotFoundStyle.css" />
     <Content Include="Content\PagedList.css" />
-    <Content Include="Content\RTL_Style.css" />
+    <Content Include="Content\RTL\Bootstrap-RTL\bootstrap-rtl.css" />
+    <Content Include="Content\RTL\Bootstrap-RTL\bootstrap-rtl.min.css" />
+    <Content Include="Content\RTL\Bootstrap-RTL\bootstrap-theme-rtl.css" />
+    <Content Include="Content\RTL\Bootstrap-RTL\bootstrap-theme-rtl.min.css" />
+    <Content Include="Content\RTL\chocolat_RTL.css" />
+    <Content Include="Content\RTL\CustomeStyle_RTL.css" />
+    <Content Include="Content\RTL\flexslider_RTL.css" />
+    <Content Include="Content\RTL\NotFoundStyle_RTL.css" />
+    <Content Include="Content\RTL\Sky_Style_RTL.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\Sky_Style.css" />
     <Content Include="Content\style.css" />
@@ -349,6 +357,7 @@
     <Content Include="Views\NotificationHistory\CarWinnerInfo.cshtml" />
     <Content Include="Views\NotificationHistory\CarOwnerInfo.cshtml" />
     <Content Include="Views\NotificationHistory\NotificationDetails.cshtml" />
+    <Content Include="Views\Shared\_LayoutRTL.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
