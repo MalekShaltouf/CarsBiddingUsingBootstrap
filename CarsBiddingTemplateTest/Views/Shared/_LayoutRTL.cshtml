@@ -25,6 +25,8 @@
     @*<link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">*@
     <link href="~/Content/animate.css" rel="stylesheet" />
     <link href="~/Content/RTL/CustomeStyle_RTL.css" rel="stylesheet" />
+    <link href="~/Content/MediaQuery.css" rel="stylesheet" />
+    <link href="~/Content/RTL/MediaQuery_RTL.css" rel="stylesheet" />
     @RenderSection("CssStyleTag", false)
     <!-- //Custom Theme files -->
     <!-- web-fonts -->
@@ -50,8 +52,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1 class="w3lslogo"><a href="index.html">@CarsBiddingUsingBootstrap.Localization.CB<span style="bottom:15px">@CarsBiddingUsingBootstrap.Localization.CarsBidding</span></a></h1>
-                    @*<h1 class="w3lslogo"><a href="index.html">CB<span style="bottom:15px">Cars Bidding</span></a></h1>*@
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="btn-group xs-notification-dropdown visible-xs-block">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle bell blue-circle-dropdown"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                            <ul class="notifications dropdown-menu scrollStyle user-notification">
+                            </ul>
+                        </div>
+                    }
+                    <h1 class="w3lslogo"><a href="@Url.Action("Index","Home")">@CarsBiddingUsingBootstrap.Localization.CB<span style="bottom:15px">@CarsBiddingUsingBootstrap.Localization.CarsBidding</span></a></h1>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -84,8 +93,9 @@
                             <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.SignIn, "SignIn", "Login", null, new { @class = "page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.SignIn })</li>
                             <li>@Html.ActionLink(CarsBiddingUsingBootstrap.Localization.SignUp, "SignUp", "Login", null, new { @class = "SignUp page-scroll", data_hover = CarsBiddingUsingBootstrap.Localization.SignUp })</li>
                             <li>
-                                <div class="btn-group beforeLoginLanguage-dropdown">
-                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle setting-icon blue-circle-dropdown"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                <div class="btn-group xsmall-dropdown non-login-language-dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-xs setting-icon blue-circle-dropdown"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle visible-xs" data-hover="@CarsBiddingUsingBootstrap.Localization.Langauge">@CarsBiddingUsingBootstrap.Localization.Langauge<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         @foreach (CarsBiddingUsingBootstrap.Classes.Language lang in CarsBiddingUsingBootstrap.Classes.LanguageManager.GetAvailableLanguages())
                                         {
@@ -98,13 +108,14 @@
                         else
                         {
                             <li class="LoginInfoDDMenu">
-                                <div class="btn-group">
-                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="~/images/user.png" alt="Avatar"> @User.Identity.Name.Split('|').FirstOrDefault() <b class="caret"></b></a>
+                                <div class="btn-group xsmall-dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-xs"><img src="~/images/user.png" alt="Avatar"> @User.Identity.Name.Split('|').FirstOrDefault()<b class="caret"></b></a>
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle visible-xs" data-hover="@User.Identity.Name.Split('|').FirstOrDefault()"><img src="~/images/user.png" alt="Avatar"> @User.Identity.Name.Split('|').FirstOrDefault()<i class="fa fa-chevron-down login-chevron-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#"><i class="fa fa-user"></i>@CarsBiddingUsingBootstrap.Localization.Profile</a></li>
-                                        <li><a href="#"><i class="fa fa-paint-brush" aria-hidden="true"></i>@CarsBiddingUsingBootstrap.Localization.ThemeColor</a></li>
+                                        <li><a href="#"><i class="fa fa-user link-icon"></i>@CarsBiddingUsingBootstrap.Localization.Profile</a></li>
+                                        <li><a href="#"><i class="fa fa-paint-brush link-icon" aria-hidden="true"></i>@CarsBiddingUsingBootstrap.Localization.ThemeColor</a></li>
                                         <li class="sub-dropdown">
-                                            <a href="#" data-toggle="dropdown"><i class="fa fa-language"></i>@CarsBiddingUsingBootstrap.Localization.Langauge</a>
+                                            <a href="#" class="Login-lang-link" data-toggle="dropdown"><i class="fa fa-language link-icon"></i>@CarsBiddingUsingBootstrap.Localization.Langauge</a>
                                             <ul class="dropdown-menu hoverable-dropdown open-right" role="menu">
                                                 @foreach (CarsBiddingUsingBootstrap.Classes.Language lang in CarsBiddingUsingBootstrap.Classes.LanguageManager.GetAvailableLanguages())
                                                 {
@@ -113,14 +124,14 @@
                                             </ul>
                                         </li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="@Url.Action("SignOut","Login")"><i class="fa fa-sign-out"></i>@CarsBiddingUsingBootstrap.Localization.Logout</a></li>
+                                        <li><a href="@Url.Action("SignOut","Login")"><i class="fa fa-sign-out link-icon"></i>@CarsBiddingUsingBootstrap.Localization.Logout</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li>
-                                <div class="btn-group bell-dropdown">
+                            <li class="hidden-xs">
+                                <div class="btn-group notification-dropdown rtl-bell-dropdown">
                                     <a href="#" data-toggle="dropdown" class="dropdown-toggle bell blue-circle-dropdown"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
-                                    <ul class="notifications dropdown-menu scrollStyle" id="user-notification">
+                                    <ul class="notifications dropdown-menu scrollStyle user-notification">
                                     </ul>
                                 </div>
                             </li>

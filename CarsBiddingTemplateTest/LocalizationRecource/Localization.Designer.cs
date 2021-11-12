@@ -106,7 +106,7 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Any electronic process aimed at reducing the time and effort on the user, and thus Bidding Cars aims to speed up the process of selling cars in less time and effort on the user..
+        ///   Looks up a localized string similar to Any electronic process aimed at reducing the time and effort on the user, and thus Bidding Cars aims to speed up the process of selling cars in less time and effort on the user.
         /// </summary>
         public static string AnyElectronicProcessAimedAtReducingThe {
             get {
@@ -907,7 +907,7 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Gallery does not contain any car..
+        ///   Looks up a localized string similar to The Gallery does not contain any car.
         /// </summary>
         public static string NotFoundData {
             get {
@@ -1141,7 +1141,7 @@ namespace CarsBiddingUsingBootstrap {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sorry!.
+        ///   Looks up a localized string similar to Sorry.
         /// </summary>
         public static string Sorry {
             get {

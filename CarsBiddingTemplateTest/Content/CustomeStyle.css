@@ -88,7 +88,12 @@ font-weight: 900
     text-indent: 10px;
     display: inline-block;
 }
-
+/*layout footer style*/
+.footer-w3icons {
+    padding-bottom:1em;
+    margin-bottom:1em
+}
+/*layout footer style*/
 /*Layout style*/
 /*Start Home Page*/
 .sky-hover.wthree-btn {
@@ -102,22 +107,6 @@ font-weight: 900
 
 .gallery .main:nth-child(3) {
 margin: 0.3em 0 0;
-}
-
-.gallery #notfound,
-.Main-Gallery #notfound {
-/*height: 52vh;*/
-height: 465px;
-}
-
-.gallery .notfound .notfound-404 h1,
-.Main-Gallery .notfound .notfound-404 h1 {
-top: 30%;
-}
-
-.gallery .notfound .wthree-btn,
-.Main-Gallery .notfound .wthree-btn {
-border: none
 }
 
 .gallery .view,
@@ -802,7 +791,7 @@ height: 36px;
 margin-right: 10px;
 }
 
-.navbar-default .navbar-nav > li > .btn-group > a {
+.navbar-default .btn-group > a {
 color: #fff;
 font-size: 1.1em;
 font-weight: 400;
@@ -814,7 +803,7 @@ text-shadow: none;
 padding: 0;
 }
 /* Effect 15: scale down, reveal */
-.navbar-default .navbar-nav > li > .btn-group > a::before {
+.navbar-default .btn-group > a::before {
     color: #fff;
     content: attr(data-hover);
     position: absolute;
@@ -859,7 +848,7 @@ transform: translateY(-5px)
 .nav .dropdown-menu li a {
     color: #00bcd4;
 }
-.nav .LoginInfoDDMenu .btn-group i {
+.nav .LoginInfoDDMenu .btn-group .link-icon {
     font-size: 18px;
     color: #00bcd4;
     margin-right: 11px
@@ -931,10 +920,6 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse span.TimeSince-Span 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color:unset;
 }
-.sub-dropdown:hover .hoverable-dropdown {
-    /*this css selector will be make sub-dropdown hoverable insted of clickable*/
-    display: block;
-}
 
 .sub-dropdown .open-right {
     /*the open-right-dropdown class will be make sub-dropdown open in right side instead of in down side*/
@@ -942,7 +927,8 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse span.TimeSince-Span 
     top: 45%;
 }
 .setting-icon .fa-cog {
-    line-height:25px
+    line-height:25px;
+    margin-left:2px
 }
 /*End Navbar Menu Style*/
 
@@ -957,5 +943,3 @@ to {
     transform: translate3d(0, 0, 0);
 }
 }
-
-

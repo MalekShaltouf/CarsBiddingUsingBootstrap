@@ -7,7 +7,14 @@
             <div class="view view-seventh">
                 <a href="@Url.Content(car.MainPhoto)" class="b-link-stripe b-animate-go thickbox" title="@car.TypeOfCar">
                     <img src="@Url.Content(car.MainPhoto)" alt="Main Photo" />
-                    <div class="mask">
+                    <div class="car-Panel-xsmall-screen visible-xs">
+                        <div>
+                            <h3>@car.TypeOfCar @car.YearOfManufacture</h3>
+                            <span data-car-id="@car.CarId" onclick="details(this); return false">@CarsBiddingUsingBootstrap.Localization.Details</span>
+                            @*<span data-car-id="@car.CarId" onclick="details(this); return false">@CarsBiddingUsingBootstrap.Localization.Details</span>*@
+                        </div>
+                    </div>
+                    <div class="mask hidden-xs">
                         <h4>@car.TypeOfCar @car.YearOfManufacture</h4>
                         <p>@CarsBiddingUsingBootstrap.Localization.Color:&nbsp;@car.ColorOfCar.ToLower()</p>
                         <p>@CarsBiddingUsingBootstrap.Localization.CurrentPrice:&nbsp;@car.CurrentPrice</p>

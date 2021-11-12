@@ -400,7 +400,7 @@
     <value>جير عادي</value>
   </data>
   <data name="NotFoundData" xml:space="preserve">
-    <value>.المعرض لاحتوي على سيارات</value>
+    <value>المعرض لا يحتوي على سيارات</value>
   </data>
   <data name="NotificationDetails" xml:space="preserve">
     <value>تفاصيل الإشعارات</value>
@@ -481,7 +481,7 @@
     <value>إنشاء حساب</value>
   </data>
   <data name="Sorry" xml:space="preserve">
-    <value>!نأسف</value>
+    <value>نأسف</value>
   </data>
   <data name="Subscribe" xml:space="preserve">
     <value>إشترك</value>

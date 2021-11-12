@@ -123,6 +123,7 @@
     <Content Include="Content\chocolat.css" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\CustomeStyle.css" />
+    <Content Include="Content\MediaQuery.css" />
     <Content Include="Content\multi-select.css" />
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\font-awesome.css" />
@@ -136,6 +137,7 @@
     <Content Include="Content\RTL\chocolat_RTL.css" />
     <Content Include="Content\RTL\CustomeStyle_RTL.css" />
     <Content Include="Content\RTL\flexslider_RTL.css" />
+    <Content Include="Content\RTL\MediaQuery_RTL.css" />
     <Content Include="Content\RTL\NotFoundStyle_RTL.css" />
     <Content Include="Content\RTL\Sky_Style_RTL.css" />
     <Content Include="Content\Site.css" />

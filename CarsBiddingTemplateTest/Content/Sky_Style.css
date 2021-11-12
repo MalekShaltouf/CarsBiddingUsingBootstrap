@@ -888,16 +888,19 @@ p{
    -ms-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
 }
-.view-seventh:hover img {
-   -webkit-transform: rotate(720deg) scale(0);
-   -moz-transform: rotate(720deg) scale(0);
-   -o-transform: rotate(720deg) scale(0);
-   -ms-transform: rotate(720deg) scale(0);
-   transform: rotate(720deg) scale(0);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
+@media(min-width:768px) {
+    .view-seventh:hover img {
+        -webkit-transform: rotate(720deg) scale(0);
+        -moz-transform: rotate(720deg) scale(0);
+        -o-transform: rotate(720deg) scale(0);
+        -ms-transform: rotate(720deg) scale(0);
+        transform: rotate(720deg) scale(0);
+        -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
 }
+
 .view-seventh:hover .mask {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
    filter: alpha(opacity=100);

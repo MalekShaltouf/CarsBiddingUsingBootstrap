@@ -133,7 +133,7 @@
     <value>A new car has been added to gallery successfully.</value>
   </data>
   <data name="AnyElectronicProcessAimedAtReducingThe" xml:space="preserve">
-    <value>Any electronic process aimed at reducing the time and effort on the user, and thus Bidding Cars aims to speed up the process of selling cars in less time and effort on the user.</value>
+    <value>Any electronic process aimed at reducing the time and effort on the user, and thus Bidding Cars aims to speed up the process of selling cars in less time and effort on the user</value>
   </data>
   <data name="Arabic" xml:space="preserve">
     <value>Arabic</value>
@@ -400,7 +400,7 @@
     <value>Normal Gear</value>
   </data>
   <data name="NotFoundData" xml:space="preserve">
-    <value>The Gallery does not contain any car.</value>
+    <value>The Gallery does not contain any car</value>
   </data>
   <data name="NotificationDetails" xml:space="preserve">
     <value>Notification Details</value>
@@ -478,7 +478,7 @@
     <value>Sign Up</value>
   </data>
   <data name="Sorry" xml:space="preserve">
-    <value>Sorry!</value>
+    <value>Sorry</value>
   </data>
   <data name="Subscribe" xml:space="preserve">
     <value>Subscribe</value>

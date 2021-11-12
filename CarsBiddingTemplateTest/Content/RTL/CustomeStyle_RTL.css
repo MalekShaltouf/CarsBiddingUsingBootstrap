@@ -93,7 +93,12 @@ select option:first-of-type {
     text-indent: 10px;
     display: inline-block;
 }
-
+/*layout footer style*/
+.footer-w3icons {
+    padding-bottom: 1em;
+    margin-bottom: 1em
+}
+/*layout footer style*/
 /*Layout style*/
 /*Start Home Page*/
 .sky-hover.wthree-btn {
@@ -111,22 +116,6 @@ select option:first-of-type {
 .gallery .newCar,
 .gallery .more-btn {
     text-align:left
-}
-
-.gallery #notfound,
-.Main-Gallery #notfound {
-    /*height: 52vh;*/
-    height: 465px;
-}
-
-.gallery .notfound .notfound-404 h1,
-.Main-Gallery .notfound .notfound-404 h1 {
-    top: 30%;
-}
-
-.gallery .notfound .wthree-btn,
-.Main-Gallery .notfound .wthree-btn {
-    border: none
 }
 
 .gallery .view,
@@ -819,7 +808,7 @@ border-bottom: 2px solid #00bcd4;*/
     margin-left: 10px;
 }
 
-.navbar-default .navbar-nav > li > .btn-group > a {
+.navbar-default .btn-group > a {
     color: #fff;
     font-size: 1.1em;
     font-weight: 400;
@@ -830,17 +819,17 @@ border-bottom: 2px solid #00bcd4;*/
     text-shadow: none;
     padding: 0;
 }
-    /* Effect 15: scale down, reveal */
-    .navbar-default .navbar-nav > li > .btn-group > a::before {
-        color: #fff;
-        content: attr(data-hover);
-        position: absolute;
-        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-        -o-transition: transform 0.3s, opacity 0.3s;
-        -ms-transition: transform 0.3s, opacity 0.3s;
-        transition: transform 0.3s, opacity 0.3s;
-    }
+/* Effect 15: scale down, reveal */
+.navbar-default .btn-group > a::before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
+    -ms-transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
 
     .navbar-default .navbar-nav > li > .btn-group > a:hover::before,
     .navbar-default .navbar-nav > li > .btn-group > a:focus::before {
@@ -877,7 +866,7 @@ border-bottom: 2px solid #00bcd4;*/
     color: #00bcd4;
 }
 
-.nav .LoginInfoDDMenu .btn-group i {
+.nav .LoginInfoDDMenu .btn-group .link-icon {
     font-size: 18px;
     color: #00bcd4;
     margin-left: 11px
@@ -969,27 +958,28 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse span.TimeSince-Span 
     background-color: unset;
 }
 
-.sub-dropdown:hover .hoverable-dropdown {
-    /*this css selector will be make sub-dropdown hoverable insted of clickable*/
-    display: block;
-}
-
 .sub-dropdown .open-right {
     /*the open-right class will be make sub-dropdown open in right side instead of in down side*/
-    right: 100%;
+    right: unset;
+    left: 100%;
     top: 45%;
 }
-
+.non-login-language-dropdown .dropdown-menu {
+    right: unset;
+    left: 8px;
+    top: 25px;
+}
 .setting-icon .fa-cog {
-    line-height: 25px
+    line-height: 25px;
+    margin-left: 2px;
 }
 .beforeLoginLanguage-dropdown .dropdown-menu,
-.bell-dropdown .dropdown-menu {
+.rtl-bell-dropdown .dropdown-menu {
     right: unset;
     left: 50%
 }
-.bell-dropdown .dropdown-menu {
-    top:120%
+.rtl-bell-dropdown .dropdown-menu {
+    top: 120%
 }
 /*End Navbar Menu Style*/
 

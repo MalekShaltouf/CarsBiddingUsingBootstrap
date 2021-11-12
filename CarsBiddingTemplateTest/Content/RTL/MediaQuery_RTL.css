@@ -1,0 +1,56 @@
+﻿/*Home Page*/
+
+/*NabBar Section*/
+/*thi media for xs small screen*/
+@media(max-width:767px) {
+    .navbar-nav {
+        margin:0 -15px
+    }
+    .navbar-collapse.navbar-ex1-collapse {
+        text-align: right;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-default .navbar-nav > li > .xsmall-dropdown .fa-chevron-down {
+        float: left;
+    }
+    .flex-control-nav {
+        right: unset;
+        left:45%;
+        margin-bottom:40px
+    }
+    .xs-notification-dropdown {
+        float: left;
+        top: 14px;
+        right: unset;
+        left: 23px;
+    }
+    .xs-notification-dropdown .dropdown-menu{
+        left:0;
+        right:unset;
+    }
+    .navbar-default .LoginInfoDDMenu .btn-group > a::before {
+        left: unset;
+        right: 52px;
+    }
+    .LoginInfoDDMenu .login-chevron-down {
+        margin-left: 8px
+    }
+}
+/*NabBar Section*/
+
+
+/*Subscribe Section*/
+/*thi media for xs small screen*/
+@media(max-width:1200px) {
+    .subscribe-agileinfo input[type="email"] {
+        width: 77%;
+    }
+}
+@media(max-width:600px) {
+    .subscribe-agileinfo input[type="email"] {
+        width: 72%;
+    }
+}
+/*Subscribe Section*/
+/*Home Page*/

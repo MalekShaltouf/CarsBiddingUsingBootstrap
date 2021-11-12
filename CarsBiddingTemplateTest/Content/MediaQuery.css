@@ -1,0 +1,149 @@
+﻿/*Home Page*/
+/*Navbar Section*/
+/*thi media for xs small screen*/
+@media(max-width:767px) {
+    .navbar-collapse.navbar-ex1-collapse {
+        text-align: left;
+        background: unset;
+        min-height: 700px;
+        padding-right: unset;
+        padding-left: unset;
+    }
+    .navbar-nav > li {
+        margin: unset;
+    }
+    .navbar-default .navbar-nav > li > a
+    {
+        background-color: #00bcd4;
+        padding: 11px;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus
+    {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus{
+        background: #fff;
+    }
+    .navbar-default .navbar-nav > li > .btn-group.xsmall-dropdown {
+        display: block;
+    }
+    .navbar-default .navbar-nav > li > .btn-group.xsmall-dropdown > a {
+        background: #00bcd4;
+        padding: 11px;
+        color: #fff;
+    }
+    .navbar-default .navbar-nav > li > .btn-group.xsmall-dropdown > a:hover,
+    .navbar-default .navbar-nav > li > .btn-group.xsmall-dropdown > a:focus
+    {
+        color: #00bcd4;
+        background-color: #fff;
+    }
+    .navbar-default .navbar-nav > li > .xsmall-dropdown .fa-chevron-down {
+        float: right;
+    }
+    .navbar-nav .xsmall-dropdown.open .dropdown-menu {
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+    .navbar-default .navbar-nav .xsmall-dropdown.open .dropdown-menu > li > a {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 11px
+    }
+    .navbar-default .navbar-nav .xsmall-dropdown.open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .xsmall-dropdown.open .dropdown-menu > li > a:focus {
+        background-color:#fff;
+        color:#00bcd4 !important;
+    }
+    .flex-control-nav {
+        right: 42%
+    }
+    .xs-notification-dropdown {
+        float:right;
+        top:14px;
+        right:23px
+    }
+    .xs-notification-dropdown .dropdown-menu{
+        left:unset;
+        right:0;
+    }
+    .navbar-default .navbar-nav > li.LoginInfoDDMenu > .btn-group.xsmall-dropdown > a {
+        padding: 2px
+    }
+    .navbar-default .LoginInfoDDMenu .btn-group > a::before {
+        left: 52px;
+        top: 7px;
+    }
+    .LoginInfoDDMenu .login-chevron-down {
+        margin-top: 10px;
+        margin-right: 8px
+    }
+    .LoginInfoDDMenu .dropdown-menu .divider {
+        margin: unset;
+    }
+    .LoginInfoDDMenu .dropdown-menu > li > a:hover, .dropdown-menu > li > a:hover i,
+    .LoginInfoDDMenu .dropdown-menu > li > a:focus, .dropdown-menu > li > a:focus i {
+        color:unset!important;
+    }
+}
+/*this custom media for solve specific problem*/
+@media (max-width: 567px) {
+    .navbar-default .navbar-nav > li > a {
+        padding: 13px;
+    }
+
+}
+/*this media from small to large screen*/
+@media(min-width:768px) {
+    .sub-dropdown:hover .hoverable-dropdown {
+        /*this css selector will be make sub-dropdown hoverable insted of clickable*/
+        display: block;
+    }
+    .nav .sub-dropdown.open > a,
+    .nav .sub-dropdown.open > a:hover,
+    .nav .sub-dropdown.open > a:focus {
+        background-color: #00bcd4;
+    }
+}
+/*Navbar Section*/
+/*Subscribe Section*/
+/*thi media for xs small screen*/
+@media(max-width:1200px) {
+    .subscribe-agileinfo input[type="email"] {
+        width: 65%;
+    }
+}
+/*Subscribe Section*/
+/*Home Page*/
+
+/*Media Query for carPanel(Home & Gallery Page) in xsmall screen*/
+@media(max-width:767px) {
+        .car-Panel-xsmall-screen {
+            position: absolute;
+            /*top: 204px;*/
+            top: 186px;
+            left: 0;
+            width: 100%;
+            height: 15%;
+            background-color: #f6f5f5;
+            color: #00BCD4;
+        }
+        .car-Panel-xsmall-screen h3{
+            line-height:38px;
+            font-weight:bolder
+        }
+        .car-Panel-xsmall-screen span {
+            background-color: #f6f5f5;
+            display: block;
+            margin: -2px;
+            color: #00BCD4 !important;
+            font-weight: bolder;
+            font-size: 13px!important;
+        }
+}
+/*Media Query for carPanel(Home & Gallery Page) in xsmall screen*/
+
+

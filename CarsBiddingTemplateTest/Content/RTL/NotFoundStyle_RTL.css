@@ -1,11 +1,11 @@
 ﻿#notfound {
     position: relative;
-    height: 100vh;
+    height: 65vh;
 }
 
     #notfound .notfound {
         position: absolute;
-        right: 50%;
+        left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -34,8 +34,8 @@
             color: #211b19;
             text-transform: uppercase;
             position: absolute;
-            right: 50%;
-            top: 50%;
+            left: 50%;
+            top: 25%;
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -57,31 +57,32 @@
             right: 0;
         }
 
+.gallery .notfound .wthree-btn,
+.Main-Gallery .notfound .wthree-btn {
+    border: none
+}
 
-
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width:991px) {
     .notfound .notfound-404 h1 {
-        font-size: 148px;
+        font-size: 170px;
+        top: 35%;
+    }
+
+    #notfound {
+        height: 52vh;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .notfound .notfound-404 {
-        height: 148px;
-        margin: 0px auto 10px;
+@media only screen and (max-width: 767px) {
+    #notfound {
+        height: 40vh;
+    }
+    .notfound .notfound-404 h1 {
+        font-size: 123px;
+        top: 55%;
     }
 
-        .notfound .notfound-404 h1 {
-            font-size: 86px;
-        }
-
-        .notfound .notfound-404 h2 {
-            font-size: 16px;
-        }
-
-    .notfound a {
-        padding: 7px 15px;
-        font-size: 14px;
+    .notfound .notfound-404 h2 {
+        font-size: 26px;
     }
 }
