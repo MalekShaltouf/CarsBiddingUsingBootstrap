@@ -265,6 +265,7 @@
     <Compile Include="Classes\Helper.cs" />
     <Compile Include="Classes\LanguageManager.cs" />
     <Compile Include="Classes\WinnerOwnerCarDetails.cs" />
+    <Content Include="Content\loading-screen-style.css" />
     <Compile Include="Controllers\BiddingProcessController.cs" />
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\LanguageController.cs" />

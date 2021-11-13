@@ -26,6 +26,7 @@
     <link href="~/Content/animate.css" rel="stylesheet" />
     <link href="~/Content/CustomeStyle.css" rel="stylesheet" />
     <link href="~/Content/MediaQuery.css" rel="stylesheet" />
+    <link href="~/Content/loading-screen-style.css" rel="stylesheet" />
     @RenderSection("CssStyleTag", false)
     <!-- //Custom Theme files -->
     <!-- web-fonts -->
@@ -152,7 +153,7 @@
             <h4>@CarsBiddingUsingBootstrap.Localization.SubscribeOurNewsletter</h4>
             <form action="#" method="post">
                 <input type="email" name="email" placeholder="@CarsBiddingUsingBootstrap.Localization.EnterYourEmail" required="">
-                <input type="submit" value="@CarsBiddingUsingBootstrap.Localization.Subscribe" >
+                <input type="submit" value="@CarsBiddingUsingBootstrap.Localization.Subscribe">
                 <div class="clearfix"> </div>
             </form>
         </div>
@@ -204,6 +205,19 @@
             </div>
         </div>
     </div>
+    <section class="loading-screen">
+        <div class="breeding-rhombus-spinner">
+            <div class="rhombus child-1"></div>
+            <div class="rhombus child-2"></div>
+            <div class="rhombus child-3"></div>
+            <div class="rhombus child-4"></div>
+            <div class="rhombus child-5"></div>
+            <div class="rhombus child-6"></div>
+            <div class="rhombus child-7"></div>
+            <div class="rhombus child-8"></div>
+            <div class="rhombus big"></div>
+        </div>
+    </section>
     <script src="~/Scripts/Notification.js"></script>
     <!-- js -->
     @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
@@ -275,6 +289,19 @@
             GetAllUserNotification();
         </script>
     }
+    <script>
+        //Loading Screen using JQuery
+        //start
+        $(window).load(function () {
+            $(".loading-screen .breeding-rhombus-spinner").fadeOut(1000, function () {
+                $("body").css("overflow", "visible");
+                $(this).parent().fadeOut(2000, function () {
+                     $(this).remove();
+                });
+            });
+        });
+                //end
+    </script>
     @RenderSection("scripts", false)
 
     @*
