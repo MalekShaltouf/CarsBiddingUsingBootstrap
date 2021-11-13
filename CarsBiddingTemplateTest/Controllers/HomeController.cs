@@ -25,6 +25,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
                     MainPhoto = car.MainPhoto,
                     CurrentPrice = bid.CurrentPrice
                 }).Where(car => car.Timer_Status == true).Take(9).ToList();
+                ViewBag.ShowLoadScreen = true;
                 return View(cars);
             }
         }

@@ -19,6 +19,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
         // GET: Car
         public ViewResult NewCar()
         {
+            ViewBag.ShowLoadScreen = true;
             CarsInfoViewModel carsInfoViewModel = new CarsInfoViewModel();
             carsInfoViewModel.TypeOfTransmissionGearMenu = Helper.fillTypeOfTransmissionGearDropDownList();
             carsInfoViewModel.CarCustomsMenu = Helper.fillCarCustomsDropDownList();
@@ -317,6 +318,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
                 carsInfoViewModel.LocalizedType = Localization.ERROR;
                 carsInfoViewModel.Msg = ex.Message;
             }
+            ViewBag.ShowLoadScreen = true;
             return View(carsInfoViewModel);
         }
 

@@ -121,7 +121,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\chocolat.css" />
-    <Content Include="Content\animate.css" />
     <Content Include="Content\CustomeStyle.css" />
     <Content Include="Content\MediaQuery.css" />
     <Content Include="Content\multi-select.css" />
@@ -130,6 +129,8 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\NotFoundStyle.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\animate.min.css" />
     <Content Include="Content\RTL\Bootstrap-RTL\bootstrap-rtl.css" />
     <Content Include="Content\RTL\Bootstrap-RTL\bootstrap-rtl.min.css" />
     <Content Include="Content\RTL\Bootstrap-RTL\bootstrap-theme-rtl.css" />
@@ -254,6 +255,8 @@
     <Content Include="Scripts\SmoothScroll.min.js" />
     <Content Include="Scripts\TemplateFromStyle.js" />
     <Content Include="Scripts\timer.js" />
+    <Content Include="Scripts\wow.js" />
+    <Content Include="Scripts\wow.min.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>

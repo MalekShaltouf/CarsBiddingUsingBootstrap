@@ -16,6 +16,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
         // GET: Contact
         public ViewResult Contact()
         {
+            ViewBag.ShowLoadScreen = true;
             return View(new ContactViewModel());
         }
         [ValidateAntiForgeryToken]

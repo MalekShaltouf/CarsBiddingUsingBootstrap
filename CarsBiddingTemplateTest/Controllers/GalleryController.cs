@@ -65,6 +65,10 @@ namespace CarsBiddingUsingBootstrap.Controllers
                      */
                     ViewBag.searchResult = JsonConvert.SerializeObject(cars);
                     //End
+                    if (page == null) 
+                    {
+                        ViewBag.ShowLoadScreen = true;
+                    }
                     return View(cars.ToPagedList(page ?? 1, 12));
                 }
             }

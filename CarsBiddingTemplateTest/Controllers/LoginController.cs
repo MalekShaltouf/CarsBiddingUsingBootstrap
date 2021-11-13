@@ -21,6 +21,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
         {
             SignUpViewModel signUpViewModel = new SignUpViewModel();
             signUpViewModel.GenderMenu = Helper.fillGenderDropDownList();
+            ViewBag.ShowLoadScreen = true;
             return View(signUpViewModel);
         }
         [ValidateAntiForgeryToken]
@@ -84,6 +85,7 @@ namespace CarsBiddingUsingBootstrap.Controllers
         [AllowAnonymousOnly]
         public ActionResult SignIn()
         {
+            ViewBag.ShowLoadScreen = true;
             return View(new SignInViewModel());
         }
         [ValidateAntiForgeryToken]
