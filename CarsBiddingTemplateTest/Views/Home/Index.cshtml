@@ -146,13 +146,16 @@
         <h3 class="agileits-title">@CarsBiddingUsingBootstrap.Localization.Gallery<span class="w3lshr-line"> </span></h3>
         @if (Model != null && Model.Count > 0)
         {
-            <div class="newCar text-right wow animate__animated animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="300">
+            @*<div class="newCar text-right wow animate__animated animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="300">
+                <a href="/Car/NewCar" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.NewCar<span></span></a>
+            </div>*@
+            <div class="newCar text-right wow animate__animated @(currentCulture.TwoLetterISOLanguageName == "ar" ? "animate__fadeInRight" : "animate__fadeInLeft")" data-wow-duration="2s" data-wow-offset="300" data-wow-delay="1s">
                 <a href="/Car/NewCar" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.NewCar<span></span></a>
             </div>
         }
         @if (Model != null && Model.Count > 0)
         {
-            <div class="wow animate__animated animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="300" data-wow-delay="1s">
+            <div class="wow animate__animated animate__pulse" data-wow-duration="2s" data-wow-offset="300">
                 @Html.Partial("~/Views/Gallery/CarPanel.cshtml", Model)
             </div>
         }
@@ -171,8 +174,8 @@
 
         @if (Model != null && Model.Count > 0)
         {
-            <div class="more-btn text-right">
-                <a href="/Gallery/Gallery" class="sky-hover wthree-btn btn-6 scroll wow animate__animated animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="100">@CarsBiddingUsingBootstrap.Localization.More<span></span></a>
+            <div class="more-btn text-right wow animate__animated @(currentCulture.TwoLetterISOLanguageName == "ar" ? "animate__fadeInRight" : "animate__fadeInLeft")" data-wow-duration="2s" data-wow-offset="300">
+                <a href="/Gallery/Gallery" class="sky-hover wthree-btn btn-6 scroll">@CarsBiddingUsingBootstrap.Localization.More<span></span></a>
             </div>
         }
 

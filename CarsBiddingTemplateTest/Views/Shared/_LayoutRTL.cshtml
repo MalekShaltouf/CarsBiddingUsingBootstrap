@@ -23,10 +23,11 @@
     <!-- font-awesome icons -->
     @RenderSection("flexsliderCss", false)<!-- flexslider-CSS -->
     @*<link rel="stylesheet" href="~/Content/chocolat.css" type="text/css" media="screen">*@
-    <link href="~/Content/animate.css" rel="stylesheet" />
+    <link href="~/Content/animate.min.css" rel="stylesheet" />
     <link href="~/Content/RTL/CustomeStyle_RTL.css" rel="stylesheet" />
     <link href="~/Content/MediaQuery.css" rel="stylesheet" />
     <link href="~/Content/RTL/MediaQuery_RTL.css" rel="stylesheet" />
+    <link href="~/Content/loading-screen-style.css" rel="stylesheet" />
     @RenderSection("CssStyleTag", false)
     <!-- //Custom Theme files -->
     <!-- web-fonts -->
@@ -38,7 +39,7 @@
         <link href="//fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">*@
     <!-- //web-fonts -->
 </head>
-<body id="page-top" class="scrollStyle" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" class="scrollStyle" data-spy="scroll" data-target=".navbar-fixed-top"  style="@(ViewBag.ShowLoadScreen == true ? "overflow:hidden" : "")">
     <!-- banner -->
     <!-- header -->
     <div class="header-w3layouts">
@@ -149,7 +150,7 @@
     </div>
     <!-- subscribe -->
     <div class="subscribe-agileinfo services jarallax">
-        <div class="container">
+        <div class="container wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-offset="300">
             <h4>@CarsBiddingUsingBootstrap.Localization.SubscribeOurNewsletter</h4>
             <form action="#" method="post">
                 <input type="email" name="email" placeholder="@CarsBiddingUsingBootstrap.Localization.EnterYourEmail" required="">
@@ -164,13 +165,13 @@
         <div class="container">
             <div class="w3_agile_social_icons footer-w3icons">
                 <ul>
-                    <li><a href="#" class="icon icon-cube agile_facebook"></a></li>
-                    <li><a href="#" class="icon icon-cube agile_rss"></a></li>
-                    <li><a href="#" class="icon icon-cube agile_instagram"></a></li>
-                    <li><a href="#" class="icon icon-cube agile_t"></a></li>
+                    <li class="wow animate__animated animate__bounceIn" data-wow-duration="2s" data-wow-offset="100" data-wow-delay=".5s"><a href="#" class="icon icon-cube agile_facebook"></a></li>
+                    <li class="wow animate__animated animate__bounceIn" data-wow-duration="2s" data-wow-offset="100" data-wow-delay="1s"><a href="#" class="icon icon-cube agile_rss"></a></li>
+                    <li class="wow animate__animated animate__bounceIn" data-wow-duration="2s" data-wow-offset="100" data-wow-delay="1.5s"><a href="#" class="icon icon-cube agile_instagram"></a></li>
+                    <li class="wow animate__animated animate__bounceIn" data-wow-duration="2s" data-wow-offset="100" data-wow-delay="2s"><a href="#" class="icon icon-cube agile_t"></a></li>
                 </ul>
             </div>
-            <p>© 2021 Cars Bidding. All Rights Reserved | Developed by  <a href="" target="_blank">Sh.Malek</a> </p>
+            <p class="wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-offset="70">© 2021 Cars Bidding. All Rights Reserved | Developed by  <a href="" target="_blank">Sh.Malek</a> </p>
         </div>
     </div>
     <!-- //copy right end here -->
@@ -205,6 +206,33 @@
             </div>
         </div>
     </div>
+    @*
+        why i sholud be to specify what's the cases that
+        i will show load screen in it??
+        becuse for example:when do some post action or
+        any action then we use return View() will be show
+        load screen and i don't want that so i just to
+        show screen load in Index [get] action fro every page
+        so i need to use ShowLoadScreen ViewBag in order to
+        specify if the user come from [Get] index action or
+        else action.
+    *@
+    @if (ViewBag.ShowLoadScreen == true)
+    {
+        <section class="loading-screen">
+            <div class="breeding-rhombus-spinner">
+                <div class="rhombus child-1"></div>
+                <div class="rhombus child-2"></div>
+                <div class="rhombus child-3"></div>
+                <div class="rhombus child-4"></div>
+                <div class="rhombus child-5"></div>
+                <div class="rhombus child-6"></div>
+                <div class="rhombus child-7"></div>
+                <div class="rhombus child-8"></div>
+                <div class="rhombus big"></div>
+            </div>
+        </section>
+    }
     <script src="~/Scripts/Notification.js"></script>
     <!-- js -->
     @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
@@ -276,6 +304,23 @@
             GetAllUserNotification();
         </script>
     }
+    <script>
+        //Loading Screen using JQuery
+        //start
+        $(window).load(function () {
+            $(".loading-screen .breeding-rhombus-spinner").fadeOut(1000, function () {
+                $("body").css("overflow", "auto");
+                $(this).parent().fadeOut(1000, function () {
+                    $(this).remove();
+                });
+            });
+        });
+        //end
+    </script>
+    <script src="~/Scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     @RenderSection("scripts", false)
 
     @*
